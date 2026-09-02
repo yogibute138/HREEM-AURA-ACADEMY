@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialsCarousel();
   initModals();
   initFormHandlers();
+  initProductFiltering();
+  initProductInquiryHandlers();
   initScrollSpy();
 });
 
@@ -94,6 +96,46 @@ document.addEventListener('click', (e) => {
     }
   }
 });
+
+// Product Filtering System
+function initProductFiltering() {
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('prod-filter-btn')) {
+      document.querySelectorAll('.prod-filter-btn').forEach(btn => btn.classList.remove('active'));
+      e.target.classList.add('active');
+
+      const filter = e.target.getAttribute('data-prod-filter');
+      const productCards = document.querySelectorAll('.products-grid .product-card');
+
+      productCards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  });
+}
+
+// Product WhatsApp Direct Inquiry Handler
+function initProductInquiryHandlers() {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.inquire-product-btn');
+    if (btn) {
+      e.preventDefault();
+      const productName = btn.getAttribute('data-product') || 'Sacred Product';
+      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI am interested in acquiring the following product and would like to know the details:\n*Product:* ${productName}`;
+      const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(waMessage)}`;
+
+      showToast(`Opening WhatsApp inquiry for ${productName}...`);
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 800);
+    }
+  });
+}
 
 // 3D Card Tilt Micro-Interactions
 function init3DTiltEffect() {
