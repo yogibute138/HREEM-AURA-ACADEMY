@@ -314,7 +314,7 @@ function openModalWithService(serviceName) {
   if (modal) modal.classList.add('open');
 }
 
-// Form Handlers
+// Form Handlers & WhatsApp Inquiry Redirection
 function initFormHandlers() {
   const mainForm = document.getElementById('main-contact-form');
   const modalForm = document.getElementById('modal-form');
@@ -322,17 +322,39 @@ function initFormHandlers() {
   if (mainForm) {
     mainForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      showToast('Thank you! Your spiritual consultation request has been submitted successfully.');
-      mainForm.reset();
+      const name = document.getElementById('full-name')?.value || '';
+      const phone = document.getElementById('phone')?.value || '';
+      const service = document.getElementById('service-select')?.value || 'Spiritual Consultation';
+      const msg = document.getElementById('message')?.value || '';
+
+      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI would like to book a consultation.\n*Name:* ${name}\n*Phone:* ${phone}\n*Service/Course:* ${service}\n*Message:* ${msg}`;
+      const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(waMessage)}`;
+
+      showToast('Redirecting to WhatsApp for instant booking...');
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+        mainForm.reset();
+      }, 800);
     });
   }
 
   if (modalForm) {
     modalForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      showToast('Booking Request Received! Our team will contact you shortly.');
+      const inputs = modalForm.querySelectorAll('.form-input');
+      const name = inputs[0]?.value || '';
+      const phone = inputs[1]?.value || '';
+      const datetime = inputs[2]?.value || '';
+
+      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI would like to book a consultation session.\n*Name:* ${name}\n*Phone/WhatsApp:* ${phone}\n*Preferred Date/Time:* ${datetime}`;
+      const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(waMessage)}`;
+
+      showToast('Booking Request Received! Opening WhatsApp...');
       document.getElementById('booking-modal').classList.remove('open');
-      modalForm.reset();
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+        modalForm.reset();
+      }, 800);
     });
   }
 }

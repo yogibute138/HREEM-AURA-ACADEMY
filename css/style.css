@@ -366,17 +366,21 @@ section {
 
 .brand-title {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
   letter-spacing: 0.12em;
-  color: var(--cream);
+  color: #FF2A4B;
+  text-shadow: 0 0 10px rgba(255, 42, 75, 0.4);
   line-height: 1.1;
 }
 
 .brand-sub {
-  font-size: 0.65rem;
-  letter-spacing: 0.22em;
-  color: var(--gold-champagne);
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: #FF2A4B;
+  text-shadow: 0 0 10px rgba(255, 42, 75, 0.4);
   text-transform: uppercase;
 }
 
@@ -1407,8 +1411,20 @@ section {
 }
 
 .footer-logo {
-  height: 50px;
-  width: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 20px var(--gold-glow-intense), 0 0 35px rgba(255, 42, 75, 0.3);
+  background: var(--bg-deep);
+  transition: var(--transition-smooth);
+}
+
+.footer-logo:hover {
+  transform: scale(1.08) rotate(5deg);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 30px var(--gold-light), 0 0 50px rgba(255, 42, 75, 0.5);
 }
 
 .footer-text {
