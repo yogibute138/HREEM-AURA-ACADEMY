@@ -3,32 +3,32 @@
    ========================================================================== */
 
 :root {
-  /* Color Palette */
-  --bg-deep: #060103;
-  --bg-burgundy: #130205;
-  --bg-maroon: #24050A;
-  --bg-card: rgba(24, 4, 8, 0.65);
-  --bg-card-hover: rgba(38, 7, 13, 0.82);
+  /* Color Palette - Brightened Luxurious Spiritual Palette */
+  --bg-deep: #140409;
+  --bg-burgundy: #260810;
+  --bg-maroon: #3B0D18;
+  --bg-card: rgba(45, 10, 19, 0.72);
+  --bg-card-hover: rgba(62, 14, 26, 0.88);
 
-  --gold-primary: #D4AF37;
-  --gold-light: #F7E7AD;
-  --gold-champagne: #E5C158;
-  --gold-dark: #8C6F1D;
-  --gold-glow: rgba(212, 175, 55, 0.35);
-  --gold-glow-intense: rgba(247, 231, 173, 0.6);
+  --gold-primary: #E6C250;
+  --gold-light: #FFF0BA;
+  --gold-champagne: #F5D77F;
+  --gold-dark: #A88622;
+  --gold-glow: rgba(230, 194, 80, 0.45);
+  --gold-glow-intense: rgba(255, 240, 186, 0.75);
 
-  --burgundy-accent: #630C1F;
-  --royal-red: #8B0000;
-  --cream: #FFF9EE;
+  --burgundy-accent: #8A152E;
+  --royal-red: #B31B38;
+  --cream: #FFFFFF;
 
-  --text-main: #FAF5EE;
-  --text-muted: #C2B3A3;
-  --text-dim: #82756A;
+  --text-main: #FFFFFF;
+  --text-muted: #E6D9CD;
+  --text-dim: #B3A090;
 
-  --glass-bg: rgba(20, 3, 6, 0.55);
-  --glass-border: rgba(212, 175, 55, 0.22);
-  --glass-border-bright: rgba(247, 231, 173, 0.55);
-  --glass-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  --glass-bg: rgba(48, 12, 22, 0.65);
+  --glass-border: rgba(230, 194, 80, 0.32);
+  --glass-border-bright: rgba(255, 240, 186, 0.7);
+  --glass-shadow: 0 20px 50px rgba(18, 2, 6, 0.5);
 
   /* Fonts */
   --font-heading: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
@@ -120,8 +120,9 @@ body {
   height: 100vh;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 20%, rgba(99, 12, 31, 0.25) 0%, rgba(6, 1, 3, 0.85) 70%),
-              radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 20%, rgba(138, 21, 46, 0.45) 0%, rgba(20, 4, 9, 0.75) 70%),
+              radial-gradient(circle at 80% 80%, rgba(230, 194, 80, 0.18) 0%, transparent 60%),
+              radial-gradient(circle at 20% 60%, rgba(179, 27, 56, 0.25) 0%, transparent 50%);
 }
 
 .app-wrapper {

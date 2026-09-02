@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialsCarousel();
   initModals();
   initFormHandlers();
+  initScrollSpy();
 });
 
 // Render 25 Courses into Grid
@@ -118,7 +119,7 @@ function init3DTiltEffect() {
   });
 }
 
-// Navbar Scroll Effect
+// Navbar Scroll Effect & ScrollSpy
 function initNavbarScroll() {
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
@@ -128,6 +129,38 @@ function initNavbarScroll() {
       navbar.classList.remove('scrolled');
     }
   });
+}
+
+// Active Navigation Link Highlighting on Scroll (ScrollSpy)
+function initScrollSpy() {
+  const navLinks = document.querySelectorAll('.nav-links .nav-link, .mobile-menu-link');
+  const sections = document.querySelectorAll('section[id]');
+
+  const onScrollSpy = () => {
+    let currentSectionId = '';
+    const scrollPosition = window.scrollY + 200; // offset for fixed header
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    if (currentSectionId) {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+          link.classList.add('active');
+        }
+      });
+    }
+  };
+
+  window.addEventListener('scroll', onScrollSpy);
+  onScrollSpy(); // Run once on load
 }
 
 // Mobile Menu
