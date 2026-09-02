@@ -52,15 +52,15 @@ class SpiritualScene {
     this.renderer.toneMappingExposure = 1.2;
 
     // Ambient Lighting
-    const ambientLight = new THREE.AmbientLight(0xfff8e7, 0.6);
+    const ambientLight = new THREE.AmbientLight(0xfff8e7, 0.85);
     this.scene.add(ambientLight);
 
     // Point Lights
-    this.goldLight = new THREE.PointLight(0xd4af37, 3, 30);
+    this.goldLight = new THREE.PointLight(0xffd700, 4.5, 35);
     this.goldLight.position.set(0, 0, 4);
     this.scene.add(this.goldLight);
 
-    this.burgundyLight = new THREE.PointLight(0x8b0000, 2, 40);
+    this.burgundyLight = new THREE.PointLight(0xb31b38, 3, 45);
     this.burgundyLight.position.set(-8, 5, -5);
     this.scene.add(this.burgundyLight);
   }
@@ -194,10 +194,10 @@ class SpiritualScene {
 
     // Particle Texture / Material
     const material = new THREE.PointsMaterial({
-      color: 0xf7e7ad,
-      size: 0.12,
+      color: 0xfff5c0,
+      size: 0.14,
       transparent: true,
-      opacity: 0.75,
+      opacity: 0.88,
       blending: THREE.AdditiveBlending
     });
 
