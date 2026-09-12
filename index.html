@@ -376,125 +376,27 @@
         </div>
       </section>
 
-      <!-- SERVICES SECTION — 3D CATEGORIZED SHOWCASE -->
+      <!-- SERVICES SECTION — 3D INTERACTIVE SHOWCASE -->
       <section id="services" class="services-section">
         <div class="container">
           <div style="text-align:center;">
             <div class="section-tag" data-i18n="services.tag">DIVINE GUIDANCE & HEALING</div>
             <h2 class="section-title text-gold-gradient" data-i18n="services.title">Services & Spiritual Healing</h2>
-            <p class="section-subtitle" data-i18n="services.subtitle">Tailored 1-on-1 consultations and transformative energy-balancing healing sessions guided by Dr. Vaishali Bute.</p>
+            <p class="section-subtitle" data-i18n="services.subtitle">Tailored 1-on-1 consultations, transformative energy-balancing healing sessions, and consecrated remedies guided by Dr. Vaishali Bute.</p>
           </div>
 
-          <!-- CATEGORY 1: CONSULTATIONS -->
-          <div class="service-category-block">
-            <h3 class="category-heading"><i class="fa-solid fa-comments text-subtle-gold"></i> <span data-i18n="services.cat_consult">Spiritual Consultations</span></h3>
-            <div class="services-grid">
-              <div class="service-card glass-card">
-                <div class="service-image-box vastu-bg">
-                  <div class="service-tag-badge"><i class="fa-solid fa-compass-drafting"></i> VASTU CHECKING</div>
-                  <div class="service-icon"><i class="fa-solid fa-compass"></i></div>
-                </div>
-                <h3 class="service-title">Vastu Consultation & Energy Audit</h3>
-                <p class="service-desc">Comprehensive residential & commercial energy auditing, directional checking, compass alignment, and non-demolition remedies.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-layer-group"></i></div>
-                </div>
-                <h3 class="service-title">Tarot Reading</h3>
-                <p class="service-desc">Archetypal intuitive card spreads to illuminate future trajectories, career paths, and relationship guidance.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-arrow-down-1-9"></i></div>
-                </div>
-                <h3 class="service-title">Numerology Consultation</h3>
-                <p class="service-desc">Name correction, mobile number analysis, date of birth grid, and lucky vibration alignment.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-book-quran"></i></div>
-                </div>
-                <h3 class="service-title">Lal Kitab Consultation</h3>
-                <p class="service-desc">Astrological diagnosis of planetary debts, karmic flaws, and fast-acting remedial prescriptions.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-person-rays"></i></div>
-                </div>
-                <h3 class="service-title">Personal Spiritual Consultation</h3>
-                <p class="service-desc">One-on-one deep energy analysis combining horoscope, aura reading, and tailored remedies.</p>
-              </div>
-            </div>
+          <!-- Service Category Filter Tabs -->
+          <div class="service-filter">
+            <button class="srv-filter-btn active" data-srv-filter="all" data-i18n="services.filter_all">ALL SERVICES</button>
+            <button class="srv-filter-btn" data-srv-filter="consultation" data-i18n="services.filter_consult">SPIRITUAL CONSULTATIONS</button>
+            <button class="srv-filter-btn" data-srv-filter="healing" data-i18n="services.filter_healing">ENERGY HEALING</button>
+            <button class="srv-filter-btn" data-srv-filter="remedies" data-i18n="services.filter_remedies">REMEDIES & TRAINING</button>
           </div>
 
-          <!-- CATEGORY 2: HEALING SESSIONS -->
-          <div class="service-category-block" style="margin-top: 3.5rem;">
-            <h3 class="category-heading"><i class="fa-solid fa-hand-holding-heart text-subtle-gold"></i> <span data-i18n="services.cat_healing">Energy Healing Sessions</span></h3>
-            <div class="services-grid">
-              <div class="service-card glass-card">
-                <div class="service-image-box healing-bg">
-                  <div class="service-tag-badge"><i class="fa-solid fa-dharmachakra"></i> CHAKRA BALANCING</div>
-                  <div class="service-icon"><i class="fa-solid fa-dharmachakra"></i></div>
-                </div>
-                <h3 class="service-title">Chakra Healing</h3>
-                <p class="service-desc">A personalized energy-balancing session focused on understanding and working with the body's chakra system.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box healing-bg">
-                  <div class="service-tag-badge"><i class="fa-solid fa-spa"></i> REIKI GRAND MASTER</div>
-                  <div class="service-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
-                </div>
-                <h3 class="service-title">Reiki Healing</h3>
-                <p class="service-desc">A guided Reiki healing session focused on relaxation, energy balance and spiritual wellbeing.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box crystal-bg">
-                  <div class="service-tag-badge"><i class="fa-solid fa-gem"></i> CRYSTAL ENERGY</div>
-                  <div class="service-icon"><i class="fa-solid fa-gem"></i></div>
-                </div>
-                <h3 class="service-title">Crystal Healing</h3>
-                <p class="service-desc">A guided crystal-based energy session using crystals as part of a spiritual wellness practice.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-feather-pointed"></i></div>
-                </div>
-                <h3 class="service-title">Angel Therapy</h3>
-                <p class="service-desc">Connecting with angelic realms for divine protection, karmic healing, and angelic messages.</p>
-              </div>
-            </div>
+          <!-- Dynamic Services 3D Grid -->
+          <div class="services-grid" id="services-container">
+            <!-- Populated dynamically via SERVICES_DATA in app.js -->
           </div>
-
-          <!-- CATEGORY 3: OTHER PERSONAL SESSIONS & REMEDIES -->
-          <div class="service-category-block" style="margin-top: 3.5rem;">
-            <h3 class="category-heading"><i class="fa-solid fa-wand-magic-sparkles text-subtle-gold"></i> <span data-i18n="services.cat_remedies">Remedies & Specialized Guidance</span></h3>
-            <div class="services-grid">
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                </div>
-                <h3 class="service-title">Spiritual Remedies & Consecration</h3>
-                <p class="service-desc">Personalized Yantras, Mojo bags, wallet magic, and Maha remedies for rapid obstacle removal.</p>
-              </div>
-
-              <div class="service-card glass-card">
-                <div class="service-image-box">
-                  <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                </div>
-                <h3 class="service-title">Certified Online Training</h3>
-                <p class="service-desc">Certified live interactive video masterclasses with direct mentorship from Dr. Vaishali Bute.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -523,98 +425,120 @@
         </div>
       </section>
 
-      <!-- TESTIMONIALS SECTION — DUAL LANGUAGE 3D CAROUSEL -->
+      <!-- TESTIMONIALS SECTION — 3D PERSPECTIVE STAGE -->
       <section id="testimonials" class="testimonials-section">
         <div class="container">
           <div style="text-align:center;">
             <div class="section-tag" data-i18n="testimonials.tag">TRANSFORMED LIVES</div>
             <h2 class="section-title text-gold-gradient" data-i18n="testimonials.title">Student & Client Testimonials</h2>
-            <p class="section-subtitle" data-i18n="testimonials.subtitle">Read how students and clients worldwide have experienced profound spiritual evolution.</p>
+            <p class="section-subtitle" data-i18n="testimonials.subtitle">Real experiences from students and clients worldwide who turned ancient spiritual wisdom into life abundance and inner healing.</p>
           </div>
 
-          <div class="testimonials-carousel-wrapper" id="testimonials-container">
-            <!-- Dynamically populated from TESTIMONIALS_DATA in app.js -->
+          <div class="testimonials-3d-stage">
+            <div class="testimonials-3d-grid" id="testimonials-container">
+              <!-- Dynamically populated from TESTIMONIALS_DATA in app.js -->
+            </div>
           </div>
 
           <div class="carousel-controls">
-            <button class="carousel-btn" id="prev-testimonial" aria-label="Previous Testimonial"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="carousel-btn" id="next-testimonial" aria-label="Next Testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+            <button class="carousel-btn" id="prev-testimonial" aria-label="Previous Testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="testimonial-pagination" id="testimonial-dots"></div>
+            <button class="carousel-btn" id="next-testimonial" aria-label="Next Testimonial"><i class="fa-solid fa-chevron-right"></i></button>
           </div>
         </div>
       </section>
 
       <!-- ACT 05: CTA GATEWAY & CONTACT SECTION — BEGIN -->
-      <section id="contact" class="cta-section">
+      <section id="contact" class="contact-section">
         <div class="container">
-          <div class="section-tag" data-i18n="contact.tag">ACT 05 — BEGIN</div>
-          <h2 class="section-title text-gold-gradient" data-i18n="contact.title">Your Transformation Begins Here</h2>
-          <p class="section-subtitle" data-i18n="contact.subtitle">Take the first step toward understanding your energy, your space, and your spiritual journey.</p>
+          <div style="text-align:center;">
+            <div class="section-tag" data-i18n="contact.tag">ACT 05 — BEGIN</div>
+            <h2 class="section-title text-gold-gradient" data-i18n="contact.title">Your Transformation Begins Here</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Take the first step toward understanding your energy, your space, and your spiritual journey with Dr. Vaishali Bute.</p>
+          </div>
 
-          <div class="contact-wrapper">
-            <!-- Quick Contact Channels -->
-            <div class="contact-info-cards">
-              <a href="https://wa.me/919552122933?text=Hello%20HREEM%20AURA%20ACADEMY,%20I%20would%20like%20to%20inquire%20about%20a%20consultation." target="_blank" class="contact-card glass-card">
-                <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
-                <div>
-                  <h4 class="contact-card-title">WhatsApp Consultation</h4>
-                  <p class="contact-card-value">+91 9552122933</p>
+          <div class="contact-spatial-grid">
+            <!-- Left 3D Channel Cards -->
+            <div class="contact-channels-column">
+              <a href="https://wa.me/919552122933?text=Hello%20HREEM%20AURA%20ACADEMY,%20I%20would%20like%20to%20inquire%20about%20a%20consultation." target="_blank" class="contact-channel-card glass-card">
+                <div class="channel-icon-orb wa-orb">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="channel-text-box">
+                  <span class="channel-badge"><i class="fa-solid fa-bolt"></i> INSTANT RESPONSE</span>
+                  <h4 class="channel-title">WhatsApp Direct Inquiry</h4>
+                  <p class="channel-value">+91 9552122933</p>
+                  <p class="channel-desc">Quickest channel for consultation bookings, course fees, and remedies.</p>
                 </div>
               </a>
 
-              <a href="mailto:hreemauraacademy@gmail.com" class="contact-card glass-card">
-                <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
-                <div>
-                  <h4 class="contact-card-title">Direct Email</h4>
-                  <p class="contact-card-value">hreemauraacademy@gmail.com</p>
+              <a href="mailto:hreemauraacademy@gmail.com" class="contact-channel-card glass-card">
+                <div class="channel-icon-orb email-orb">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="channel-text-box">
+                  <span class="channel-badge"><i class="fa-solid fa-shield-halved"></i> OFFICIAL CORRESPONDENCE</span>
+                  <h4 class="channel-title">Direct Email</h4>
+                  <p class="channel-value">hreemauraacademy@gmail.com</p>
+                  <p class="channel-desc">Detailed Vastu map submissions, horoscope inquiries, and official correspondence.</p>
                 </div>
               </a>
 
-              <div class="contact-card glass-card">
-                <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
-                <div>
-                  <h4 class="contact-card-title">Online Consultations</h4>
-                  <p class="contact-card-value">Worldwide Zoom Sessions</p>
+              <div class="contact-channel-card glass-card">
+                <div class="channel-icon-orb zoom-orb">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="channel-text-box">
+                  <span class="channel-badge"><i class="fa-solid fa-globe"></i> WORLDWIDE SESSIONS</span>
+                  <h4 class="channel-title">Live Zoom Consultations</h4>
+                  <p class="channel-value">1-on-1 Worldwide Sessions</p>
+                  <p class="channel-desc">Private HD video consultations available globally across all time zones.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Interactive Form -->
-            <form class="contact-form glass-card" id="main-contact-form">
-              <div class="form-group">
-                <label class="form-label" for="full-name">Full Name</label>
-                <input type="text" id="full-name" class="form-input" placeholder="Your Full Name" required>
+            <!-- Right Glassmorphic Form -->
+            <form class="contact-form-glass glass-card" id="main-contact-form">
+              <h3 class="form-card-title"><i class="fa-solid fa-calendar-check text-subtle-gold"></i> Book Consultation / Inquire</h3>
+              <p class="form-card-subtitle">Fill in your details below to connect directly with Dr. Vaishali Bute.</p>
+
+              <!-- Quick Intent Pill Selectors -->
+              <div class="form-group" style="margin-top:1.5rem;">
+                <label class="form-floating-label">Select Your Inquiry Focus:</label>
+                <div class="intent-pills-grid" id="intent-pills">
+                  <button type="button" class="intent-pill active" data-intent="Personal Consultation">Personal Consultation</button>
+                  <button type="button" class="intent-pill" data-intent="Vastu Audit">Vastu Audit</button>
+                  <button type="button" class="intent-pill" data-intent="Reiki Course">Reiki Course</button>
+                  <button type="button" class="intent-pill" data-intent="Tarot Reading">Tarot Reading</button>
+                  <button type="button" class="intent-pill" data-intent="Numerology">Numerology</button>
+                  <button type="button" class="intent-pill" data-intent="Sacred Products">Sacred Products</button>
+                </div>
+              </div>
+
+              <div class="form-input-grid">
+                <div class="form-group">
+                  <label class="form-floating-label" for="full-name">Full Name</label>
+                  <input type="text" id="full-name" class="form-input-luxury" placeholder="Your Full Name" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-floating-label" for="phone">Phone Number / WhatsApp</label>
+                  <input type="tel" id="phone" class="form-input-luxury" placeholder="+91 9552122933" required>
+                </div>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="email">Email Address</label>
-                <input type="email" id="email" class="form-input" placeholder="you@domain.com" required>
+                <label class="form-floating-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input-luxury" placeholder="you@domain.com" required>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="phone">Phone Number</label>
-                <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210" required>
+                <label class="form-floating-label" for="message">Your Query / Intent</label>
+                <textarea id="message" class="form-textarea-luxury" placeholder="Describe your requirement, preferred consultation date, or question..." required></textarea>
               </div>
 
-              <div class="form-group">
-                <label class="form-label" for="service-select">Select Service / Course</label>
-                <select id="service-select" class="form-select" required>
-                  <option value="" disabled selected>Choose an offering...</option>
-                  <option value="Personal Consultation">Personal Consultation</option>
-                  <option value="Reiki Healing Course">Reiki Healing Course</option>
-                  <option value="Vastu Consultation">Vastu Consultation</option>
-                  <option value="Mobile Numerology">Mobile Numerology</option>
-                  <option value="Tarot Reading">Tarot Reading</option>
-                  <option value="Crystal Therapy">Crystal Therapy</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="message">Your Message / Intent</label>
-                <textarea id="message" class="form-textarea" placeholder="Describe your requirement or questions..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-gold w-100" data-i18n="contact.btn_submit">
-                <i class="fa-solid fa-paper-plane"></i> BOOK YOUR CONSULTATION
+              <button type="submit" class="btn btn-gold w-100 btn-lg" data-i18n="contact.btn_submit">
+                <i class="fa-brands fa-whatsapp"></i> BOOK YOUR CONSULTATION
               </button>
             </form>
           </div>

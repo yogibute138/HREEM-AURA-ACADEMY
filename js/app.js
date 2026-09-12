@@ -31,6 +31,114 @@ const COURSES_DATA = [
   { slug: 'digital-marketing-course', title: 'Digital Marketing Course', cat: 'numerology', icon: 'fa-bullhorn', badge: 'BUSINESS', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80', desc: 'Grow your spiritual practice, consultation business, and social media presence effectively.', fullDesc: 'A tailored course specifically for spiritual healers, astrologers, and tarot readers to build their online brand, social media, website presence, and client funnel.' }
 ];
 
+// Structured 3D Services Dataset
+const SERVICES_DATA = [
+  {
+    id: 'srv-vastu',
+    category: 'consultation',
+    title: 'Vastu Energy Audit & Spatial Correction',
+    titleMr: 'वास्तू ऊर्जा ऑडीट व तोडफोड विरहित उपाय',
+    icon: 'fa-compass-drafting',
+    bgClass: 'vastu-bg',
+    badge: 'RESIDENTIAL & COMMERCIAL',
+    desc: 'Comprehensive directional checking, 5-element balancing, Brahmasthan audit, and non-demolition remedial correction.',
+    descMr: 'तोडफोड न करता घर, दुकान व ऑफिसमधील वास्तू दोष दूर करून प्रगती व शांती आणणारा वास्तू सल्ला.',
+    features: ['Directional Compass Checking', 'Brahmasthan Energy Alignment', 'Non-Demolition Remedies', 'Geopathic Stress Check'],
+    price: '1-on-1 Consultation'
+  },
+  {
+    id: 'srv-tarot',
+    category: 'consultation',
+    title: 'Archetypal Tarot Reading & Life Guidance',
+    titleMr: 'टॅरो कार्ड रीडिंग व भविष्य मार्गदर्शन',
+    icon: 'fa-layer-group',
+    bgClass: 'divination-bg',
+    badge: 'CAREER, LOVE & FINANCE',
+    desc: 'Intuitive 78-card archetypal spreads to illuminate upcoming career choices, relationship alignment, and spiritual guidance.',
+    descMr: 'टॅरो कार्ड्सच्या माध्यमातून तुमच्या भविष्यातील निर्णय, करिअर आणि नात्यांविषयी सखोल मार्गदर्शन.',
+    features: ['Detailed 78-Card Spread', 'Relationship & Marriage Guidance', 'Business & Career Outlook', 'Actionable Remedies'],
+    price: 'Personal Session'
+  },
+  {
+    id: 'srv-numerology',
+    category: 'consultation',
+    title: 'Name & Mobile Numerology Consultation',
+    titleMr: 'नाम व मोबाईल अंकशास्त्र सल्ला',
+    icon: 'fa-arrow-down-1-9',
+    bgClass: 'numerology-bg',
+    badge: 'WEALTH & FREQUENCY',
+    desc: 'Name vibration alignment, mobile number calculation, date of birth grid analysis, and business name luck correction.',
+    descMr: 'तुमचे नाव, मोबाईल नंबर आणि जन्मतारीख यांच्यातील सुसंवाद साधून आर्थिक व व्यावसायिक यश मिळवा.',
+    features: ['Name Frequency Correction', 'Mobile Number Analysis', 'Lucky Number Grid', 'Business Name Alignment'],
+    price: 'Personal Consultation'
+  },
+  {
+    id: 'srv-lalkitab',
+    category: 'consultation',
+    title: 'Lal Kitab Astrological Consultation',
+    titleMr: 'लाल किताब ज्योतिष सल्ला व तात्काळ उपाय',
+    icon: 'fa-book-quran',
+    bgClass: 'lalkitab-bg',
+    badge: 'KARMIC REMEDIES',
+    desc: 'Astrological diagnosis of planetary debts, karmic flaws, and fast-acting practical prescriptions for rapid relief.',
+    descMr: 'ग्रहांच्या त्रासावर लाल किताबानुसार सोपे, जलद आणि प्रभावी उपाय जे त्वरित सकारात्मक परिणाम देतात.',
+    features: ['Planetary Debt Diagnosis', 'Fast-acting Remedies', 'Household Ritual Prescriptions', 'Personalized Horoscope Analysis'],
+    price: 'Horoscope Session'
+  },
+  {
+    id: 'srv-reiki',
+    category: 'healing',
+    title: 'Reiki Energy & Distance Healing Session',
+    titleMr: 'रेकी ऊर्जा व डिस्टन्स हीलिंग सत्र',
+    icon: 'fa-hands-holding-circle',
+    bgClass: 'healing-bg',
+    badge: 'REIKI GRAND MASTER',
+    desc: 'Deep energetic purification, aura cleansing, chakra balance, and distance healing for physical and emotional wellbeing.',
+    descMr: 'डॉ. वैशाली बुटे यांच्या प्रत्यक्ष किंवा डिस्टन्स रेकीद्वारे आजार, ताणतणाव आणि नकारात्मक ऊर्जेचे निरसन.',
+    features: ['Aura Cleansing & Shielding', 'Chakra Balancing', 'Distance Energy Transfer', 'Emotional Blockage Release'],
+    price: 'Healing Session'
+  },
+  {
+    id: 'srv-crystal',
+    category: 'healing',
+    title: 'Crystal Therapy & Aura Alignment',
+    titleMr: 'क्रिस्टल थेरपी व ऑरा संतुलन',
+    icon: 'fa-gem',
+    bgClass: 'crystal-bg',
+    badge: 'HIGH-VIBRATION CRYSTALS',
+    desc: 'Targeted crystal layout sessions to clear psychic fatigue, revitalize life force, and amplify positive intentions.',
+    descMr: 'अभिमंत्रित क्रिस्टल्सच्या साहाय्याने ऑरा शुद्धीकरण आणि शरीरातील ऊर्जा केंद्रांचे संतुलन.',
+    features: ['Custom Crystal Grid Placement', 'Psychic Shielding', 'Stress & Anxiety Relief', 'Consecrated Crystal Selection'],
+    price: 'Therapy Session'
+  },
+  {
+    id: 'srv-angel',
+    category: 'healing',
+    title: 'Angel Therapy & Divine Invocation',
+    titleMr: 'एंजेल थेरपी व दिव्य देवदूत मार्गदर्शन',
+    icon: 'fa-feather-pointed',
+    bgClass: 'healing-bg',
+    badge: 'ANGELIC MESSAGES',
+    desc: 'Connecting with angelic realms for divine protection, cord cutting, karmic healing, and angel oracle messages.',
+    descMr: 'देवदूतांच्या ऊर्जेशी जोडून वैयक्तिक संकटमुक्ती, आत्मिक शांतता आणि दिव्य संदेश प्राप्त करा.',
+    features: ['Angelic Cord Cutting', 'Divine Protection Shield', 'Angel Oracle Messages', 'Peace & Anxiety Healing'],
+    price: 'Divine Session'
+  },
+  {
+    id: 'srv-training',
+    category: 'remedies',
+    title: 'Live Certified Masterclasses & Mentorship',
+    titleMr: 'थेट ऑनलाईन प्रमाणित मास्टरक्लास व मार्गदर्शन',
+    icon: 'fa-award',
+    bgClass: 'vastu-bg',
+    badge: 'HREEM AURA CERTIFIED',
+    desc: 'Direct video masterclasses in Reiki, Vastu, Numerology, and Tarot with lifetime student mentorship and certification.',
+    descMr: 'डॉ. वैशाली बुटे यांच्याकडून थेट ऑनलाईन प्रशिक्षण घ्या आणि ह्रीम ऑरा अकॅडमीचे प्रमाणपत्र मिळवा.',
+    features: ['Live Interactive Masterclass', 'Detailed Study PDF Manuals', 'ISO & MSME Recognized Cert', 'Lifetime Mentorship Group'],
+    price: 'Certification Program'
+  }
+];
+
 // Physical Products Data Structure with Prices & Variations
 const PRODUCTS_DATA = [
   // 12 Rashi Bracelets
@@ -529,6 +637,68 @@ function formatDevanagariNum(num) {
   return String(num).replace(/[0-9]/g, match => devanagariDigits[match]);
 }
 
+// Render 3D Services Showcase
+function renderServices(services) {
+  const container = document.getElementById('services-container');
+  if (!container) return;
+
+  container.innerHTML = services.map(s => {
+    const title = currentLanguage === 'mr' ? s.titleMr : s.title;
+    const desc = currentLanguage === 'mr' ? s.descMr : s.desc;
+
+    return `
+      <div class="service-card glass-card" data-category="${s.category}" data-id="${s.id}">
+        <div>
+          <div class="service-image-box ${s.bgClass}">
+            <span class="service-tag-badge"><i class="fa-solid ${s.icon}"></i> ${s.badge}</span>
+            <div class="service-icon-frame">
+              <i class="fa-solid ${s.icon}"></i>
+            </div>
+          </div>
+          <h3 class="service-title">${title}</h3>
+          <p class="service-desc">${desc}</p>
+          <ul class="service-features-list">
+            ${s.features.map(f => `<li class="service-feature-item"><i class="fa-solid fa-circle-check text-subtle-gold"></i> <span>${f}</span></li>`).join('')}
+          </ul>
+        </div>
+        <div class="service-footer">
+          <span class="service-price">${s.price}</span>
+          <button class="btn btn-gold btn-sm open-booking-modal-with-service" data-service="${title}">
+            <i class="fa-brands fa-whatsapp"></i> ${getTranslation('nav.book', 'BOOK CONSULTATION')}
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Bind click event for service booking buttons
+  document.querySelectorAll('.open-booking-modal-with-service').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const sName = btn.getAttribute('data-service');
+      openModalWithService(sName);
+    });
+  });
+
+  init3DTiltEffect();
+}
+
+// Service Filtering Event Listeners
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('srv-filter-btn')) {
+    document.querySelectorAll('.srv-filter-btn').forEach(btn => btn.classList.remove('active'));
+    e.target.classList.add('active');
+
+    const filter = e.target.getAttribute('data-srv-filter');
+    if (filter === 'all') {
+      renderServices(SERVICES_DATA);
+    } else {
+      const filtered = SERVICES_DATA.filter(item => item.category === filter);
+      renderServices(filtered);
+    }
+  }
+});
+
 // Render Products Grid Dynamically
 function renderProducts(products) {
   const container = document.getElementById('products-container');
@@ -739,10 +909,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initCourseDetailRouter();
 
+  renderServices(SERVICES_DATA);
+
   // Re-render components when language toggling occurs
   window.addEventListener('languageChanged', () => {
     renderCourses(COURSES_DATA);
     renderProducts(PRODUCTS_DATA);
+    renderServices(SERVICES_DATA);
     renderTestimonials();
     updateCartBadge();
     renderCartDrawer();
@@ -1066,84 +1239,119 @@ const TESTIMONIALS_DATA = [
     language: 'en',
     name: 'Rajesh Patel',
     testimonial: 'Learning Money Reiki and Mobile Numerology from Dr. Vaishali Bute completely transformed my business financial trajectory within 30 days! Her remedies are incredibly fast and potent.',
-    course: 'Money Reiki & Mobile Numerology',
+    course: 'Money Reiki & Mobile Numerology Master',
     location: 'Mumbai, Maharashtra',
-    photo: ''
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
   },
   {
     language: 'mr',
-    name: '[विद्यार्थ्याचे नाव / STUDENT NAME]',
-    testimonial: 'डॉ. वैशाली बुटे यांच्याकडून मनि रेकी आणि वास्तूचे मार्गदर्शन घेतल्यानंतर माझ्या व्यवसायात आणि घरात अतिशय सकारात्मक बदल झाले आहेत. त्यांच्या उपचारांमुळे मनाला असीम शांतता मिळाली.',
+    name: 'आनंद देशपांडे',
+    testimonial: 'डॉ. वैशाली बुटे यांच्याकडून मनि रेकी आणि वास्तूचे मार्गदर्शन घेतल्यानंतर माझ्या व्यवसायात आणि घरात अतिशय सकारात्मक बदल झाले आहेत. त्यांच्या उपचारांमुळे मनाला असीम शांतता आणि प्रगती मिळाली.',
     course: 'मनि रेकी व वास्तू सल्ला',
     location: 'पुणे, महाराष्ट्र',
-    photo: ''
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
   },
   {
     language: 'en',
     name: 'Sunita Sharma',
     testimonial: 'The Vastu consultation for my house cleared years of unexplained energetic heaviness. My family feels peaceful, vibrant, and prosperous. Dr. Vaishali is truly a gifted master.',
-    course: 'Vastu Consultation & Chakra Healing',
+    course: 'Vastu Energy Audit & Chakra Healing',
     location: 'Delhi NCR',
-    photo: ''
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
   },
   {
     language: 'mr',
-    name: '[विद्यार्थ्याचे नाव / STUDENT NAME]',
+    name: 'प्रिया कुलकर्णी',
     testimonial: 'मोबाईल न्युमरोलॉजी आणि लकी नंबर निवडीनंतर मला कामाच्या ठिकाणी नवीन संधी आणि आर्थिक लाभ मिळाला. ह्रीम ऑरा अकॅडमीचे मार्गदर्शन खरोखरच जीवन बदलणारे आहे.',
-    course: 'मोबाईल न्युमरोलॉजी',
+    course: 'मोबाईल न्युमरोलॉजी मास्टरक्लास',
     location: 'नागपूर, महाराष्ट्र',
-    photo: ''
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'en',
+    name: 'Dr. Amit Malhotra',
+    testimonial: 'As a medical practitioner, I was amazed by Dr. Vaishali Bute’s Reiki Grand Master attunements. The energetic alignment felt instantaneous and deeply grounding.',
+    course: 'Reiki Grand Master Masterclass',
+    location: 'Bengaluru, Karnataka',
+    stars: 5,
+    verified: 'REIKI MASTER'
   }
 ];
 
 let testimonialCarouselInterval = null;
+let currentTestimonialIndex = 0;
 
 function renderTestimonials() {
   const container = document.getElementById('testimonials-container');
+  const dotsContainer = document.getElementById('testimonial-dots');
   if (!container) return;
 
-  // Render all testimonials matching current language first, or all if available
-  const list = TESTIMONIALS_DATA;
+  // Filter or list testimonials based on current language preference first
+  const list = TESTIMONIALS_DATA.filter(t => t.language === currentLanguage).length > 0
+    ? TESTIMONIALS_DATA.filter(t => t.language === currentLanguage)
+    : TESTIMONIALS_DATA;
 
   container.innerHTML = list.map((item, index) => {
-    const initials = item.name && !item.name.includes('[')
-      ? item.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()
-      : 'HA';
+    const initials = item.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
 
     return `
-      <div class="testimonial-card glass-card ${index === 0 ? 'active' : ''}" data-index="${index}">
-        <div class="testimonial-stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      <div class="testimonial-card-3d ${index === 0 ? 'active' : ''}" data-index="${index}">
+        <div>
+          <div class="testimonial-top-row">
+            <div class="testimonial-stars">
+              ${Array(item.stars || 5).fill('<i class="fa-solid fa-star"></i>').join('')}
+            </div>
+            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> ${item.verified}</span>
+          </div>
+          <p class="testimonial-quote-text">${item.testimonial}</p>
         </div>
-        <p class="testimonial-quote">
-          "${item.testimonial}"
-        </p>
-        <div class="testimonial-author">
-          <div class="author-avatar">${item.photo ? `<img src="${item.photo}" alt="${item.name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">` : initials}</div>
-          <div class="author-info">
-            <h4 class="author-name">${item.name}</h4>
-            <p class="author-course">${item.course} ${item.location ? `• ${item.location}` : ''}</p>
+
+        <div class="testimonial-author-box">
+          <div class="author-avatar-frame">${initials}</div>
+          <div class="author-info-details">
+            <h4 class="author-name-title">${item.name}</h4>
+            <span class="author-course-tag">${item.course} ${item.location ? `• ${item.location}` : ''}</span>
           </div>
         </div>
       </div>
     `;
   }).join('');
 
-  initTestimonialsCarousel();
+  if (dotsContainer) {
+    dotsContainer.innerHTML = list.map((_, idx) => `
+      <span class="dot-indicator ${idx === 0 ? 'active' : ''}" data-dot="${idx}"></span>
+    `).join('');
+  }
+
+  initTestimonialsCarousel3D(list.length);
 }
 
-// Testimonials 3D Carousel
-function initTestimonialsCarousel() {
-  const cards = document.querySelectorAll('.testimonial-card');
-  if (cards.length === 0) return;
-  let currentIndex = 0;
+// Testimonials 3D Stage Carousel Engine
+function initTestimonialsCarousel3D(totalCount) {
+  if (totalCount === 0) return;
+  const cards = document.querySelectorAll('.testimonial-card-3d');
+  const dots = document.querySelectorAll('.dot-indicator');
+  currentTestimonialIndex = 0;
 
-  const showTestimonial = (index) => {
+  const updateStage = (index) => {
     cards.forEach((card, idx) => {
-      card.classList.remove('active');
+      card.classList.remove('active', 'prev', 'next');
       if (idx === index) {
         card.classList.add('active');
+      } else if (idx === (index - 1 + totalCount) % totalCount) {
+        card.classList.add('prev');
+      } else if (idx === (index + 1) % totalCount) {
+        card.classList.add('next');
       }
+    });
+
+    dots.forEach((dot, idx) => {
+      if (idx === index) dot.classList.add('active');
+      else dot.classList.remove('active');
     });
   };
 
@@ -1152,23 +1360,33 @@ function initTestimonialsCarousel() {
 
   if (nextBtn) {
     nextBtn.onclick = () => {
-      currentIndex = (currentIndex + 1) % cards.length;
-      showTestimonial(currentIndex);
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % totalCount;
+      updateStage(currentTestimonialIndex);
     };
   }
 
   if (prevBtn) {
     prevBtn.onclick = () => {
-      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-      showTestimonial(currentIndex);
+      currentTestimonialIndex = (currentTestimonialIndex - 1 + totalCount) % totalCount;
+      updateStage(currentTestimonialIndex);
     };
   }
 
+  dots.forEach(dot => {
+    dot.onclick = () => {
+      const idx = parseInt(dot.getAttribute('data-dot'), 10);
+      currentTestimonialIndex = idx;
+      updateStage(currentTestimonialIndex);
+    };
+  });
+
   if (testimonialCarouselInterval) clearInterval(testimonialCarouselInterval);
   testimonialCarouselInterval = setInterval(() => {
-    currentIndex = (currentIndex + 1) % cards.length;
-    showTestimonial(currentIndex);
-  }, 6000);
+    currentTestimonialIndex = (currentTestimonialIndex + 1) % totalCount;
+    updateStage(currentTestimonialIndex);
+  }, 6500);
+
+  updateStage(0);
 }
 
 // GSAP ScrollTrigger Animations
@@ -1265,19 +1483,29 @@ function openModalWithService(serviceName) {
 function initFormHandlers() {
   const mainForm = document.getElementById('main-contact-form');
   const modalForm = document.getElementById('modal-form');
+  let selectedIntent = 'Personal Consultation';
+
+  // Intent pills toggle handler
+  document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('intent-pill')) {
+      document.querySelectorAll('.intent-pill').forEach(p => p.classList.remove('active'));
+      e.target.classList.add('active');
+      selectedIntent = e.target.getAttribute('data-intent') || 'Personal Consultation';
+    }
+  });
 
   if (mainForm) {
     mainForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('full-name')?.value || '';
       const phone = document.getElementById('phone')?.value || '';
-      const service = document.getElementById('service-select')?.value || 'Spiritual Consultation';
+      const email = document.getElementById('email')?.value || '';
       const msg = document.getElementById('message')?.value || '';
 
-      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI would like to book a consultation.\n*Name:* ${name}\n*Phone:* ${phone}\n*Service/Course:* ${service}\n*Message:* ${msg}`;
+      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI would like to book a consultation.\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email}\n*Inquiry Focus:* ${selectedIntent}\n*Message/Query:* ${msg}`;
       const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(waMessage)}`;
 
-      showToast('Redirecting to WhatsApp for instant booking...');
+      showToast('Redirecting to WhatsApp for instant consultation booking...');
       setTimeout(() => {
         window.open(waUrl, '_blank');
         mainForm.reset();
