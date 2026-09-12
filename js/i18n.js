@@ -6,13 +6,14 @@
 const TRANSLATIONS = {
   en: {
     // Navigation
+    'nav.brand_main': 'HREEM AURA',
+    'nav.brand_sub': 'ACADEMY',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.courses': 'Courses',
     'nav.services': 'Services',
-    'nav.products': 'Products',
-    'nav.students': 'Students',
     'nav.testimonials': 'Testimonials',
+    'nav.products': 'Products',
     'nav.contact': 'Contact',
     'nav.book': 'BOOK CONSULTATION',
     'nav.cart': 'Cart',
@@ -26,6 +27,12 @@ const TRANSLATIONS = {
     'hero.cta_book': 'BOOK A CONSULTATION',
     'hero.cta_courses': 'EXPLORE COURSES',
     'hero.scroll': 'ENTER THE JOURNEY',
+
+    // Trust
+    'trust.msme_title': 'MSME Registered',
+    'trust.msme_sub': 'Govt. of India Recognized Entity',
+    'trust.iso_title': 'ISO Certified',
+    'trust.iso_sub': 'International Quality Standard Compliance',
 
     // About
     'about.tag': 'MEET OUR FOUNDER',
@@ -123,13 +130,14 @@ const TRANSLATIONS = {
 
   mr: {
     // Navigation
+    'nav.brand_main': 'ह्रीम ऑरा',
+    'nav.brand_sub': 'अकॅडमी',
     'nav.home': 'मुख्य पृष्ठ',
     'nav.about': 'संस्थापक परिचय',
     'nav.courses': 'अभ्यासक्रम',
     'nav.services': 'सेवा व मार्गदर्शन',
-    'nav.products': 'पवित्र वस्तू व प्रॉडक्ट्स',
-    'nav.students': 'आमचे विद्यार्थी',
     'nav.testimonials': 'अनुभव व प्रतिक्रिया',
+    'nav.products': 'पवित्र वस्तू व प्रॉडक्ट्स',
     'nav.contact': 'संपर्क',
     'nav.book': 'सल्लामसलत बुक करा',
     'nav.cart': 'कार्ट',
@@ -143,6 +151,12 @@ const TRANSLATIONS = {
     'hero.cta_book': 'सल्लामसलत बुक करा',
     'hero.cta_courses': 'अभ्यासक्रम पहा',
     'hero.scroll': 'प्रवास सुरू करा',
+
+    // Trust
+    'trust.msme_title': 'MSME नोंदणीकृत',
+    'trust.msme_sub': 'भारत सरकार मान्यताप्राप्त संस्था',
+    'trust.iso_title': 'ISO प्रमाणित',
+    'trust.iso_sub': 'आंतरराष्ट्रीय गुणवत्ता मानक मानकांकन',
 
     // About
     'about.tag': 'आमच्या संस्थापक',

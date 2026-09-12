@@ -2,33 +2,33 @@
  * HREEM AURA ACADEMY — Application Controller, E-Commerce Cart Engine & Router
  */
 
-// Comprehensive 25 Course Dataset with full detail metadata
+// Comprehensive 25 Course Dataset with full detail metadata and subject-matched images
 const COURSES_DATA = [
-  { slug: 'lal-kitab', title: 'Lal Kitab', cat: 'numerology', icon: 'fa-book-quran', badge: 'POPULAR', desc: 'Ancient astrological science of quick remedies, planetary analysis, and practical solutions.', fullDesc: 'Lal Kitab is a unique set of books on palmistry and astrology. It introduces a brand new style of horoscope analysis with quick, effective, and non-cumbersome remedies.' },
-  { slug: 'vastu', title: 'Vastu', cat: 'vastu', icon: 'fa-compass-drafting', badge: 'MASTER', desc: 'Harmonize residential and commercial living spaces for health, wealth, and spiritual peace.', fullDesc: 'Vastu Shastra is the traditional Indian system of architecture. This course covers spatial geometry, directional energies, five element balance, and non-demolition corrective remedies.' },
-  { slug: 'mobile-numerology', title: 'Mobile Numerology', cat: 'numerology', icon: 'fa-mobile-screen-button', badge: 'BESTSELLER', desc: 'Align your personal mobile phone number frequency with wealth and career growth luck.', fullDesc: 'Your mobile phone number is an active daily acoustic and electromagnetic frequency magnet. Learn how to calculate, choose, and correct your mobile number for prosperity.' },
-  { slug: 'mobile-yantra', title: 'Mobile Yantra', cat: 'remedies', icon: 'fa-kaaba', badge: 'REMEDY', desc: 'Sacred geometric digital yantras for mobile wallpaper activation and energy shield protection.', fullDesc: 'Discover the power of sacred geometry applied to modern digital screens. Consecrate mobile yantras to protect your aura and attract favorable synchronicities.' },
-  { slug: 'money-magic-wallet', title: 'Money Magic Wallet', cat: 'remedies', icon: 'fa-wallet', badge: 'PROSPERITY', desc: 'Secrets of magnetizing money through wallet consecration, color frequencies, and sacred herbs.', fullDesc: 'Transform your wallet into an active money attractor. Learn color vibrational alignment, sacred herbal inserts, and energetic wallet discipline.' },
-  { slug: 'akshat-kalash', title: 'Akshat Kalash', cat: 'remedies', icon: 'fa-jar', badge: 'SACRED', desc: 'Vedic pot ritual activation for household wealth retention and continuous divine grace.', fullDesc: 'Akshat Kalash is an ancient consecration ritual using energized rice, copper, and sacred herbs to stabilize wealth and invoke Goddess Lakshmi in your home.' },
-  { slug: 'coin-currency-prediction', title: 'Coin Currency Prediction', cat: 'divination', icon: 'fa-coins', badge: 'ADVANCED', desc: 'Intuitive forecasting techniques using ancient currency symbols and planetary energies.', fullDesc: 'Master the art of coin divination for intuitive guidance on financial decisions, business partnerships, and market timing.' },
-  { slug: 'color-therapy', title: 'Color Therapy', cat: 'healing', icon: 'fa-palette', badge: 'HEALING', desc: 'Balance chakra energy channels using specialized color frequency wavelengths and clothing.', fullDesc: 'Color therapy (Chromotherapy) uses light and color to balance energy wherever our bodies are lacking, whether physically, emotionally, or spiritually.' },
-  { slug: 'crystal-therapy', title: 'Crystal Therapy', cat: 'remedies', icon: 'fa-gem', badge: 'POPULAR', desc: 'Harness high-vibrational gemstone grids for aura shield, stress reduction, and healing.', fullDesc: 'Comprehensive guide to selecting, cleansing, energizing, and programming crystals for body layouts, home grids, and wearable aura shields.' },
-  { slug: 'ganesha-blessing-cards', title: 'Ganesha Blessing Cards', cat: 'divination', icon: 'fa-square-poll-vertical', badge: 'DIVINE', desc: 'Divine oracle card reading techniques to invoke Lord Ganesha for removing life obstacles.', fullDesc: 'Learn how to read and interpret sacred Lord Ganesha oracle cards for obstacle removal, new beginnings, and daily divine guidance.' },
-  { slug: 'house-numerology', title: 'House Numerology', cat: 'numerology', icon: 'fa-house-chimney-window', badge: 'VASTU', desc: 'Evaluate house number vibrations to ensure harmony, family happiness, and abundance.', fullDesc: 'Every home carries a numerical vibration that influences resident relationships, peace, and financial stability. Learn how to calculate and remedy house numbers.' },
-  { slug: 'money-reiki', title: 'Money Reiki', cat: 'healing', icon: 'fa-sack-dollar', badge: 'BESTSELLER', desc: 'High-frequency Reiki energy attunement specifically engineered for clearing money blocks.', fullDesc: 'Money Reiki focuses specifically on the Spiritual Energy of Money. Learn attunements, symbols, and distance healing to clear financial karma and negative beliefs.' },
-  { slug: 'mojo-bag', title: 'Mojo Bag', cat: 'remedies', icon: 'fa-bag-shopping', badge: 'TALISMAN', desc: 'Creation and consecration of personalized talismanic pouch remedies for luck and shielding.', fullDesc: 'A Mojo Bag is a prayer in a bag—a personalized talisman pouch filled with botanical, mineral, and symbolic items consecrated for protection, luck, or love.' },
-  { slug: 'maha-remedy', title: 'Maha Remedy', cat: 'remedies', icon: 'fa-sun', badge: 'MASTER', desc: 'Master level Vedic remedies combining herbs, yantras, and mantras for rapid life transformation.', fullDesc: 'The ultimate synthesis of Vedic remedies. Combines herbology, yantra activation, mantra recitation, and planetary timing for intense situation resolution.' },
-  { slug: 'reiki-grand-master', title: 'Reiki Grand Master', cat: 'healing', icon: 'fa-crown', badge: 'GRAND MASTER', desc: 'Complete mastership in Usui Reiki, attunement passing, distance healing, and teacher level training.', fullDesc: 'The highest level of Usui Reiki training. Master the attunement processes, advanced secret symbols, student training methodologies, and deep spiritual mastery.' },
-  { slug: 'rudraksha', title: 'Rudraksha', cat: 'remedies', icon: 'fa-circle-dot', badge: 'SACRED', desc: 'Mystical science of 1 to 14 Mukhi Rudraksha selection, purification, and aura alignment.', fullDesc: 'Discover the electromagnetic power of sacred Rudraksha beads. Learn mukhi classifications, planetary associations, wearing rules, and authentic testing.' },
-  { slug: 'runes-prediction', title: 'Runes Prediction', cat: 'divination', icon: 'fa-scroll', badge: 'DIVINATION', desc: 'Ancient Nordic symbols divination for intuitive insight, protection, and decision making.', fullDesc: 'Explore Elder Futhark rune casting. Learn the esoteric meanings of all 24 runes, casting layouts, and how to combine rune wisdom with personal intuition.' },
-  { slug: 'shiv-sharva', title: 'Shiv Sharva', cat: 'healing', icon: 'fa-om', badge: 'DIVINE', desc: 'Lord Shiva divine energy invocation practices for deep spiritual transcendence and karmic cleansing.', fullDesc: 'Sacred meditative and mantra practices dedicated to Lord Shiva for destroying negative karmic patterns, physical healing, and ultimate spiritual liberation.' },
-  { slug: 'tarot-card', title: 'Tarot Card', cat: 'divination', icon: 'fa-layer-group', badge: 'BESTSELLER', desc: 'Intuitive 78-card archetypal divination masterclass for revealing past, present, and future.', fullDesc: 'Complete masterclass covering Major and Minor Arcana, court cards, intuitive interpretation, client consultation ethics, and multi-card spreads.' },
-  { slug: 'vehicle-numerology', title: 'Vehicle Numerology', cat: 'numerology', icon: 'fa-car-side', badge: 'NEW', desc: 'Discover the relationship between vehicle numbers, numerological vibrations and personal energy through practical numerology guidance.', fullDesc: 'Your vehicle number plate carries continuous motion energy. Learn how vehicle numbers affect safety, travel ease, breakdowns, and personal wealth alignment.' },
-  { slug: 'vision-board', title: 'Vision Board', cat: 'remedies', icon: 'fa-chart-pie', badge: 'MANIFESTATION', desc: 'Subconscious mind programming and sacred geometry manifestation vision board creation.', fullDesc: 'Combine modern neuro-plasticity principles with sacred geometry and elemental placement to build high-potency manifestation vision boards that yield results.' },
-  { slug: 'matichi-matki-rituals', title: 'Matichi Matki Rituals', cat: 'remedies', icon: 'fa-vessel-filled', badge: 'RITUAL', desc: 'Traditional earthen pot remedies for absorbing household negative energy and debt relief.', fullDesc: 'Sacred earthen pot (matki) rituals rooted in traditional rural remedies for absorbing family strife, neutralizing evil eye, and stabilizing financial debt.' },
-  { slug: 'vastu-reiki', title: 'Vastu Reiki', cat: 'healing', icon: 'fa-house-signal', badge: 'VASTU HEALING', desc: 'Infusing spatial structures with distance Reiki energy for clearing land doshas.', fullDesc: 'A powerful hybrid practice using high-vibrational Reiki energy to cleanse residential and commercial space land memory, structural stress, and earth energies.' },
-  { slug: 'bath-salt-making', title: 'Bath Salt Making', cat: 'remedies', icon: 'fa-shower', badge: 'AURA CLEANSE', desc: 'Crafting custom herbal and crystal-infused aura cleansing bath salts for stress release.', fullDesc: 'Learn the formulation of ritual bath salts using Himalayan pink salt, essential oils, dried herbs, and crystal charges for aura cleansing and psychic relief.' },
-  { slug: 'digital-marketing-course', title: 'Digital Marketing Course', cat: 'numerology', icon: 'fa-bullhorn', badge: 'BUSINESS', desc: 'Grow your spiritual practice, consultation business, and social media presence effectively.', fullDesc: 'A tailored course specifically for spiritual healers, astrologers, and tarot readers to build their online brand, social media, website presence, and client funnel.' }
+  { slug: 'lal-kitab', title: 'Lal Kitab', cat: 'numerology', icon: 'fa-book-quran', badge: 'POPULAR', image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=600&q=80', desc: 'Ancient astrological science of quick remedies, planetary analysis, and practical solutions.', fullDesc: 'Lal Kitab is a unique set of books on palmistry and astrology. It introduces a brand new style of horoscope analysis with quick, effective, and non-cumbersome remedies.' },
+  { slug: 'vastu', title: 'Vastu', cat: 'vastu', icon: 'fa-compass-drafting', badge: 'MASTER', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80', desc: 'Harmonize residential and commercial living spaces for health, wealth, and spiritual peace.', fullDesc: 'Vastu Shastra is the traditional Indian system of architecture. This course covers spatial geometry, directional energies, five element balance, and non-demolition corrective remedies.' },
+  { slug: 'mobile-numerology', title: 'Mobile Numerology', cat: 'numerology', icon: 'fa-mobile-screen-button', badge: 'BESTSELLER', image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', desc: 'Align your personal mobile phone number frequency with wealth and career growth luck.', fullDesc: 'Your mobile phone number is an active daily acoustic and electromagnetic frequency magnet. Learn how to calculate, choose, and correct your mobile number for prosperity.' },
+  { slug: 'mobile-yantra', title: 'Mobile Yantra', cat: 'remedies', icon: 'fa-kaaba', badge: 'REMEDY', image: 'https://images.unsplash.com/photo-1616469829941-c7200edec809?auto=format&fit=crop&w=600&q=80', desc: 'Sacred geometric digital yantras for mobile wallpaper activation and energy shield protection.', fullDesc: 'Discover the power of sacred geometry applied to modern digital screens. Consecrate mobile yantras to protect your aura and attract favorable synchronicities.' },
+  { slug: 'money-magic-wallet', title: 'Money Magic Wallet', cat: 'remedies', icon: 'fa-wallet', badge: 'PROSPERITY', image: 'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?auto=format&fit=crop&w=600&q=80', desc: 'Secrets of magnetizing money through wallet consecration, color frequencies, and sacred herbs.', fullDesc: 'Transform your wallet into an active money attractor. Learn color vibrational alignment, sacred herbal inserts, and energetic wallet discipline.' },
+  { slug: 'akshat-kalash', title: 'Akshat Kalash', cat: 'remedies', icon: 'fa-jar', badge: 'SACRED', image: 'https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=600&q=80', desc: 'Vedic pot ritual activation for household wealth retention and continuous divine grace.', fullDesc: 'Akshat Kalash is an ancient consecration ritual using energized rice, copper, and sacred herbs to stabilize wealth and invoke Goddess Lakshmi in your home.' },
+  { slug: 'coin-currency-prediction', title: 'Coin Currency Prediction', cat: 'divination', icon: 'fa-coins', badge: 'ADVANCED', image: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=600&q=80', desc: 'Intuitive forecasting techniques using ancient currency symbols and planetary energies.', fullDesc: 'Master the art of coin divination for intuitive guidance on financial decisions, business partnerships, and market timing.' },
+  { slug: 'color-therapy', title: 'Color Therapy', cat: 'healing', icon: 'fa-palette', badge: 'HEALING', image: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80', desc: 'Balance chakra energy channels using specialized color frequency wavelengths and clothing.', fullDesc: 'Color therapy (Chromotherapy) uses light and color to balance energy wherever our bodies are lacking, whether physically, emotionally, or spiritually.' },
+  { slug: 'crystal-therapy', title: 'Crystal Therapy', cat: 'remedies', icon: 'fa-gem', badge: 'POPULAR', image: 'https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=600&q=80', desc: 'Harness high-vibrational gemstone grids for aura shield, stress reduction, and healing.', fullDesc: 'Comprehensive guide to selecting, cleansing, energizing, and programming crystals for body layouts, home grids, and wearable aura shields.' },
+  { slug: 'ganesha-blessing-cards', title: 'Ganesha Blessing Cards', cat: 'divination', icon: 'fa-square-poll-vertical', badge: 'DIVINE', image: 'https://images.unsplash.com/photo-1567591370501-f25b3a4a034d?auto=format&fit=crop&w=600&q=80', desc: 'Divine oracle card reading techniques to invoke Lord Ganesha for removing life obstacles.', fullDesc: 'Learn how to read and interpret sacred Lord Ganesha oracle cards for obstacle removal, new beginnings, and daily divine guidance.' },
+  { slug: 'house-numerology', title: 'House Numerology', cat: 'numerology', icon: 'fa-house-chimney-window', badge: 'VASTU', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80', desc: 'Evaluate house number vibrations to ensure harmony, family happiness, and abundance.', fullDesc: 'Every home carries a numerical vibration that influences resident relationships, peace, and financial stability. Learn how to calculate and remedy house numbers.' },
+  { slug: 'money-reiki', title: 'Money Reiki', cat: 'healing', icon: 'fa-sack-dollar', badge: 'BESTSELLER', image: 'https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=600&q=80', desc: 'High-frequency Reiki energy attunement specifically engineered for clearing money blocks.', fullDesc: 'Money Reiki focuses specifically on the Spiritual Energy of Money. Learn attunements, symbols, and distance healing to clear financial karma and negative beliefs.' },
+  { slug: 'mojo-bag', title: 'Mojo Bag', cat: 'remedies', icon: 'fa-bag-shopping', badge: 'TALISMAN', image: 'https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80', desc: 'Creation and consecration of personalized talismanic pouch remedies for luck and shielding.', fullDesc: 'A Mojo Bag is a prayer in a bag—a personalized talisman pouch filled with botanical, mineral, and symbolic items consecrated for protection, luck, or love.' },
+  { slug: 'maha-remedy', title: 'Maha Remedy', cat: 'remedies', icon: 'fa-sun', badge: 'MASTER', image: 'https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&w=600&q=80', desc: 'Master level Vedic remedies combining herbs, yantras, and mantras for rapid life transformation.', fullDesc: 'The ultimate synthesis of Vedic remedies. Combines herbology, yantra activation, mantra recitation, and planetary timing for intense situation resolution.' },
+  { slug: 'reiki-grand-master', title: 'Reiki Grand Master', cat: 'healing', icon: 'fa-crown', badge: 'GRAND MASTER', image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80', desc: 'Complete mastership in Usui Reiki, attunement passing, distance healing, and teacher level training.', fullDesc: 'The highest level of Usui Reiki training. Master the attunement processes, advanced secret symbols, student training methodologies, and deep spiritual mastery.' },
+  { slug: 'rudraksha', title: 'Rudraksha', cat: 'remedies', icon: 'fa-circle-dot', badge: 'SACRED', image: 'https://images.unsplash.com/photo-1599420186946-7b6fb4e297f0?auto=format&fit=crop&w=600&q=80', desc: 'Mystical science of 1 to 14 Mukhi Rudraksha selection, purification, and aura alignment.', fullDesc: 'Discover the electromagnetic power of sacred Rudraksha beads. Learn mukhi classifications, planetary associations, wearing rules, and authentic testing.' },
+  { slug: 'runes-prediction', title: 'Runes Prediction', cat: 'divination', icon: 'fa-scroll', badge: 'DIVINATION', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80', desc: 'Ancient Nordic symbols divination for intuitive insight, protection, and decision making.', fullDesc: 'Explore Elder Futhark rune casting. Learn the esoteric meanings of all 24 runes, casting layouts, and how to combine rune wisdom with personal intuition.' },
+  { slug: 'shiv-sharva', title: 'Shiv Sharva', cat: 'healing', icon: 'fa-om', badge: 'DIVINE', image: 'https://images.unsplash.com/photo-1608976328227-31362e5b029e?auto=format&fit=crop&w=600&q=80', desc: 'Lord Shiva divine energy invocation practices for deep spiritual transcendence and karmic cleansing.', fullDesc: 'Sacred meditative and mantra practices dedicated to Lord Shiva for destroying negative karmic patterns, physical healing, and ultimate spiritual liberation.' },
+  { slug: 'tarot-card', title: 'Tarot Card', cat: 'divination', icon: 'fa-layer-group', badge: 'BESTSELLER', image: 'https://images.unsplash.com/photo-1601314167099-232775b3d6fd?auto=format&fit=crop&w=600&q=80', desc: 'Intuitive 78-card archetypal divination masterclass for revealing past, present, and future.', fullDesc: 'Complete masterclass covering Major and Minor Arcana, court cards, intuitive interpretation, client consultation ethics, and multi-card spreads.' },
+  { slug: 'vehicle-numerology', title: 'Vehicle Numerology', cat: 'numerology', icon: 'fa-car-side', badge: 'NEW', image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80', desc: 'Discover the relationship between vehicle numbers, numerological vibrations and personal energy through practical numerology guidance.', fullDesc: 'Your vehicle number plate carries continuous motion energy. Learn how vehicle numbers affect safety, travel ease, breakdowns, and personal wealth alignment.' },
+  { slug: 'vision-board', title: 'Vision Board', cat: 'remedies', icon: 'fa-chart-pie', badge: 'MANIFESTATION', image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&q=80', desc: 'Subconscious mind programming and sacred geometry manifestation vision board creation.', fullDesc: 'Combine modern neuro-plasticity principles with sacred geometry and elemental placement to build high-potency manifestation vision boards that yield results.' },
+  { slug: 'matichi-matki-rituals', title: 'Matichi Matki Rituals', cat: 'remedies', icon: 'fa-vessel-filled', badge: 'RITUAL', image: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=600&q=80', desc: 'Traditional earthen pot remedies for absorbing household negative energy and debt relief.', fullDesc: 'Sacred earthen pot (matki) rituals rooted in traditional rural remedies for absorbing family strife, neutralizing evil eye, and stabilizing financial debt.' },
+  { slug: 'vastu-reiki', title: 'Vastu Reiki', cat: 'healing', icon: 'fa-house-signal', badge: 'VASTU HEALING', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80', desc: 'Infusing spatial structures with distance Reiki energy for clearing land doshas.', fullDesc: 'A powerful hybrid practice using high-vibrational Reiki energy to cleanse residential and commercial space land memory, structural stress, and earth energies.' },
+  { slug: 'bath-salt-making', title: 'Bath Salt Making', cat: 'remedies', icon: 'fa-shower', badge: 'AURA CLEANSE', image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80', desc: 'Crafting custom herbal and crystal-infused aura cleansing bath salts for stress release.', fullDesc: 'Learn the formulation of ritual bath salts using Himalayan pink salt, essential oils, dried herbs, and crystal charges for aura cleansing and psychic relief.' },
+  { slug: 'digital-marketing-course', title: 'Digital Marketing Course', cat: 'numerology', icon: 'fa-bullhorn', badge: 'BUSINESS', image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80', desc: 'Grow your spiritual practice, consultation business, and social media presence effectively.', fullDesc: 'A tailored course specifically for spiritual healers, astrologers, and tarot readers to build their online brand, social media, website presence, and client funnel.' }
 ];
 
 // Physical Products Data Structure with Prices & Variations
@@ -725,12 +725,12 @@ function openProductDetailModal(productId) {
 document.addEventListener('DOMContentLoaded', () => {
   renderCourses(COURSES_DATA);
   renderProducts(PRODUCTS_DATA);
+  renderTestimonials();
   updateCartBadge();
   initNavbarScroll();
   initMobileMenu();
   init3DTiltEffect();
   initGSAPAnimations();
-  initTestimonialsCarousel();
   initModals();
   initFormHandlers();
   initProductFiltering();
@@ -743,6 +743,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('languageChanged', () => {
     renderCourses(COURSES_DATA);
     renderProducts(PRODUCTS_DATA);
+    renderTestimonials();
     updateCartBadge();
     renderCartDrawer();
   });
@@ -820,16 +821,17 @@ function renderCourses(courses) {
 
   container.innerHTML = courses.map(course => `
     <div class="course-card glass-card" data-category="${course.cat}" data-slug="${course.slug}">
-      <div class="course-header">
-        <div class="course-icon-wrapper">
-          <i class="fa-solid ${course.icon}"></i>
-        </div>
-        <span class="course-badge">${course.badge}</span>
+      <div class="course-thumb-box">
+        <img src="${course.image}" alt="${course.title}" class="course-thumb-img" loading="lazy">
+        <div class="course-thumb-overlay"></div>
+        <span class="course-badge"><i class="fa-solid ${course.icon}"></i> ${course.badge}</span>
       </div>
-      <h3 class="course-title">${course.title}</h3>
-      <p class="course-description">${course.desc}</p>
-      <div class="course-footer">
-        <span class="course-action">${getTranslation('courses.view_details', 'VIEW DETAILS')} <i class="fa-solid fa-arrow-right"></i></span>
+      <div class="course-card-body">
+        <h3 class="course-title">${course.title}</h3>
+        <p class="course-description">${course.desc}</p>
+        <div class="course-footer">
+          <span class="course-action">${getTranslation('courses.view_details', 'VIEW DETAILS')} <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
       </div>
     </div>
   `).join('');
@@ -882,8 +884,12 @@ function openCourseDetail(slug, updateHash = true) {
   if (!modal || !content) return;
 
   content.innerHTML = `
-    <div class="course-hero-badge"><i class="fa-solid ${course.icon}"></i> ${course.badge}</div>
-    <h2 class="course-detail-title">${course.title}</h2>
+    <div class="course-detail-banner-box">
+      <img src="${course.image}" alt="${course.title}" class="course-detail-banner-img">
+      <div class="course-detail-banner-overlay"></div>
+      <div class="course-hero-badge" style="position:absolute; top:1.25rem; left:1.25rem; z-index:2;"><i class="fa-solid ${course.icon}"></i> ${course.badge}</div>
+    </div>
+    <h2 class="course-detail-title" style="margin-top:1.5rem;">${course.title}</h2>
     <p class="course-detail-intro">${course.desc}</p>
 
     <div class="course-section-block">
@@ -1054,9 +1060,82 @@ function initMobileMenu() {
   });
 }
 
+// Editable Testimonial Data Structure with Language & Field Support
+const TESTIMONIALS_DATA = [
+  {
+    language: 'en',
+    name: 'Rajesh Patel',
+    testimonial: 'Learning Money Reiki and Mobile Numerology from Dr. Vaishali Bute completely transformed my business financial trajectory within 30 days! Her remedies are incredibly fast and potent.',
+    course: 'Money Reiki & Mobile Numerology',
+    location: 'Mumbai, Maharashtra',
+    photo: ''
+  },
+  {
+    language: 'mr',
+    name: '[विद्यार्थ्याचे नाव / STUDENT NAME]',
+    testimonial: 'डॉ. वैशाली बुटे यांच्याकडून मनि रेकी आणि वास्तूचे मार्गदर्शन घेतल्यानंतर माझ्या व्यवसायात आणि घरात अतिशय सकारात्मक बदल झाले आहेत. त्यांच्या उपचारांमुळे मनाला असीम शांतता मिळाली.',
+    course: 'मनि रेकी व वास्तू सल्ला',
+    location: 'पुणे, महाराष्ट्र',
+    photo: ''
+  },
+  {
+    language: 'en',
+    name: 'Sunita Sharma',
+    testimonial: 'The Vastu consultation for my house cleared years of unexplained energetic heaviness. My family feels peaceful, vibrant, and prosperous. Dr. Vaishali is truly a gifted master.',
+    course: 'Vastu Consultation & Chakra Healing',
+    location: 'Delhi NCR',
+    photo: ''
+  },
+  {
+    language: 'mr',
+    name: '[विद्यार्थ्याचे नाव / STUDENT NAME]',
+    testimonial: 'मोबाईल न्युमरोलॉजी आणि लकी नंबर निवडीनंतर मला कामाच्या ठिकाणी नवीन संधी आणि आर्थिक लाभ मिळाला. ह्रीम ऑरा अकॅडमीचे मार्गदर्शन खरोखरच जीवन बदलणारे आहे.',
+    course: 'मोबाईल न्युमरोलॉजी',
+    location: 'नागपूर, महाराष्ट्र',
+    photo: ''
+  }
+];
+
+let testimonialCarouselInterval = null;
+
+function renderTestimonials() {
+  const container = document.getElementById('testimonials-container');
+  if (!container) return;
+
+  // Render all testimonials matching current language first, or all if available
+  const list = TESTIMONIALS_DATA;
+
+  container.innerHTML = list.map((item, index) => {
+    const initials = item.name && !item.name.includes('[')
+      ? item.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase()
+      : 'HA';
+
+    return `
+      <div class="testimonial-card glass-card ${index === 0 ? 'active' : ''}" data-index="${index}">
+        <div class="testimonial-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testimonial-quote">
+          "${item.testimonial}"
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">${item.photo ? `<img src="${item.photo}" alt="${item.name}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">` : initials}</div>
+          <div class="author-info">
+            <h4 class="author-name">${item.name}</h4>
+            <p class="author-course">${item.course} ${item.location ? `• ${item.location}` : ''}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  initTestimonialsCarousel();
+}
+
 // Testimonials 3D Carousel
 function initTestimonialsCarousel() {
   const cards = document.querySelectorAll('.testimonial-card');
+  if (cards.length === 0) return;
   let currentIndex = 0;
 
   const showTestimonial = (index) => {
@@ -1072,20 +1151,21 @@ function initTestimonialsCarousel() {
   const prevBtn = document.getElementById('prev-testimonial');
 
   if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
+    nextBtn.onclick = () => {
       currentIndex = (currentIndex + 1) % cards.length;
       showTestimonial(currentIndex);
-    });
+    };
   }
 
   if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
+    prevBtn.onclick = () => {
       currentIndex = (currentIndex - 1 + cards.length) % cards.length;
       showTestimonial(currentIndex);
-    });
+    };
   }
 
-  setInterval(() => {
+  if (testimonialCarouselInterval) clearInterval(testimonialCarouselInterval);
+  testimonialCarouselInterval = setInterval(() => {
     currentIndex = (currentIndex + 1) % cards.length;
     showTestimonial(currentIndex);
   }, 6000);

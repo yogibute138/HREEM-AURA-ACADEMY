@@ -410,10 +410,10 @@ section {
 }
 
 .nav-logo {
-  height: 58px;
+  height: 78px;
   width: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.6)) drop-shadow(0 0 16px rgba(169, 29, 58, 0.5));
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.75)) drop-shadow(0 0 22px rgba(169, 29, 58, 0.6));
   transition: var(--transition-smooth);
 }
 
@@ -889,6 +889,89 @@ section {
 }
 
 /* --------------------------------------------------------------------------
+   OFFICIAL ACCREDITATIONS & TRUST BADGES (MSME & ISO)
+   -------------------------------------------------------------------------- */
+.trust-accreditation-block {
+  margin-top: 4rem;
+  padding: 2.25rem 3rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(50, 10, 22, 0.85), rgba(15, 2, 6, 0.95));
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 30px var(--gold-glow);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.trust-badge-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.trust-badge-seal {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-light) 0%, var(--gold-primary) 60%, var(--gold-dark) 100%);
+  border: 2px solid var(--cream);
+  color: var(--bg-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.85rem;
+  box-shadow: 0 0 25px var(--gold-glow-intense);
+  flex-shrink: 0;
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.trust-badge-card:hover .trust-badge-seal {
+  transform: scale(1.12) rotate(10deg);
+}
+
+.trust-badge-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.trust-badge-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.trust-badge-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, var(--gold-primary), transparent);
+}
+
+@media (max-width: 768px) {
+  .trust-divider {
+    display: none;
+  }
+  .trust-accreditation-block {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+  .trust-badge-card {
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------------------------------------------------
    AWARDS & ACHIEVEMENTS SECTION
    -------------------------------------------------------------------------- */
 .awards-section {
@@ -1064,15 +1147,16 @@ section {
 }
 
 .course-card {
-  padding: 2.2rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 300px;
+  min-height: 340px;
   border-radius: 20px;
   cursor: pointer;
   transform-style: preserve-3d;
   transition: transform 0.5s var(--ease-out-expo), border-color 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
 }
 
 .course-card:hover {
@@ -1081,37 +1165,83 @@ section {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.85), 0 0 35px rgba(212, 175, 55, 0.3);
 }
 
-.course-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
+.course-thumb-box {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--bg-deep);
 }
 
-.course-icon-wrapper {
-  width: 54px;
-  height: 54px;
-  border-radius: 14px;
-  background: radial-gradient(circle, rgba(212, 175, 55, 0.25) 0%, rgba(99, 12, 31, 0.4) 100%);
-  border: 1px solid var(--gold-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--gold-light);
-  font-size: 1.4rem;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+.course-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+  filter: contrast(1.05) brightness(0.9);
+}
+
+.course-card:hover .course-thumb-img {
+  transform: scale(1.12);
+  filter: contrast(1.1) brightness(1);
+}
+
+.course-thumb-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(12, 2, 4, 0.2) 0%, rgba(35, 7, 16, 0.95) 100%);
 }
 
 .course-badge {
-  font-size: 0.7rem;
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  font-size: 0.72rem;
   font-family: var(--font-heading);
   letter-spacing: 0.12em;
   padding: 0.35rem 0.85rem;
   border-radius: 20px;
-  background: rgba(212, 175, 55, 0.1);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  background: rgba(12, 2, 4, 0.85);
+  border: 1px solid var(--gold-primary);
   color: var(--gold-champagne);
   text-transform: uppercase;
+  z-index: 2;
+}
+
+.course-card-body {
+  padding: 1.5rem 1.75rem 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.course-detail-banner-box {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--gold-primary);
+  margin-bottom: 1.5rem;
+}
+
+.course-detail-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-detail-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(35, 7, 16, 0.85) 100%);
 }
 
 .course-title {
