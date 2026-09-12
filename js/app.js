@@ -1,5 +1,5 @@
 /**
- * HREEM AURA ACADEMY — Application Controller & Dynamic Router
+ * HREEM AURA ACADEMY — Application Controller, E-Commerce Cart Engine & Router
  */
 
 // Comprehensive 25 Course Dataset with full detail metadata
@@ -9,7 +9,7 @@ const COURSES_DATA = [
   { slug: 'mobile-numerology', title: 'Mobile Numerology', cat: 'numerology', icon: 'fa-mobile-screen-button', badge: 'BESTSELLER', desc: 'Align your personal mobile phone number frequency with wealth and career growth luck.', fullDesc: 'Your mobile phone number is an active daily acoustic and electromagnetic frequency magnet. Learn how to calculate, choose, and correct your mobile number for prosperity.' },
   { slug: 'mobile-yantra', title: 'Mobile Yantra', cat: 'remedies', icon: 'fa-kaaba', badge: 'REMEDY', desc: 'Sacred geometric digital yantras for mobile wallpaper activation and energy shield protection.', fullDesc: 'Discover the power of sacred geometry applied to modern digital screens. Consecrate mobile yantras to protect your aura and attract favorable synchronicities.' },
   { slug: 'money-magic-wallet', title: 'Money Magic Wallet', cat: 'remedies', icon: 'fa-wallet', badge: 'PROSPERITY', desc: 'Secrets of magnetizing money through wallet consecration, color frequencies, and sacred herbs.', fullDesc: 'Transform your wallet into an active money attractor. Learn color vibrational alignment, sacred herbal inserts, and energetic wallet discipline.' },
-  { slug: 'akshat-kalash', title: 'Akshat Kalash', cat: 'remedies', icon: 'fa-jar', badge: 'SACRED', desc: 'Vedic pot ritual activation for household wealth retention and continuous divine grace.', badge: 'SACRED', fullDesc: 'Akshat Kalash is an ancient consecration ritual using energized rice, copper, and sacred herbs to stabilize wealth and invoke Goddess Lakshmi in your home.' },
+  { slug: 'akshat-kalash', title: 'Akshat Kalash', cat: 'remedies', icon: 'fa-jar', badge: 'SACRED', desc: 'Vedic pot ritual activation for household wealth retention and continuous divine grace.', fullDesc: 'Akshat Kalash is an ancient consecration ritual using energized rice, copper, and sacred herbs to stabilize wealth and invoke Goddess Lakshmi in your home.' },
   { slug: 'coin-currency-prediction', title: 'Coin Currency Prediction', cat: 'divination', icon: 'fa-coins', badge: 'ADVANCED', desc: 'Intuitive forecasting techniques using ancient currency symbols and planetary energies.', fullDesc: 'Master the art of coin divination for intuitive guidance on financial decisions, business partnerships, and market timing.' },
   { slug: 'color-therapy', title: 'Color Therapy', cat: 'healing', icon: 'fa-palette', badge: 'HEALING', desc: 'Balance chakra energy channels using specialized color frequency wavelengths and clothing.', fullDesc: 'Color therapy (Chromotherapy) uses light and color to balance energy wherever our bodies are lacking, whether physically, emotionally, or spiritually.' },
   { slug: 'crystal-therapy', title: 'Crystal Therapy', cat: 'remedies', icon: 'fa-gem', badge: 'POPULAR', desc: 'Harness high-vibrational gemstone grids for aura shield, stress reduction, and healing.', fullDesc: 'Comprehensive guide to selecting, cleansing, energizing, and programming crystals for body layouts, home grids, and wearable aura shields.' },
@@ -31,8 +31,701 @@ const COURSES_DATA = [
   { slug: 'digital-marketing-course', title: 'Digital Marketing Course', cat: 'numerology', icon: 'fa-bullhorn', badge: 'BUSINESS', desc: 'Grow your spiritual practice, consultation business, and social media presence effectively.', fullDesc: 'A tailored course specifically for spiritual healers, astrologers, and tarot readers to build their online brand, social media, website presence, and client funnel.' }
 ];
 
+// Physical Products Data Structure with Prices & Variations
+const PRODUCTS_DATA = [
+  // 12 Rashi Bracelets
+  {
+    id: 'prod-aries',
+    slug: 'mesha-aries-rashi-bracelet',
+    name: 'Mesha (Aries) Rashi Bracelet',
+    nameMr: 'मेष राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/aries.png',
+    category: 'rashi',
+    badge: 'ARIES / MESHA',
+    orbClass: 'glow-red',
+    desc: 'Hand-strung energized gemstone bracelet designed for Aries born individuals to enhance Mars energy, vitality, and career courage.',
+    descMr: 'मेष राशीच्या व्यक्तींसाठी मंगळ ग्रहाचे तेज आणि धैर्य वाढवण्यासाठी डॉ. वैशाली बुटे यांनी अभिमंत्रित केलेले विशेष राशी ब्रेसलेट.',
+    features: ['100% Authentic Gemstones', 'Energized by Dr. Vaishali Bute', 'Stretchable Elastic Band', 'Aura Protection Shield'],
+    usage: 'Wear on your right wrist on Tuesday morning after offering morning prayers.',
+    care: 'Cleanse once a month under moonlight or with sage incense. Avoid chemical detergents.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-taurus',
+    slug: 'vrishabha-taurus-rashi-bracelet',
+    name: 'Vrishabha (Taurus) Rashi Bracelet',
+    nameMr: 'वृषभ राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/taurus.png',
+    category: 'rashi',
+    badge: 'TAURUS / VRISHABHA',
+    orbClass: 'glow-green',
+    desc: 'Attracts luxury, relationship stability, material abundance, and strengthens Venusian energy flow.',
+    descMr: 'शुक्र ग्रहाची कृपा, आकर्षण, आर्थिक स्थिरता आणि नात्यांमधील गोडवा वाढवणारे वृषभ राशी ब्रेसलेट.',
+    features: ['Natural Green & Pink Quartz', 'Venusian Energy Consecration', 'Durable Stretch Cord'],
+    usage: 'Wear on Friday morning after cleansing with holy water or raw milk.',
+    care: 'Recharge under full moonlight. Keep away from harsh chemicals.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-gemini',
+    slug: 'mithuna-gemini-rashi-bracelet',
+    name: 'Mithuna (Gemini) Rashi Bracelet',
+    nameMr: 'मिथुन राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/gemini.png',
+    category: 'rashi',
+    badge: 'GEMINI / MITHUNA',
+    orbClass: 'glow-gold',
+    desc: 'Enhances communication skills, business intellect, sharpness, and pacifies Mercury transits.',
+    descMr: 'बुध ग्रहाची बुद्धिमत्ता, संवादकौशल्य आणि व्यापारातील यश वाढवणारे मिथुन राशी ब्रेसलेट.',
+    features: ['Natural Aventurine & Citrine', 'Mercury Mantra Activation', 'Comfort Fit'],
+    usage: 'Wear on Wednesday morning after morning meditation.',
+    care: 'Cleanse with running water and charge with morning sunlight.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-cancer',
+    slug: 'karka-cancer-rashi-bracelet',
+    name: 'Karka (Cancer) Rashi Bracelet',
+    nameMr: 'कर्क राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/cancer.png',
+    category: 'rashi',
+    badge: 'CANCER / KARKA',
+    orbClass: 'glow-silver',
+    desc: 'Soothes emotional volatility, promotes deep mental peace, intuition, and balances Lunar frequency.',
+    descMr: 'चंद्र ग्रहाचे मानसिक स्वास्थ्य, शांतता आणि भावनिक स्थैर्य प्रदान करणारे कर्क राशी ब्रेसलेट.',
+    features: ['Natural Moonstone & Selenite', 'Lunar Energy Charging', 'Premium Polish'],
+    usage: 'Wear on Monday morning facing East.',
+    care: 'Recharge under Monday moonlight or Selenite plate.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-leo',
+    slug: 'simha-leo-rashi-bracelet',
+    name: 'Simha (Leo) Rashi Bracelet',
+    nameMr: 'सिंह राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/leo.png',
+    category: 'rashi',
+    badge: 'LEO / SIMHA',
+    orbClass: 'glow-gold',
+    desc: 'Magnifies leadership, magnetic charisma, confidence, authority, and invokes Solar blessings.',
+    descMr: 'सूर्य ग्रहाचे तेज, नेतृत्वगुण, आत्मविश्वास आणि राजयोग प्रदान करणारे सिंह राशी ब्रेसलेट.',
+    features: ['Sunstone & Tiger Eye Beads', 'Solar Mantra Consecration', 'Unisex Luxury Design'],
+    usage: 'Wear on Sunday morning during sunrise.',
+    care: 'Recharge in early morning gentle sunlight for 30 minutes.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-virgo',
+    slug: 'kanya-virgo-rashi-bracelet',
+    name: 'Kanya (Virgo) Rashi Bracelet',
+    nameMr: 'कन्या राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/virgo.png',
+    category: 'rashi',
+    badge: 'VIRGO / KANYA',
+    orbClass: 'glow-green',
+    desc: 'Sharpens analytical clarity, health wellness, wealth management, and clears Mercury blockages.',
+    descMr: 'उत्तम आरोग्य, आर्थिक शिस्त आणि बौद्धिक प्रगती देणारे कन्या राशी ब्रेसलेट.',
+    features: ['Green Jade & Moss Agate', 'Vedic Consecration', 'Flexible Fit'],
+    usage: 'Wear on Wednesday morning.',
+    care: 'Cleanse with fresh water.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-libra',
+    slug: 'tula-libra-rashi-bracelet',
+    name: 'Tula (Libra) Rashi Bracelet',
+    nameMr: 'तुळ राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/libra.png',
+    category: 'rashi',
+    badge: 'LIBRA / TULA',
+    orbClass: 'glow-pink',
+    desc: 'Harmonizes partnerships, marital happiness, aesthetic refinement, and Venusian prosperity.',
+    descMr: 'नात्यांमधील गोडवा, वैवाहिक सुख आणि आर्थिक आकर्षण वाढवणारे तुळ राशी ब्रेसलेट.',
+    features: ['Rose Quartz & Opalite', 'Venus Attunement', 'Handcrafted Quality'],
+    usage: 'Wear on Friday morning.',
+    care: 'Keep in velvet box when not in use.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-scorpio',
+    slug: 'vrishchika-scorpio-rashi-bracelet',
+    name: 'Vrishchika (Scorpio) Rashi Bracelet',
+    nameMr: 'वृश्चिक राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/scorpio.png',
+    category: 'rashi',
+    badge: 'SCORPIO / VRISHCHIKA',
+    orbClass: 'glow-darkred',
+    desc: 'Unlocks intuitive transformation, shields against hidden evil eye, and strengthens aura.',
+    descMr: 'गुप्त शत्रूंपासून संरक्षण, तीव्र निर्णयक्षमता आणि सुरक्षितता देणारे वृश्चिक राशी ब्रेसलेट.',
+    features: ['Red Jasper & Obsidian', 'Aura Shield Activation', 'High Elastic Cord'],
+    usage: 'Wear on Tuesday morning.',
+    care: 'Smudge with incense smoke regularly.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-sagittarius',
+    slug: 'dhanu-sagittarius-rashi-bracelet',
+    name: 'Dhanu (Sagittarius) Rashi Bracelet',
+    nameMr: 'धनु राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/sagittarius.png',
+    category: 'rashi',
+    badge: 'SAGITTARIUS / DHANU',
+    orbClass: 'glow-yellow',
+    desc: 'Expands spiritual wisdom, luck, travel safety, and invokes Guru Jupiter grace.',
+    descMr: 'गुरु ग्रहाची कृपा, उच्च शिक्षण, नशीब आणि समृद्धी देणारे धनु राशी ब्रेसलेट.',
+    features: ['Yellow Aventurine & Citrine', 'Guru Jupiter Blessings', 'Unisex Elastic'],
+    usage: 'Wear on Thursday morning.',
+    care: 'Keep clean and recharge under sunlight.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-capricorn',
+    slug: 'makara-capricorn-rashi-bracelet',
+    name: 'Makara (Capricorn) Rashi Bracelet',
+    nameMr: 'मकर राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/capricorn.png',
+    category: 'rashi',
+    badge: 'CAPRICORN / MAKARA',
+    orbClass: 'glow-blue',
+    desc: 'Drives career endurance, discipline, financial security, and neutralizes Saturnian delays.',
+    descMr: 'शनि ग्रहाचे पाठबळ, कामात सातत्य आणि करिअरमधील अडथळे दूर करणारे मकर राशी ब्रेसलेट.',
+    features: ['Blue Tiger Eye & Lapis', 'Saturn Pacification Mantra', 'Sturdy Construction'],
+    usage: 'Wear on Saturday morning or evening.',
+    care: 'Avoid direct chemical contact.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-aquarius',
+    slug: 'kumbha-aquarius-rashi-bracelet',
+    name: 'Kumbha (Aquarius) Rashi Bracelet',
+    nameMr: 'कुंभ राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/aquarius.png',
+    category: 'rashi',
+    badge: 'AQUARIUS / KUMBHA',
+    orbClass: 'glow-violet',
+    desc: 'Fosters innovative thinking, social influence, wealth accumulation, and balances Rahu/Saturn.',
+    descMr: 'नाविन्यपूर्ण विचार, सामाजिक प्रतिष्ठा आणि आर्थिक यश देणारे कुंभ राशी ब्रेसलेट.',
+    features: ['Amethyst & Sodalite Beads', 'Rahu-Saturn Harmony Charge', 'Stretch Band'],
+    usage: 'Wear on Saturday morning.',
+    care: 'Recharge with Selenite plate.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+  {
+    id: 'prod-pisces',
+    slug: 'meena-pisces-rashi-bracelet',
+    name: 'Meena (Pisces) Rashi Bracelet',
+    nameMr: 'मीन राशी अभिमंत्रित ब्रेसलेट',
+    price: 1499,
+    priceDisplay: '₹1,499',
+    priceDisplayMr: '₹१,४९९',
+    image: 'assets/images/bracelets/pisces.png',
+    category: 'rashi',
+    badge: 'PISCES / MEENA',
+    orbClass: 'glow-cyan',
+    desc: 'Awakens spiritual enlightenment, artistic creativity, emotional serenity, and Jupiterian luck.',
+    descMr: 'आत्मिक शांतता, कलात्मक प्रगती आणि ईश्वरी कृपा प्रदान करणारे मीन राशी ब्रेसलेट.',
+    features: ['Aquamarine & Fluorite', 'Guru Jupiter Activation', 'Gentle Comfort Fit'],
+    usage: 'Wear on Thursday morning.',
+    care: 'Cleanse under gentle running water.',
+    variants: [
+      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Large (10mm Beads)', price: 1799 }
+    ]
+  },
+
+  // Healing Crystals & Remedies
+  {
+    id: 'prod-pyrite',
+    slug: 'natural-pyrite-cluster',
+    name: 'Natural Pyrite Cluster ("Fool\'s Gold")',
+    nameMr: 'नैसर्गिक पायराईट क्लस्टर (पैशांचा लोहचुंबक)',
+    price: 1850,
+    priceDisplay: '₹1,850',
+    priceDisplayMr: '₹१,८५०',
+    image: 'assets/images/bracelets/aries.png',
+    category: 'crystals',
+    badge: 'WEALTH MAGNET',
+    orbClass: 'glow-gold',
+    desc: 'The ultimate wealth magnet crystal cluster. Place in your cash locker, office desk, or wealth corner to attract continuous cash flow.',
+    descMr: 'आर्थिक यश आणि पैशांचा ओघ वाढवणारा नैसर्गिक पायराईट क्रिस्टल. ऑफिस डेस्क किंवा तिजोरीत ठेवण्यासाठी उत्तम.',
+    features: ['100% Natural Raw Pyrite Specimen', 'Consecrated for Lakshmi Activation', 'Heavy Metallic Gold Luster'],
+    usage: 'Keep on your cash desk, office table, or North-East wealth direction.',
+    care: 'Dust gently with dry cloth. Keep dry.',
+    variants: [
+      { name: 'Medium Specimen (~200g)', price: 1850 },
+      { name: 'Large Specimen (~400g)', price: 2800 }
+    ]
+  },
+  {
+    id: 'prod-amethyst',
+    slug: 'amethyst-raw-geode',
+    name: 'Amethyst Raw Geode & Healing Sphere',
+    nameMr: 'अ‍ॅमेथिस्ट रॉ जिओड व हीलिंग स्फेअर',
+    price: 2100,
+    priceDisplay: '₹2,100',
+    priceDisplayMr: '₹२,१००',
+    image: 'assets/images/bracelets/aquarius.png',
+    category: 'crystals',
+    badge: 'INTUITION & CALM',
+    orbClass: 'glow-violet',
+    desc: 'Opens Third Eye Chakra, reduces stress and anxiety, promotes peaceful sleep and intuitive meditation.',
+    descMr: 'मानसिक ताणतणाव दूर करून गाढ झोप आणि मनःशांती देणारा जांभळा अ‍ॅमेथिस्ट क्रिस्टल.',
+    features: ['Natural Deep Violet Crystals', 'Third Eye Chakra Charging', 'Decorative Healing Piece'],
+    usage: 'Place on bedroom side table or meditation room altar.',
+    care: 'Cleanse with sage smoke or under moonlight.',
+    variants: [
+      { name: 'Standard Cluster', price: 2100 },
+      { name: 'Polished Sphere', price: 2600 }
+    ]
+  },
+  {
+    id: 'prod-rosequartz',
+    slug: 'rose-quartz-heart-crystal',
+    name: 'Rose Quartz Heart Crystal',
+    nameMr: 'रोज क्वार्ट्ज हार्ट क्रिस्टल',
+    price: 1250,
+    priceDisplay: '₹1,250',
+    priceDisplayMr: '₹१,२५०',
+    image: 'assets/images/bracelets/libra.png',
+    category: 'crystals',
+    badge: 'LOVE & HARMONY',
+    orbClass: 'glow-pink',
+    desc: 'The crystal of unconditional love and harmony. Heals emotional wounds, strengthens relationships, and attracts love.',
+    descMr: 'प्रेमाचे आणि नात्यांमधील गोडव्याचे प्रतीक असलेला नैसर्गिक गुलाबी क्वार्ट्ज क्रिस्टल.',
+    features: ['Hand-carved Heart Shape', 'Heart Chakra Resonance', 'Gift Ready Packaging'],
+    usage: 'Keep in bedroom or carry in pocket.',
+    care: 'Wash gently with clean water.',
+    variants: [
+      { name: 'Single Heart (approx 50mm)', price: 1250 }
+    ]
+  },
+  {
+    id: 'prod-lalkitab-grid',
+    slug: 'lal-kitab-crystal-grid',
+    name: 'Lal Kitab Consecrated Crystal Grid',
+    nameMr: 'लाल किताब मंत्रसिद्ध क्रिस्टल ग्रिड',
+    price: 3500,
+    priceDisplay: '₹3,500',
+    priceDisplayMr: '₹३,५००',
+    image: 'assets/images/bracelets/sagittarius.png',
+    category: 'lalkitab',
+    badge: 'LAL KITAB REMEDY',
+    orbClass: 'glow-orange',
+    desc: 'Custom Lal Kitab remedial crystal set consecrated according to planetary debt calculations.',
+    descMr: 'लाल किताबानुसार ग्रहांचे दोष दूर करण्यासाठी डॉ. वैशाली बुटे यांनी तयार केलेली क्रिस्टल ग्रिड.',
+    features: ['Custom Selected Planetary Stones', 'Consecrated Yantra Plate', 'Detailed Manual Included'],
+    usage: 'Place on home altar facing East during auspicious Muhurat.',
+    care: 'Follow included ritual guidelines.',
+    variants: [
+      { name: 'Standard Kit', price: 3500 }
+    ]
+  },
+  {
+    id: 'prod-vastu-pyramid',
+    slug: 'vastu-energy-crystal-pyramid',
+    name: 'Vastu Energy Crystal Pyramid',
+    nameMr: 'वास्तू ऊर्जा क्रिस्टल पिरामिड',
+    price: 2400,
+    priceDisplay: '₹2,400',
+    priceDisplayMr: '₹२,४००',
+    image: 'assets/images/bracelets/capricorn.png',
+    category: 'vastu',
+    badge: 'VASTU CORRECTION',
+    orbClass: 'glow-cyan',
+    desc: 'Precision crafted crystal pyramid for residential and commercial space energy auditing and directional correction without demolition.',
+    descMr: 'कोणतीही तोडफोड न करता वास्तू दोष निवारण करणारा उच्च-ऊर्जा क्रिस्टल पिरामिड.',
+    features: ['Optical Grade Crystal Glass', 'Golden Sacred Geometry Grid', 'North-East Wealth Zone Activator'],
+    usage: 'Place in center of hall (Brahmasthan) or North-East corner.',
+    care: 'Wipe with microfiber cloth.',
+    variants: [
+      { name: '75mm Base Pyramid', price: 2400 },
+      { name: '100mm Base Pyramid', price: 3200 }
+    ]
+  },
+  {
+    id: 'prod-tourmaline',
+    slug: 'black-tourmaline-raw-shield',
+    name: 'Black Tourmaline Raw Shield Stone',
+    nameMr: 'ब्लॅक तूरमलीन संरक्षण शिळा',
+    price: 1100,
+    priceDisplay: '₹1,100',
+    priceDisplayMr: '₹१,१००',
+    image: 'assets/images/bracelets/scorpio.png',
+    category: 'crystals',
+    badge: 'PSYCHIC SHIELD',
+    orbClass: 'glow-dark',
+    desc: 'Powerful protection stone against negative energies, evil eye (Nazar), jealousy, and electronic EMF radiation.',
+    descMr: 'वाईट नजर, नकारात्मक ऊर्जा आणि रेडिएशनपासून संरक्षण देणारा काळा तूरमलीन क्रिस्टल.',
+    features: ['Raw Natural Specimen', 'High EMF Absorbing Capacity', 'Aura Grounding Stone'],
+    usage: 'Place near main entrance door or computer desk.',
+    care: 'Cleanse with dry salt once a fortnight.',
+    variants: [
+      { name: 'Medium Piece (~150g)', price: 1100 },
+      { name: 'Large Piece (~300g)', price: 1750 }
+    ]
+  }
+];
+
+// Shopping Cart State Engine
+let cartState = JSON.parse(localStorage.getItem('hreem_cart_v2')) || [];
+
+function saveCart() {
+  localStorage.setItem('hreem_cart_v2', JSON.stringify(cartState));
+  updateCartBadge();
+  renderCartDrawer();
+}
+
+function addToCart(productId, quantity = 1, variantIndex = 0) {
+  const product = PRODUCTS_DATA.find(p => p.id === productId);
+  if (!product) return;
+
+  const variant = product.variants && product.variants[variantIndex] ? product.variants[variantIndex] : null;
+  const unitPrice = variant ? variant.price : (product.price || 0);
+  const variantName = variant ? variant.name : '';
+
+  const existingIndex = cartState.findIndex(item => item.id === productId && item.variantName === variantName);
+  if (existingIndex > -1) {
+    cartState[existingIndex].quantity += quantity;
+  } else {
+    cartState.push({
+      id: product.id,
+      slug: product.slug,
+      name: product.name,
+      nameMr: product.nameMr,
+      image: product.image,
+      unitPrice: unitPrice,
+      quantity: quantity,
+      variantName: variantName
+    });
+  }
+
+  saveCart();
+  openCartDrawer();
+  const prodName = currentLanguage === 'mr' ? product.nameMr : product.name;
+  showToast(`${prodName} ${getTranslation('cart.added', 'added to cart!')}`);
+}
+
+function updateCartQuantity(index, delta) {
+  if (cartState[index]) {
+    cartState[index].quantity += delta;
+    if (cartState[index].quantity <= 0) {
+      cartState.splice(index, 1);
+    }
+    saveCart();
+  }
+}
+
+function removeFromCart(index) {
+  if (cartState[index]) {
+    cartState.splice(index, 1);
+    saveCart();
+  }
+}
+
+function calculateCartTotals() {
+  let totalAmount = 0;
+  cartState.forEach(item => {
+    item.subtotal = item.unitPrice * item.quantity;
+    totalAmount += item.subtotal;
+  });
+  return {
+    itemCount: cartState.reduce((sum, item) => sum + item.quantity, 0),
+    totalAmount: totalAmount
+  };
+}
+
+function formatINR(num) {
+  if (!num && num !== 0) return 'PRICE TO BE UPDATED';
+  if (currentLanguage === 'mr') {
+    const formatted = num.toLocaleString('en-IN');
+    const devanagariDigits = {'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'};
+    const devNum = formatted.replace(/[0-9]/g, match => devanagariDigits[match]);
+    return `₹${devNum}`;
+  }
+  return `₹${num.toLocaleString('en-IN')}`;
+}
+
+function updateCartBadge() {
+  const badge = document.getElementById('cart-badge');
+  const totals = calculateCartTotals();
+  if (badge) {
+    badge.textContent = currentLanguage === 'mr' ? formatDevanagariNum(totals.itemCount) : totals.itemCount;
+    if (totals.itemCount > 0) {
+      badge.style.display = 'inline-flex';
+    } else {
+      badge.style.display = 'none';
+    }
+  }
+}
+
+function formatDevanagariNum(num) {
+  const devanagariDigits = {'0':'०','1':'१','2':'२','3':'३','4':'४','5':'५','6':'६','7':'७','8':'८','9':'९'};
+  return String(num).replace(/[0-9]/g, match => devanagariDigits[match]);
+}
+
+// Render Products Grid Dynamically
+function renderProducts(products) {
+  const container = document.getElementById('products-container');
+  if (!container) return;
+
+  container.innerHTML = products.map(p => {
+    const title = currentLanguage === 'mr' ? p.nameMr : p.name;
+    const desc = currentLanguage === 'mr' ? p.descMr : p.desc;
+    const priceStr = formatINR(p.price);
+
+    return `
+      <div class="product-card glass-card" data-category="${p.category}" data-id="${p.id}">
+        <div class="product-image-wrapper">
+          <img src="${p.image}" alt="${title}" class="product-img">
+          <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
+          <div class="product-visual-orb ${p.orbClass}"></div>
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">${title}</h3>
+          <div class="product-price-box">
+            <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
+            <span class="price-val text-gold-gradient">${priceStr}</span>
+          </div>
+          <p class="product-desc">${desc}</p>
+          <div style="display:flex; gap:0.5rem; margin-top:0.5rem;">
+            <button class="btn btn-gold btn-sm add-to-cart-btn" data-id="${p.id}" style="flex:1;">
+              <i class="fa-solid fa-cart-plus"></i> ${getTranslation('products.add_to_cart', 'ADD TO CART')}
+            </button>
+            <button class="btn btn-outline btn-sm view-product-detail-btn" data-id="${p.id}">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  init3DTiltEffect();
+}
+
+// Render Shopping Cart Drawer
+function renderCartDrawer() {
+  const container = document.getElementById('cart-items-container');
+  const subtotalEl = document.getElementById('cart-subtotal-val');
+  const totalEl = document.getElementById('cart-total-val');
+
+  if (!container) return;
+
+  const totals = calculateCartTotals();
+
+  if (cartState.length === 0) {
+    container.innerHTML = `
+      <div class="empty-cart-state">
+        <i class="fa-solid fa-basket-shopping text-subtle-gold" style="font-size:3rem; margin-bottom:1rem;"></i>
+        <p>${getTranslation('cart.empty', 'Your shopping cart is currently empty.')}</p>
+      </div>
+    `;
+    if (subtotalEl) subtotalEl.textContent = formatINR(0);
+    if (totalEl) totalEl.textContent = formatINR(0);
+    return;
+  }
+
+  container.innerHTML = cartState.map((item, index) => {
+    const title = currentLanguage === 'mr' ? (item.nameMr || item.name) : item.name;
+    const unitPriceStr = formatINR(item.unitPrice);
+    const subtotalStr = formatINR(item.unitPrice * item.quantity);
+
+    return `
+      <div class="cart-item-row glass-card">
+        <img src="${item.image}" alt="${title}" class="cart-item-thumb">
+        <div class="cart-item-details">
+          <h4 class="cart-item-title">${title}</h4>
+          ${item.variantName ? `<span class="cart-item-variant">${item.variantName}</span>` : ''}
+          <div class="cart-item-price">${getTranslation('cart.unit_price', 'Price')}: ${unitPriceStr}</div>
+          <div class="cart-item-controls">
+            <div class="qty-control-box">
+              <button class="qty-btn" onclick="updateCartQuantity(${index}, -1)">−</button>
+              <span class="qty-num">${currentLanguage === 'mr' ? formatDevanagariNum(item.quantity) : item.quantity}</span>
+              <button class="qty-btn" onclick="updateCartQuantity(${index}, 1)">+</button>
+            </div>
+            <button class="cart-remove-btn" onclick="removeFromCart(${index})" title="${getTranslation('cart.remove', 'Remove')}">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div>
+        <div class="cart-item-subtotal">
+          ${subtotalStr}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  if (subtotalEl) subtotalEl.textContent = formatINR(totals.totalAmount);
+  if (totalEl) totalEl.textContent = formatINR(totals.totalAmount);
+}
+
+function openCartDrawer() {
+  const drawer = document.getElementById('cart-drawer');
+  if (drawer) {
+    renderCartDrawer();
+    drawer.classList.add('open');
+  }
+}
+
+function closeCartDrawer() {
+  const drawer = document.getElementById('cart-drawer');
+  if (drawer) {
+    drawer.classList.remove('open');
+  }
+}
+
+// Product Detail Modal Controller
+function openProductDetailModal(productId) {
+  const product = PRODUCTS_DATA.find(p => p.id === productId);
+  if (!product) return;
+
+  const modal = document.getElementById('product-detail-modal');
+  const content = document.getElementById('product-detail-content');
+  if (!modal || !content) return;
+
+  const title = currentLanguage === 'mr' ? product.nameMr : product.name;
+  const desc = currentLanguage === 'mr' ? product.descMr : product.desc;
+  const priceStr = formatINR(product.price);
+
+  content.innerHTML = `
+    <div class="product-detail-grid">
+      <div class="product-detail-visual">
+        <img src="${product.image}" alt="${title}" class="product-detail-img">
+        <span class="product-badge" style="position:absolute; top:1rem; left:1rem;"><i class="fa-solid fa-gem"></i> ${product.badge}</span>
+      </div>
+
+      <div class="product-detail-info">
+        <h2 class="product-detail-title">${title}</h2>
+        <div class="product-detail-price-box">
+          <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
+          <span class="price-val text-gold-gradient" style="font-size:1.8rem; font-weight:700;">${priceStr}</span>
+        </div>
+        <p class="product-detail-desc">${desc}</p>
+
+        ${product.variants && product.variants.length > 0 ? `
+          <div class="variant-select-box">
+            <label class="form-label">Select Option / Size:</label>
+            <select id="modal-product-variant" class="form-select">
+              ${product.variants.map((v, idx) => `
+                <option value="${idx}">${v.name} — ${formatINR(v.price)}</option>
+              `).join('')}
+            </select>
+          </div>
+        ` : ''}
+
+        <div class="product-section-block">
+          <h4 class="product-section-heading"><i class="fa-solid fa-sparkles text-subtle-gold"></i> Key Benefits & Features</h4>
+          <ul class="feature-list">
+            ${product.features.map(f => `<li><i class="fa-solid fa-circle-check text-subtle-gold"></i> ${f}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div class="product-section-block">
+          <h4 class="product-section-heading"><i class="fa-solid fa-hand-holding-hand text-subtle-gold"></i> How To Use / Wear</h4>
+          <p class="usage-text">${product.usage}</p>
+        </div>
+
+        <div class="product-section-block">
+          <h4 class="product-section-heading"><i class="fa-solid fa-shield-cat text-subtle-gold"></i> Care & Cleansing</h4>
+          <p class="usage-text">${product.care}</p>
+        </div>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:2rem;">
+          <button class="btn btn-gold modal-add-cart-btn" data-id="${product.id}">
+            <i class="fa-solid fa-cart-plus"></i> ${getTranslation('products.add_to_cart', 'ADD TO CART')}
+          </button>
+          <a href="https://wa.me/919552122933?text=Hello%20HREEM%20AURA%20ACADEMY,%20I%20would%20like%20to%20enquire%20about%20the%20product:%20${encodeURIComponent(product.name)}" target="_blank" class="btn btn-outline">
+            <i class="fa-brands fa-whatsapp"></i> ${getTranslation('products.inquire_wa', 'INQUIRE ON WHATSAPP')}
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  modal.classList.add('open');
+
+  const addBtn = content.querySelector('.modal-add-cart-btn');
+  if (addBtn) {
+    addBtn.addEventListener('click', () => {
+      const variantSelect = document.getElementById('modal-product-variant');
+      const vIndex = variantSelect ? parseInt(variantSelect.value, 10) : 0;
+      addToCart(product.id, 1, vIndex);
+      modal.classList.remove('open');
+    });
+  }
+}
+
+// App Initialization
 document.addEventListener('DOMContentLoaded', () => {
   renderCourses(COURSES_DATA);
+  renderProducts(PRODUCTS_DATA);
+  updateCartBadge();
   initNavbarScroll();
   initMobileMenu();
   init3DTiltEffect();
@@ -41,10 +734,84 @@ document.addEventListener('DOMContentLoaded', () => {
   initModals();
   initFormHandlers();
   initProductFiltering();
-  initProductInquiryHandlers();
+  initProductEvents();
+  initCartEvents();
   initScrollSpy();
   initCourseDetailRouter();
+
+  // Re-render components when language toggling occurs
+  window.addEventListener('languageChanged', () => {
+    renderCourses(COURSES_DATA);
+    renderProducts(PRODUCTS_DATA);
+    updateCartBadge();
+    renderCartDrawer();
+  });
 });
+
+// Bind Product Grid & Modal Click Listeners
+function initProductEvents() {
+  document.addEventListener('click', (e) => {
+    const addBtn = e.target.closest('.add-to-cart-btn');
+    if (addBtn) {
+      e.preventDefault();
+      const id = addBtn.getAttribute('data-id');
+      addToCart(id, 1, 0);
+      return;
+    }
+
+    const detailBtn = e.target.closest('.view-product-detail-btn');
+    if (detailBtn) {
+      e.preventDefault();
+      const id = detailBtn.getAttribute('data-id');
+      openProductDetailModal(id);
+      return;
+    }
+  });
+
+  const modal = document.getElementById('product-detail-modal');
+  const closeBtn = document.getElementById('product-detail-close');
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', () => modal.classList.remove('open'));
+  }
+}
+
+// Bind Shopping Cart Drawer Events & WhatsApp Checkout
+function initCartEvents() {
+  const openCartBtn = document.getElementById('open-cart-btn');
+  const openCartMobile = document.getElementById('mobile-cart-btn');
+  const closeCartBtn = document.getElementById('cart-close-btn');
+  const continueBtn = document.getElementById('cart-continue-btn');
+  const checkoutBtn = document.getElementById('cart-checkout-btn');
+
+  if (openCartBtn) openCartBtn.addEventListener('click', openCartDrawer);
+  if (openCartMobile) openCartMobile.addEventListener('click', openCartDrawer);
+  if (closeCartBtn) closeCartBtn.addEventListener('click', closeCartDrawer);
+  if (continueBtn) continueBtn.addEventListener('click', closeCartDrawer);
+
+  if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+      if (cartState.length === 0) {
+        showToast(getTranslation('cart.empty', 'Your cart is empty!'));
+        return;
+      }
+
+      const totals = calculateCartTotals();
+      let orderListText = cartState.map((item, idx) => {
+        const title = currentLanguage === 'mr' ? (item.nameMr || item.name) : item.name;
+        const sub = formatINR(item.unitPrice * item.quantity);
+        return `${idx + 1}. ${title}${item.variantName ? ` (${item.variantName})` : ''}\n   Qty: ${item.quantity} × ${formatINR(item.unitPrice)} = ${sub}`;
+      }).join('\n\n');
+
+      const msg = `Hello HREEM AURA ACADEMY,\n\nI would like to place an order / enquire for the following items:\n\n${orderListText}\n\n------------------------\n*Total Cart Value:* ${formatINR(totals.totalAmount)}\n\nPlease confirm availability and payment/delivery details.`;
+      const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(msg)}`;
+
+      showToast('Opening WhatsApp for Order Checkout...');
+      setTimeout(() => {
+        window.open(waUrl, '_blank');
+      }, 800);
+    });
+  }
+}
 
 // Render 25 Courses into Grid
 function renderCourses(courses) {
@@ -62,7 +829,7 @@ function renderCourses(courses) {
       <h3 class="course-title">${course.title}</h3>
       <p class="course-description">${course.desc}</p>
       <div class="course-footer">
-        <span class="course-action">VIEW DETAILS <i class="fa-solid fa-arrow-right"></i></span>
+        <span class="course-action">${getTranslation('courses.view_details', 'VIEW DETAILS')} <i class="fa-solid fa-arrow-right"></i></span>
       </div>
     </div>
   `).join('');
@@ -90,7 +857,6 @@ function initCourseDetailRouter() {
     });
   }
 
-  // Handle hash changes like #course/vehicle-numerology
   window.addEventListener('hashchange', checkHashRoute);
   checkHashRoute();
 }
@@ -159,7 +925,6 @@ function openCourseDetail(slug, updateHash = true) {
 
   modal.classList.add('open');
 
-  // Bind booking modal trigger button inside detail view
   const bookBtn = content.querySelector('.open-booking-modal-with-course');
   if (bookBtn) {
     bookBtn.addEventListener('click', () => {
@@ -185,7 +950,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Product Filtering System
+// Product Category Filtering System
 function initProductFiltering() {
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('prod-filter-btn')) {
@@ -193,34 +958,12 @@ function initProductFiltering() {
       e.target.classList.add('active');
 
       const filter = e.target.getAttribute('data-prod-filter');
-      const productCards = document.querySelectorAll('.products-grid .product-card');
-
-      productCards.forEach(card => {
-        const cat = card.getAttribute('data-category');
-        if (filter === 'all' || cat === filter) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    }
-  });
-}
-
-// Product WhatsApp Direct Inquiry Handler
-function initProductInquiryHandlers() {
-  document.addEventListener('click', (e) => {
-    const btn = e.target.closest('.inquire-product-btn');
-    if (btn) {
-      e.preventDefault();
-      const productName = btn.getAttribute('data-product') || 'Sacred Product';
-      const waMessage = `Hello HREEM AURA ACADEMY,\n\nI am interested in acquiring the following product and would like to know the details:\n*Product:* ${productName}`;
-      const waUrl = `https://wa.me/919552122933?text=${encodeURIComponent(waMessage)}`;
-
-      showToast(`Opening WhatsApp inquiry for ${productName}...`);
-      setTimeout(() => {
-        window.open(waUrl, '_blank');
-      }, 800);
+      if (filter === 'all') {
+        renderProducts(PRODUCTS_DATA);
+      } else {
+        const filtered = PRODUCTS_DATA.filter(p => p.category === filter);
+        renderProducts(filtered);
+      }
     }
   });
 }
