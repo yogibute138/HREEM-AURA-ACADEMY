@@ -133,7 +133,7 @@ const SERVICES_DATA = [
     bgClass: 'vastu-bg',
     badge: 'HREEM AURA CERTIFIED',
     desc: 'Direct video masterclasses in Reiki, Vastu, Numerology, and Tarot with lifetime student mentorship and certification.',
-    descMr: 'डॉ. वैशाली बुटे यांच्याकडून थेट ऑनलाईन प्रशिक्षण घ्या आणि ह्रीम ऑरा अकॅडमीचे प्रमाणपत्र मिळवा.',
+    descMr: 'डॉ. वैशाली बुटे यांच्याकडून थेट ऑनलाईन प्रशिक्षण घ्या आणि ह्रीं ऑरा अकॅडमीचे प्रमाणपत्र मिळवा.',
     features: ['Live Interactive Masterclass', 'Detailed Study PDF Manuals', 'ISO & MSME Recognized Cert', 'Lifetime Mentorship Group'],
     price: 'Certification Program'
   }
@@ -141,6 +141,35 @@ const SERVICES_DATA = [
 
 // Physical Products Data Structure with Prices & Variations
 const PRODUCTS_DATA = [
+  {
+    "id": "prod-all-rashi-collection",
+    "slug": "complete-12-rashi-energetics-collection",
+    "name": "Complete 12 Rashi Sacred Bracelet Collection",
+    "nameMr": "सर्व १२ राशी अभिमंत्रित ब्रेसलेट संग्रह",
+    "price": 15999,
+    "priceDisplay": "₹15,999",
+    "priceDisplayMr": "₹१५,९९९",
+    "image": "assets/images/bracelets/all_rashi_featured.png",
+    "category": "rashi",
+    "badge": "12 RASHI SET",
+    "orbClass": "glow-gold",
+    "desc": "Complete sacred collection of all 12 energised Rashi bracelets handcrafted with authentic natural stones and consecrated by Dr. Vaishali Bute.",
+    "descMr": "डॉ. वैशाली बुटे यांनी अभिमंत्रित केलेल्या संपूर्ण १२ राशींच्या ब्रेसलेटचा विशेष संग्रह. घर, कार्यालय आणि संपूर्ण कुटुंबासाठी अत्यंत प्रभावी.",
+    "features": [
+        "Includes All 12 Rashi Bracelets",
+        "Personalized Consecration",
+        "Aura Protection Shield",
+        "Luxury Velvet Presentation Box"
+    ],
+    "usage": "Keep in your sacred altar, Vastu energetic center, or wear matching daily zodiac alignments.",
+    "care": "Cleanse once a month under moonlight or with sage incense. Avoid chemical detergents.",
+    "variants": [
+        {
+            "name": "Complete 12-Piece Collection Box",
+            "price": 15999
+        }
+    ]
+},
   // 12 Rashi Bracelets
   {
     id: 'prod-aries',
@@ -348,7 +377,7 @@ const PRODUCTS_DATA = [
     price: 1499,
     priceDisplay: '₹1,499',
     priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/capricorn.png',
+    image: 'assets/images/bracelets/capricorn_highres.png',
     category: 'rashi',
     badge: 'CAPRICORN / MAKARA',
     orbClass: 'glow-blue',
@@ -370,7 +399,7 @@ const PRODUCTS_DATA = [
     price: 1499,
     priceDisplay: '₹1,499',
     priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/aquarius.png',
+    image: 'assets/images/bracelets/aquarius_highres.png',
     category: 'rashi',
     badge: 'AQUARIUS / KUMBHA',
     orbClass: 'glow-violet',
@@ -1265,7 +1294,7 @@ const TESTIMONIALS_DATA = [
   {
     language: 'mr',
     name: 'प्रिया कुलकर्णी',
-    testimonial: 'मोबाईल न्युमरोलॉजी आणि लकी नंबर निवडीनंतर मला कामाच्या ठिकाणी नवीन संधी आणि आर्थिक लाभ मिळाला. ह्रीम ऑरा अकॅडमीचे मार्गदर्शन खरोखरच जीवन बदलणारे आहे.',
+    testimonial: 'मोबाईल न्युमरोलॉजी आणि लकी नंबर निवडीनंतर मला कामाच्या ठिकाणी नवीन संधी आणि आर्थिक लाभ मिळाला. ह्रीं ऑरा अकॅडमीचे मार्गदर्शन खरोखरच जीवन बदलणारे आहे.',
     course: 'मोबाईल न्युमरोलॉजी मास्टरक्लास',
     location: 'नागपूर, महाराष्ट्र',
     stars: 5,
