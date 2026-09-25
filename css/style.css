@@ -912,23 +912,31 @@ section {
 }
 
 .trust-badge-seal {
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  background: radial-gradient(circle, var(--gold-light) 0%, var(--gold-primary) 60%, var(--gold-dark) 100%);
-  border: 2px solid var(--cream);
-  color: var(--bg-deep);
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 2px solid var(--gold-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.85rem;
-  box-shadow: 0 0 25px var(--gold-glow-intense);
+  box-shadow: 0 0 20px var(--gold-glow);
   flex-shrink: 0;
-  transition: transform 0.4s var(--ease-out-expo);
+  overflow: hidden;
+  padding: 4px;
+  transition: transform 0.4s var(--ease-out-expo), box-shadow 0.4s ease;
+}
+
+.trust-badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
 }
 
 .trust-badge-card:hover .trust-badge-seal {
-  transform: scale(1.12) rotate(10deg);
+  transform: scale(1.08);
+  box-shadow: 0 0 30px var(--gold-glow-intense);
 }
 
 .trust-badge-text {
