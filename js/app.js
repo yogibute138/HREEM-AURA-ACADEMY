@@ -1307,6 +1307,33 @@ const TESTIMONIALS_DATA = [
     location: 'Bengaluru, Karnataka',
     stars: 5,
     verified: 'REIKI MASTER'
+  },
+  {
+    language: 'mr',
+    name: 'महेश पाटील',
+    testimonial: 'डॉ. वैशाली मॅडमचे लाल किताब आणि क्रिस्टल थेरपीचे क्लास अतिशय सोप्या भाषेत आणि प्रात्यक्षिकांसह असतात. १,००० पेक्षा जास्त विद्यार्थ्यांना शिकवण्याचा त्यांचा अनुभव प्रत्येक लेक्चरमध्ये जाणवतो.',
+    course: 'क्रिस्टल थेरपी व लाल किताब',
+    location: 'छत्रपती संभाजीनगर, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'सुजाता जोशी',
+    testimonial: 'टॅरो कार्ड रीडिंग आणि एंजेल थेरपी शिकल्यानंतर मला स्वतःचे क्लिनिक सुरू करण्याची प्रेरणा मिळाली. मॅडमच्या मार्गदर्शनामुळे माझ्या विश्वासात प्रचंड वाढ झाली.',
+    course: 'टॅरो व एंजेल थेरपी',
+    location: 'नाशिक, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'en',
+    name: 'Sneha Rao',
+    testimonial: 'Dr. Vaishali Bute has guided over 1000+ students, and her depth of knowledge in Tarot and Crystal Therapy is unmatched. Her guidance gave me the clarity to start my own healing practice.',
+    course: 'Tarot Card & Crystal Healing',
+    location: 'Hyderabad, Telangana',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
   }
 ];
 
