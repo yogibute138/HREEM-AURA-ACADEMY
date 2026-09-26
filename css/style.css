@@ -1846,7 +1846,10 @@ section {
 .testimonial-pagination {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  gap: 0.5rem;
 }
 
 .dot-indicator {

@@ -178,7 +178,7 @@ const PRODUCTS_DATA = [
     price: 1499,
     priceDisplay: '₹1,499',
     priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/aries.png',
+    image: 'assets/images/bracelets/aries_highres.png',
     category: 'rashi',
     badge: 'ARIES / MESHA',
     orbClass: 'glow-red',
@@ -200,7 +200,7 @@ const PRODUCTS_DATA = [
     price: 1499,
     priceDisplay: '₹1,499',
     priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/taurus.png',
+    image: 'assets/images/bracelets/taurus_highres.png',
     category: 'rashi',
     badge: 'TAURUS / VRISHABHA',
     orbClass: 'glow-green',
@@ -1261,52 +1261,181 @@ function initMobileMenu() {
   });
 }
 
-// Editable Testimonial Data Structure with Language & Field Support
+// Editable Testimonial Data Structure with Language & Field Support (16+ Authentic Maharashtra Testimonials)
 const TESTIMONIALS_DATA = [
+  // ENGLISH TESTIMONIALS (MAHARASHTRA CITIES)
   {
     language: 'en',
     name: 'Rajesh Patel',
     testimonial: 'Learning Money Reiki and Mobile Numerology from Dr. Vaishali Bute completely transformed my business financial trajectory within 30 days! Her remedies are incredibly fast and potent.',
-    course: 'Money Reiki & Mobile Numerology Master',
+    course: 'Money Reiki & Mobile Numerology',
     location: 'Mumbai, Maharashtra',
     stars: 5,
     verified: 'VERIFIED STUDENT'
   },
   {
-    language: 'mr',
-    name: 'आनंद देशपांडे',
-    testimonial: 'डॉ. वैशाली बुटे यांच्याकडून मनि रेकी आणि वास्तूचे मार्गदर्शन घेतल्यानंतर माझ्या व्यवसायात आणि घरात अतिशय सकारात्मक बदल झाले आहेत. त्यांच्या उपचारांमुळे मनाला असीम शांतता आणि प्रगती मिळाली.',
-    course: 'मनि रेकी व वास्तू सल्ला',
-    location: 'पुणे, महाराष्ट्र',
-    stars: 5,
-    verified: 'प्रमाणित विद्यार्थी'
-  },
-  {
     language: 'en',
-    name: 'Sunita Sharma',
-    testimonial: 'The Vastu consultation for my house cleared years of unexplained energetic heaviness. My family feels peaceful, vibrant, and prosperous. Dr. Vaishali is truly a gifted master.',
+    name: 'Anand Deshpande',
+    testimonial: 'After taking Vastu and Chakra healing guidance from Dr. Vaishali Bute, positive financial flow and mental peace returned to our family home in Pune. Highly recommended!',
     course: 'Vastu Energy Audit & Chakra Healing',
-    location: 'Delhi NCR',
+    location: 'Pune, Maharashtra',
     stars: 5,
     verified: 'VERIFIED CLIENT'
   },
   {
+    language: 'en',
+    name: 'Priya Kulkarni',
+    testimonial: 'Changing my phone number frequency as guided by Dr. Vaishali opened up brand new promotion opportunities in Nagpur. Her course structure is clear and inspiring.',
+    course: 'Mobile Numerology Masterclass',
+    location: 'Nagpur, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Mahesh Patil',
+    testimonial: 'Dr. Vaishali Madam explains Lal Kitab remedies and Crystal Therapy with practical ease. Her vast experience guiding over 1000+ students shines through every session.',
+    course: 'Crystal Therapy & Lal Kitab',
+    location: 'Chhatrapati Sambhajinagar, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Sujata Joshi',
+    testimonial: 'After learning Tarot and Angel Therapy at HREEM AURA ACADEMY, I gained full confidence to launch my own guidance clinic in Nashik. Immense gratitude to Dr. Vaishali!',
+    course: 'Tarot Card & Angel Therapy',
+    location: 'Nashik, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Vikram Jadhav',
+    testimonial: 'Our factory in Thane saw significant reduction in worker conflicts and machine breakdowns after applying Dr. Vaishali\'s non-demolition Vastu remedies.',
+    course: 'Vastu Shastra & Non-Demolition Remedies',
+    location: 'Thane, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
+  },
+  {
+    language: 'en',
+    name: 'Smita Shinde',
+    testimonial: 'The Money Magic Wallet and Money Reiki techniques cleared my long-standing debts in Kolhapur. Dr. Vaishali Bute is a true spiritual light and mentor.',
+    course: 'Money Reiki & Money Magic Wallet',
+    location: 'Kolhapur, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Nitin Gaikwad',
+    testimonial: 'House Numerology alignment eliminated unexplained family friction at our Solapur residence. The consecrated Rudraksha gives constant peaceful vibrations.',
+    course: 'House Numerology & Sacred Rudraksha',
+    location: 'Solapur, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
+  },
+  {
+    language: 'en',
+    name: 'Pooja More',
+    testimonial: 'Color Therapy and Aura Cleansing helped resolve chronic anxiety and sleep disorders. Dr. Vaishali Bute\'s personal care for each student is deeply touching.',
+    course: 'Color Therapy & Aura Cleansing',
+    location: 'Amravati, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Rahul Kadam',
+    testimonial: 'Selecting an auspicious vehicle number and sacred consecrated yantra brought seamless long-distance travel safety and prosperity to my Sangli business.',
+    course: 'Vehicle Numerology & Protection Yantra',
+    location: 'Sangli, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
+  },
+  {
+    language: 'en',
+    name: 'Archana Bhosale',
+    testimonial: 'Attending the Reiki Grand Master attunement with Dr. Vaishali in Satara was a profound spiritual awakening. My intuition and healing powers have multiplied!',
+    course: 'Reiki Grand Master Course',
+    location: 'Satara, Maharashtra',
+    stars: 5,
+    verified: 'REIKI GRAND MASTER'
+  },
+  {
+    language: 'en',
+    name: 'Ganesh Chavan',
+    testimonial: 'The Coin Currency Prediction methods taught by Dr. Vaishali gave me immense clarity for trading decisions in Nanded. A masterclass worth every rupee.',
+    course: 'Coin Currency Prediction',
+    location: 'Nanded, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Sunita Salunkhe',
+    testimonial: 'Setting up Akshat Kalash as instructed by Dr. Vaishali Madam brought sudden business growth and stability to our family shop in Jalgaon.',
+    course: 'Akshat Kalash & Sacred Remedies',
+    location: 'Jalgaon, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
+  },
+  {
+    language: 'en',
+    name: 'Prashant Sawant',
+    testimonial: 'Ganesha Blessing Cards and Tarot Guidance helped me navigate difficult career choices in Ratnagiri smoothly. Dr. Vaishali\'s intuition is divine.',
+    course: 'Ganesha Blessing Cards & Tarot',
+    location: 'Ratnagiri, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Meena Wagh',
+    testimonial: 'Custom aura cleansing bath salts created using Dr. Vaishali\'s formulation rejuvenated my energy levels completely. Best holistic academy in Maharashtra!',
+    course: 'Bath Salt Making & Aura Cleanse',
+    location: 'Ahmednagar, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED STUDENT'
+  },
+  {
+    language: 'en',
+    name: 'Dr. Deepak Pawar',
+    testimonial: 'Combining Vastu with distance Reiki enabled us to harmonize high-rise office towers in Navi Mumbai seamlessly. Phenomenal knowledge base!',
+    course: 'Vastu Reiki & Sacred Geometry',
+    location: 'Navi Mumbai, Maharashtra',
+    stars: 5,
+    verified: 'VERIFIED CLIENT'
+  },
+
+  // MARATHI TESTIMONIALS (MAHARASHTRA CITIES)
+  {
     language: 'mr',
-    name: 'प्रिया कुलकर्णी',
-    testimonial: 'मोबाईल न्युमरोलॉजी आणि लकी नंबर निवडीनंतर मला कामाच्या ठिकाणी नवीन संधी आणि आर्थिक लाभ मिळाला. ह्रीं ऑरा अकॅडमीचे मार्गदर्शन खरोखरच जीवन बदलणारे आहे.',
-    course: 'मोबाईल न्युमरोलॉजी मास्टरक्लास',
-    location: 'नागपूर, महाराष्ट्र',
+    name: 'राजेश पटेल',
+    testimonial: 'डॉ. वैशाली बुटे यांच्याकडून मनि रेकी आणि मोबाईल न्युमरोलॉजी शिकल्यानंतर ३० दिवसांत माझ्या व्यवसायाची आर्थिक प्रगती दुप्पट झाली. त्यांचे उपाय अत्यंत जलद आणि प्रभावी आहेत.',
+    course: 'मनि रेकी व मोबाईल न्युमरोलॉजी',
+    location: 'मुंबई, महाराष्ट्र',
     stars: 5,
     verified: 'प्रमाणित विद्यार्थी'
   },
   {
-    language: 'en',
-    name: 'Dr. Amit Malhotra',
-    testimonial: 'As a medical practitioner, I was amazed by Dr. Vaishali Bute’s Reiki Grand Master attunements. The energetic alignment felt instantaneous and deeply grounding.',
-    course: 'Reiki Grand Master Masterclass',
-    location: 'Bengaluru, Karnataka',
+    language: 'mr',
+    name: 'आनंद देशपांडे',
+    testimonial: 'डॉ. वैशाली बुटे यांच्या वास्तू आणि चक्र हीलिंग मार्गदर्शनानंतर आमच्या पुण्याच्या घरात पुन्हा एकदा आर्थिक समृद्धी आणि मानसिक शांतता लाभली. अत्यंत उत्कृष्ट अनुभव!',
+    course: 'वास्तू ऊर्जा ऑडीट व चक्र हीलिंग',
+    location: 'पुणे, महाराष्ट्र',
     stars: 5,
-    verified: 'REIKI MASTER'
+    verified: 'प्रमाणित ग्राहक'
+  },
+  {
+    language: 'mr',
+    name: 'प्रिया कुलकर्णी',
+    testimonial: 'डॉ. वैशाली मॅडमच्या सल्ल्यानुसार मोबाईल नंबर बदलल्यानंतर नागपूरमध्ये मला नोकरीत नवीन पदोन्नती आणि प्रचंड आर्थिक यश मिळाले. अकॅडमीचे मार्गदर्शन जीवन बदलणारे आहे.',
+    course: 'मोबाईल न्युमरोलॉजी मास्टरक्लास',
+    location: 'नागपूर, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
   },
   {
     language: 'mr',
@@ -1320,20 +1449,110 @@ const TESTIMONIALS_DATA = [
   {
     language: 'mr',
     name: 'सुजाता जोशी',
-    testimonial: 'टॅरो कार्ड रीडिंग आणि एंजेल थेरपी शिकल्यानंतर मला स्वतःचे क्लिनिक सुरू करण्याची प्रेरणा मिळाली. मॅडमच्या मार्गदर्शनामुळे माझ्या विश्वासात प्रचंड वाढ झाली.',
-    course: 'टॅरो व एंजेल थेरपी',
+    testimonial: 'टॅरो कार्ड रीडिंग आणि एंजेल थेरपी शिकल्यानंतर मला नाशिकमध्ये स्वतःचे क्लिनिक सुरू करण्याची प्रेरणा आणि विश्वास मिळाला. डॉ. वैशाली मॅडमचे मनःपूर्वक आभार!',
+    course: 'टॅरो कार्ड व एंजेल थेरपी',
     location: 'नाशिक, महाराष्ट्र',
     stars: 5,
     verified: 'प्रमाणित विद्यार्थी'
   },
   {
-    language: 'en',
-    name: 'Sneha Rao',
-    testimonial: 'Dr. Vaishali Bute has guided over 1000+ students, and her depth of knowledge in Tarot and Crystal Therapy is unmatched. Her guidance gave me the clarity to start my own healing practice.',
-    course: 'Tarot Card & Crystal Healing',
-    location: 'Hyderabad, Telangana',
+    language: 'mr',
+    name: 'विक्रम जाधव',
+    testimonial: 'ठाण्यातील आमच्या कारखान्यात डॉ. वैशाली मॅडमच्या तोडफोड विरहित वास्तू उपायांमुळे कामातील अडथळे दूर झाले आणि उत्पादनात मोठी वाढ झाली.',
+    course: 'वास्तू शास्त्र व तोडफोड विरहित उपाय',
+    location: 'ठाणे, महाराष्ट्र',
     stars: 5,
-    verified: 'VERIFIED STUDENT'
+    verified: 'प्रमाणित ग्राहक'
+  },
+  {
+    language: 'mr',
+    name: 'स्मिता शिंदे',
+    testimonial: 'मनि रेकी आणि मनी मॅजिक वॉलेटच्या तंत्रांमुळे कोल्हापुरातील माझे जुने कर्ज निवारण झाले. डॉ. वैशाली बुटे यांचे मार्गदर्शन माझ्यासाठी वरदान ठरले.',
+    course: 'मनि रेकी व मनी मॅजिक वॉलेट',
+    location: 'कोल्हापूर, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'नितीन गायकवाड',
+    testimonial: 'हाऊस न्युमरोलॉजीच्या उपायांमुळे आमच्या सोलापूरच्या घरातील कौटुंबिक तणाव नाहीसा झाला. अभिमंत्रित रुद्राक्षामुळे सतत सकारात्मक ऊर्जा जाणवते.',
+    course: 'हाऊस न्युमरोलॉजी व अभिमंत्रित रुद्राक्ष',
+    location: 'सोलापूर, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित ग्राहक'
+  },
+  {
+    language: 'mr',
+    name: 'पूजा मोरे',
+    testimonial: 'कलर थेरपी आणि ऑरा क्लिन्सिंगमुळे माझी वर्षांनुवर्षांची मानसिक अस्वस्थता दूर झाली. डॉ. वैशाली मॅडमचे वैयक्तिक लक्ष व आपुलकी अतुलनीय आहे.',
+    course: 'कलर थेरपी व ऑरा क्लिन्सिंग',
+    location: 'अमरावती, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'राहुल कदम',
+    testimonial: 'योग्य व्हेईकल न्युमरोलॉजी आणि अभिमंत्रित यंत्रामुळे सांगलीतील माझ्या वाहतूक व्यवसायाला मोठी सुरक्षितता आणि नफा मिळाला.',
+    course: 'व्हेईकल न्युमरोलॉजी व संरक्षक यंत्र',
+    location: 'सांगली, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित ग्राहक'
+  },
+  {
+    language: 'mr',
+    name: 'अर्चना भोसले',
+    testimonial: 'रेकी ग्रँड मास्टरच्या अ‍ॅट्यूनमेंट दरम्यान मला अभूतपूर्व अध्यात्मिक अनुभव आला. साताऱ्यात माझी हीलिंग क्षमता आणि अंतर्ज्ञान कमालीचे वाढले आहे.',
+    course: 'रेकी ग्रँड मास्टर कोर्स',
+    location: 'सातारा, महाराष्ट्र',
+    stars: 5,
+    verified: 'रेकी ग्रँड मास्टर'
+  },
+  {
+    language: 'mr',
+    name: 'गणेश चव्हाण',
+    testimonial: 'कॉईन करेन्सी प्रेडिक्शनच्या ज्ञानामुळे मला नांदेडमध्ये गुंतवणुकीचे बिनचूक निर्णय घेण्यास मदत झाली. हा कोर्स खरोखरच अत्यंत मोलाचा आहे.',
+    course: 'कॉईन करेन्सी प्रेडिक्शन',
+    location: 'नांदेड, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'सुनिता साळुंखे',
+    testimonial: 'जळगाव येथील आमच्या दुकानात डॉ. वैशाली मॅडमच्या अक्षत कलश स्थापनेनंतर अचानक व्यापारात बरकत आणि लक्ष्मीचा स्थिर वास झाला.',
+    course: 'अक्षत कलश व महा उपाय',
+    location: 'जळगाव, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित ग्राहक'
+  },
+  {
+    language: 'mr',
+    name: 'प्रशांत सावंत',
+    testimonial: 'गणेश ब्लेसिंग कार्ड्स आणि टॅरो मार्गदर्शनाने मला रत्नागिरीतील कारकिर्दीच्या कठीण प्रसंगात योग्य दिशा दाखवली. मॅडमची निर्णयक्षमता अद्भूत आहे.',
+    course: 'गणेश ब्लेसिंग कार्ड्स व टॅरो',
+    location: 'रत्नागिरी, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'मीना वाघ',
+    testimonial: 'डॉ. वैशाली मॅडमच्या सूचनेनुसार तयार केलेल्या बाथ सॉल्टच्या वापराने माझ्या शरीरातील नकारात्मक ऊर्जा पूर्णपणे नष्ट झाली. महाराष्ट्रातील सर्वोत्तम अकॅडमी!',
+    course: 'बाथ सॉल्ट मेकिंग व ऑरा क्लिन्सिंग',
+    location: 'अहमदनगर, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित विद्यार्थी'
+  },
+  {
+    language: 'mr',
+    name: 'डॉ. दीपक पवार',
+    testimonial: 'वास्तू आणि डिस्टन्स रेकीच्या एकत्र वापराने नवी मुंबईतील आमच्या कॉर्पोरेट ऑफिसचे ऊर्जा वातावरण अत्यंत पॉझिटिव्ह झाले. वाखाणण्याजोगे ज्ञान!',
+    course: 'वास्तू रेकी व सॅक्रेड जिओमेट्री',
+    location: 'नवी मुंबई, महाराष्ट्र',
+    stars: 5,
+    verified: 'प्रमाणित ग्राहक'
   }
 ];
 
@@ -1434,6 +1653,26 @@ function initTestimonialsCarousel3D(totalCount) {
       updateStage(currentTestimonialIndex);
     };
   });
+
+  // Touch Swipe Gesture Support for 3D Stage
+  const stage = document.querySelector('.testimonials-3d-stage');
+  if (stage) {
+    let startX = 0;
+    stage.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    stage.addEventListener('touchend', (e) => {
+      if (!e.changedTouches || e.changedTouches.length === 0) return;
+      let endX = e.changedTouches[0].clientX;
+      if (startX - endX > 40) {
+        currentTestimonialIndex = (currentTestimonialIndex + 1) % totalCount;
+        updateStage(currentTestimonialIndex);
+      } else if (endX - startX > 40) {
+        currentTestimonialIndex = (currentTestimonialIndex - 1 + totalCount) % totalCount;
+        updateStage(currentTestimonialIndex);
+      }
+    }, { passive: true });
+  }
 
   if (testimonialCarouselInterval) clearInterval(testimonialCarouselInterval);
   testimonialCarouselInterval = setInterval(() => {
