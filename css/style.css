@@ -431,10 +431,11 @@ section {
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.14em;
-  background: linear-gradient(135deg, #FF2A4B 0%, #C70039 50%, #900C3F 100%);
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #FF0000 0%, #E60000 50%, #B30000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 12px rgba(199, 0, 57, 0.6));
+  filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.8));
   line-height: 1.1;
 }
 
@@ -443,8 +444,8 @@ section {
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.28em;
-  color: #FF2A4B;
-  text-shadow: 0 0 10px rgba(255, 42, 75, 0.5);
+  color: #FF0000;
+  text-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
   text-transform: uppercase;
 }
 
@@ -649,10 +650,10 @@ section {
   font-weight: 800;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  background: linear-gradient(135deg, #FF2A4B 0%, #E60039 40%, #900C3F 80%, #FFD700 100%);
+  background: linear-gradient(135deg, #FF0000 0%, #E60000 40%, #B30000 70%, #FFD700 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 20px rgba(230, 0, 57, 0.7)) drop-shadow(0 0 35px rgba(255, 215, 0, 0.4));
+  filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.85)) drop-shadow(0 0 35px rgba(255, 215, 0, 0.4));
   display: inline-block;
   position: relative;
 }
@@ -662,7 +663,7 @@ section {
   display: block;
   width: 60%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #FF2A4B, #FFD700, transparent);
+  background: linear-gradient(90deg, transparent, #FF0000, #FFD700, transparent);
   margin: 0.5rem auto 0 auto;
   border-radius: 2px;
 }
