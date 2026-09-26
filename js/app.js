@@ -742,7 +742,6 @@ function renderProducts(products) {
         <div class="product-image-wrapper">
           <img src="${p.image}" alt="${title}" class="product-img">
           <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
-          <div class="product-visual-orb ${p.orbClass}"></div>
         </div>
         <div class="product-info">
           <h3 class="product-title">${title}</h3>
