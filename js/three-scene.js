@@ -1,7 +1,7 @@
 /**
  * HREEM AURA ACADEMY — Interactive Three.js WebGL 3D Scene
- * Premium spiritual 3D graphics: Glowing Aura Orb, Sacred Geometry Rings,
- * Floating Crystals, Light Rays, and 3000+ Gold Particles.
+ * Bright Luminous Theme: Glowing Gold Orb, Sacred Geometry Rings,
+ * Floating Crystals, Light Rays, and Warm Cosmic Gold Particles.
  */
 
 class SpiritualScene {
@@ -26,9 +26,9 @@ class SpiritualScene {
   }
 
   initScene() {
-    // Scene
+    // Scene with light beige/ivory fog
     this.scene = new THREE.Scene();
-    this.scene.fog = new THREE.FogExp2(0x060103, 0.025);
+    this.scene.fog = new THREE.FogExp2(0xFAF6F0, 0.022);
 
     // Camera
     this.camera = new THREE.PerspectiveCamera(
@@ -49,18 +49,18 @@ class SpiritualScene {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    this.renderer.toneMappingExposure = 1.2;
+    this.renderer.toneMappingExposure = 1.1;
 
     // Ambient Lighting
-    const ambientLight = new THREE.AmbientLight(0xfff8e7, 0.85);
+    const ambientLight = new THREE.AmbientLight(0xfff5e6, 1.2);
     this.scene.add(ambientLight);
 
     // Point Lights
-    this.goldLight = new THREE.PointLight(0xffd700, 4.5, 35);
+    this.goldLight = new THREE.PointLight(0xc59b27, 5.0, 40);
     this.goldLight.position.set(0, 0, 4);
     this.scene.add(this.goldLight);
 
-    this.burgundyLight = new THREE.PointLight(0xb31b38, 3, 45);
+    this.burgundyLight = new THREE.PointLight(0xc01830, 3.5, 45);
     this.burgundyLight.position.set(-8, 5, -5);
     this.scene.add(this.burgundyLight);
   }
@@ -71,14 +71,14 @@ class SpiritualScene {
     // Inner Glowing Core
     const coreGeo = new THREE.IcosahedronGeometry(2.2, 5);
     const coreMat = new THREE.MeshPhysicalMaterial({
-      color: 0xd4af37,
-      emissive: 0x8b0000,
-      emissiveIntensity: 0.8,
+      color: 0xc59b27,
+      emissive: 0xc01830,
+      emissiveIntensity: 0.6,
       roughness: 0.2,
-      metalness: 0.8,
+      metalness: 0.7,
       clearcoat: 1.0,
       clearcoatRoughness: 0.1,
-      transmission: 0.6,
+      transmission: 0.4,
       opacity: 0.95,
       transparent: true,
       wireframe: false
@@ -89,10 +89,10 @@ class SpiritualScene {
     // Outer Aura Atmosphere
     const auraGeo = new THREE.SphereGeometry(2.8, 32, 32);
     const auraMat = new THREE.MeshBasicMaterial({
-      color: 0xf7e7ad,
+      color: 0xc59b27,
       wireframe: true,
       transparent: true,
-      opacity: 0.15
+      opacity: 0.28
     });
     this.orbAura = new THREE.Mesh(auraGeo, auraMat);
     this.orbGroup.add(this.orbAura);
@@ -104,20 +104,20 @@ class SpiritualScene {
     this.geometryGroup = new THREE.Group();
 
     // Ring 1 — Outer Mandala Ring
-    const ring1Geo = new THREE.TorusGeometry(4.2, 0.02, 16, 100);
+    const ring1Geo = new THREE.TorusGeometry(4.2, 0.025, 16, 100);
     const goldMat = new THREE.MeshStandardMaterial({
-      color: 0xd4af37,
-      metalness: 0.9,
-      roughness: 0.1,
-      emissive: 0x3b0910,
-      emissiveIntensity: 0.3
+      color: 0xc59b27,
+      metalness: 0.8,
+      roughness: 0.2,
+      emissive: 0x8b6b10,
+      emissiveIntensity: 0.4
     });
     this.ring1 = new THREE.Mesh(ring1Geo, goldMat);
     this.ring1.rotation.x = Math.PI / 3;
     this.geometryGroup.add(this.ring1);
 
     // Ring 2 — Concentric Rotating Ring
-    const ring2Geo = new THREE.TorusGeometry(3.4, 0.015, 16, 80);
+    const ring2Geo = new THREE.TorusGeometry(3.4, 0.02, 16, 80);
     this.ring2 = new THREE.Mesh(ring2Geo, goldMat);
     this.ring2.rotation.y = Math.PI / 4;
     this.geometryGroup.add(this.ring2);
@@ -125,10 +125,10 @@ class SpiritualScene {
     // Octahedron Sacred Geometry Shell
     const octaGeo = new THREE.OctahedronGeometry(4.8, 0);
     const octaMat = new THREE.MeshBasicMaterial({
-      color: 0xf7e7ad,
+      color: 0x8b6b10,
       wireframe: true,
       transparent: true,
-      opacity: 0.22
+      opacity: 0.35
     });
     this.octahedron = new THREE.Mesh(octaGeo, octaMat);
     this.geometryGroup.add(this.octahedron);
@@ -141,14 +141,14 @@ class SpiritualScene {
     const crystalGeo = new THREE.ConeGeometry(0.4, 1.2, 5);
     const crystalMat = new THREE.MeshPhysicalMaterial({
       color: 0xfff8e7,
-      emissive: 0xd4af37,
-      emissiveIntensity: 0.4,
+      emissive: 0xc59b27,
+      emissiveIntensity: 0.5,
       roughness: 0.1,
-      metalness: 0.2,
-      transmission: 0.8,
+      metalness: 0.3,
+      transmission: 0.7,
       thickness: 0.5,
       transparent: true,
-      opacity: 0.85
+      opacity: 0.9
     });
 
     const crystalPositions = [
@@ -192,13 +192,13 @@ class SpiritualScene {
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('scale', new THREE.BufferAttribute(scales, 1));
 
-    // Particle Texture / Material
+    // Particle Texture / Material for bright theme
     const material = new THREE.PointsMaterial({
-      color: 0xfff5c0,
-      size: 0.14,
+      color: 0xc59b27,
+      size: 0.16,
       transparent: true,
-      opacity: 0.88,
-      blending: THREE.AdditiveBlending
+      opacity: 0.75,
+      blending: THREE.NormalBlending
     });
 
     this.particles = new THREE.Points(geometry, material);
@@ -208,11 +208,11 @@ class SpiritualScene {
   createLightRays() {
     const rayGeo = new THREE.CylinderGeometry(0.1, 2.5, 20, 16, 1, true);
     const rayMat = new THREE.MeshBasicMaterial({
-      color: 0xd4af37,
+      color: 0xc59b27,
       transparent: true,
-      opacity: 0.06,
+      opacity: 0.08,
       side: THREE.DoubleSide,
-      blending: THREE.AdditiveBlending
+      blending: THREE.NormalBlending
     });
 
     this.lightRay1 = new THREE.Mesh(rayGeo, rayMat);
