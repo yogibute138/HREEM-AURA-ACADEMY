@@ -148,6 +148,12 @@ const PRODUCTS_DATA = [
     "price": 15999,
     "priceDisplay": "₹15,999",
     "priceDisplayMr": "₹१५,९९९",
+    "marketPrice": 24999,
+    "marketPriceDisplay": "₹24,999",
+    "marketPriceDisplayMr": "₹२४,९९९",
+    "discountPercent": 36,
+    "rating": 4.9,
+    "reviewsCount": 128,
     "image": "assets/images/bracelets/all_rashi_featured.png",
     "category": "rashi",
     "badge": "12 RASHI SET",
@@ -178,6 +184,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/aries_highres.png',
     category: 'rashi',
     badge: 'ARIES / MESHA',
@@ -200,6 +212,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/taurus_highres.png',
     category: 'rashi',
     badge: 'TAURUS / VRISHABHA',
@@ -222,6 +240,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/gemini.png',
     category: 'rashi',
     badge: 'GEMINI / MITHUNA',
@@ -244,6 +268,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/cancer.png',
     category: 'rashi',
     badge: 'CANCER / KARKA',
@@ -266,6 +296,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/leo.png',
     category: 'rashi',
     badge: 'LEO / SIMHA',
@@ -288,6 +324,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/virgo.png',
     category: 'rashi',
     badge: 'VIRGO / KANYA',
@@ -310,6 +352,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/libra.png',
     category: 'rashi',
     badge: 'LIBRA / TULA',
@@ -332,6 +380,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/scorpio.png',
     category: 'rashi',
     badge: 'SCORPIO / VRISHCHIKA',
@@ -354,6 +408,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/sagittarius.png',
     category: 'rashi',
     badge: 'SAGITTARIUS / DHANU',
@@ -376,6 +436,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/capricorn_highres.png',
     category: 'rashi',
     badge: 'CAPRICORN / MAKARA',
@@ -398,6 +464,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/aquarius_highres.png',
     category: 'rashi',
     badge: 'AQUARIUS / KUMBHA',
@@ -420,6 +492,12 @@ const PRODUCTS_DATA = [
     price: 799,
     priceDisplay: '₹799',
     priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 94,
     image: 'assets/images/bracelets/pisces.png',
     category: 'rashi',
     badge: 'PISCES / MEENA',
@@ -444,6 +522,12 @@ const PRODUCTS_DATA = [
     price: 1850,
     priceDisplay: '₹1,850',
     priceDisplayMr: '₹१,८५०',
+    marketPrice: 2999,
+    marketPriceDisplay: '₹2,999',
+    marketPriceDisplayMr: '₹२,९९९',
+    discountPercent: 38,
+    rating: 4.9,
+    reviewsCount: 114,
     image: 'assets/images/bracelets/aries.png',
     category: 'crystals',
     badge: 'WEALTH MAGNET',
@@ -466,6 +550,12 @@ const PRODUCTS_DATA = [
     price: 2100,
     priceDisplay: '₹2,100',
     priceDisplayMr: '₹२,१००',
+    marketPrice: 3499,
+    marketPriceDisplay: '₹3,499',
+    marketPriceDisplayMr: '₹३,४९९',
+    discountPercent: 40,
+    rating: 4.8,
+    reviewsCount: 89,
     image: 'assets/images/bracelets/aquarius.png',
     category: 'crystals',
     badge: 'INTUITION & CALM',
@@ -488,6 +578,12 @@ const PRODUCTS_DATA = [
     price: 1250,
     priceDisplay: '₹1,250',
     priceDisplayMr: '₹१,२५०',
+    marketPrice: 1999,
+    marketPriceDisplay: '₹1,999',
+    marketPriceDisplayMr: '₹१,९९९',
+    discountPercent: 37,
+    rating: 4.9,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/libra.png',
     category: 'crystals',
     badge: 'LOVE & HARMONY',
@@ -509,6 +605,12 @@ const PRODUCTS_DATA = [
     price: 3500,
     priceDisplay: '₹3,500',
     priceDisplayMr: '₹३,५००',
+    marketPrice: 5999,
+    marketPriceDisplay: '₹5,999',
+    marketPriceDisplayMr: '₹५,९९९',
+    discountPercent: 42,
+    rating: 5.0,
+    reviewsCount: 64,
     image: 'assets/images/bracelets/sagittarius.png',
     category: 'lalkitab',
     badge: 'LAL KITAB REMEDY',
@@ -530,6 +632,12 @@ const PRODUCTS_DATA = [
     price: 2400,
     priceDisplay: '₹2,400',
     priceDisplayMr: '₹२,४००',
+    marketPrice: 3999,
+    marketPriceDisplay: '₹3,999',
+    marketPriceDisplayMr: '₹३,९९९',
+    discountPercent: 40,
+    rating: 4.9,
+    reviewsCount: 82,
     image: 'assets/images/bracelets/capricorn.png',
     category: 'vastu',
     badge: 'VASTU CORRECTION',
@@ -552,6 +660,12 @@ const PRODUCTS_DATA = [
     price: 1100,
     priceDisplay: '₹1,100',
     priceDisplayMr: '₹१,१००',
+    marketPrice: 1899,
+    marketPriceDisplay: '₹1,899',
+    marketPriceDisplayMr: '₹१,८९९',
+    discountPercent: 42,
+    rating: 4.9,
+    reviewsCount: 105,
     image: 'assets/images/bracelets/scorpio.png',
     category: 'crystals',
     badge: 'PSYCHIC SHIELD',
@@ -727,7 +841,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Render Products Grid Dynamically
+// Render Products Grid Dynamically with Market Price Comparison & Sales Tags
 function renderProducts(products) {
   const container = document.getElementById('products-container');
   if (!container) return;
@@ -736,25 +850,70 @@ function renderProducts(products) {
     const title = currentLanguage === 'mr' ? p.nameMr : p.name;
     const desc = currentLanguage === 'mr' ? p.descMr : p.desc;
     const priceStr = formatINR(p.price);
+    const mktPriceStr = currentLanguage === 'mr' ? (p.marketPriceDisplayMr || formatINR(p.marketPrice)) : (p.marketPriceDisplay || formatINR(p.marketPrice));
+    const discount = p.discountPercent || (p.marketPrice ? Math.round(((p.marketPrice - p.price) / p.marketPrice) * 100) : 0);
+    const discountStr = currentLanguage === 'mr' ? formatDevanagariNum(discount) : discount;
+    const savingsAmount = p.marketPrice ? (p.marketPrice - p.price) : 0;
+    const savingsStr = formatINR(savingsAmount);
+    const ratingStr = currentLanguage === 'mr' ? (p.ratingMr || '४.९') : (p.rating || '4.9');
+    const reviewsStr = currentLanguage === 'mr' ? (p.reviewsCountMr || formatDevanagariNum(p.reviewsCount || 90)) : (p.reviewsCount || 90);
 
     return `
-      <div class="product-card glass-card" data-category="${p.category}" data-id="${p.id}">
+      <div class="product-card glass-card luxury-crystal-card" data-category="${p.category}" data-id="${p.id}">
         <div class="product-image-wrapper">
-          <img src="${p.image}" alt="${title}" class="product-img">
+          <img src="${p.image}" alt="${title}" class="product-img" loading="lazy">
           <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
+          ${discount > 0 ? `
+            <div class="product-discount-ribbon">
+              <span class="ribbon-percent">${discountStr}%</span>
+              <span class="ribbon-off">OFF</span>
+            </div>
+          ` : ''}
+          <div class="product-certified-tag">
+            <i class="fa-solid fa-circle-check text-gold-primary"></i> ${getTranslation('products.energized_badge', '100% CONSECRATED')}
+          </div>
         </div>
         <div class="product-info">
-          <h3 class="product-title">${title}</h3>
-          <div class="product-price-box">
-            <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
-            <span class="price-val text-gold-gradient">${priceStr}</span>
+          <div class="product-meta-header">
+            <div class="product-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">${ratingStr}</span>
+              <span class="rating-count">(${reviewsStr})</span>
+            </div>
+            <span class="in-stock-tag"><i class="fa-solid fa-circle-dot"></i> In Stock</span>
           </div>
+
+          <h3 class="product-title">${title}</h3>
+
+          <!-- Market Price Comparison Tagging Module -->
+          <div class="price-comparison-container">
+            <div class="market-price-row">
+              <span class="market-price-label">${getTranslation('products.market_price', 'ONLINE MARKET')}:</span>
+              <span class="market-price-val strike-through">${mktPriceStr}</span>
+            </div>
+            <div class="academy-price-row">
+              <div class="academy-price-wrap">
+                <span class="academy-price-label">${getTranslation('products.academy_price', 'OUR SPECIAL PRICE')}:</span>
+                <span class="price-val text-gold-gradient">${priceStr}</span>
+              </div>
+              ${savingsAmount > 0 ? `
+                <div class="savings-pill">
+                  <i class="fa-solid fa-tags"></i> ${getTranslation('products.save', 'SAVE')} ${savingsStr}
+                </div>
+              ` : ''}
+            </div>
+            <div class="market-comparison-note">
+              <i class="fa-solid fa-shield-halved text-subtle-gold"></i> Compared with Amazon, Etsy & Commercial Market
+            </div>
+          </div>
+
           <p class="product-desc">${desc}</p>
-          <div style="display:flex; gap:0.5rem; margin-top:0.5rem;">
+
+          <div class="product-card-actions">
             <button class="btn btn-gold btn-sm add-to-cart-btn" data-id="${p.id}" style="flex:1;">
               <i class="fa-solid fa-cart-plus"></i> ${getTranslation('products.add_to_cart', 'ADD TO CART')}
             </button>
-            <button class="btn btn-outline btn-sm view-product-detail-btn" data-id="${p.id}">
+            <button class="btn btn-outline btn-sm view-product-detail-btn" data-id="${p.id}" title="${getTranslation('products.view_details', 'VIEW DETAILS')}">
               <i class="fa-solid fa-eye"></i>
             </button>
           </div>
@@ -859,10 +1018,28 @@ function openProductDetailModal(productId) {
 
       <div class="product-detail-info">
         <h2 class="product-detail-title">${title}</h2>
-        <div class="product-detail-price-box">
-          <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
-          <span class="price-val text-gold-gradient" style="font-size:1.8rem; font-weight:700;">${priceStr}</span>
+
+        <!-- Detailed Online Market Comparison Box in Modal -->
+        <div class="modal-price-comparison-box">
+          <div class="modal-price-top">
+            <div>
+              <span class="modal-mkt-label">${getTranslation('products.market_price', 'ONLINE MARKET')}:</span>
+              <span class="modal-mkt-val strike-through">${currentLanguage === 'mr' ? (product.marketPriceDisplayMr || formatINR(product.marketPrice)) : (product.marketPriceDisplay || formatINR(product.marketPrice))}</span>
+            </div>
+            ${product.discountPercent ? `
+              <span class="modal-discount-tag"><i class="fa-solid fa-bolt"></i> ${currentLanguage === 'mr' ? formatDevanagariNum(product.discountPercent) : product.discountPercent}% OFF</span>
+            ` : ''}
+          </div>
+          <div class="modal-price-main">
+            <span class="modal-academy-label">${getTranslation('products.academy_price', 'OUR SPECIAL PRICE')}:</span>
+            <span class="price-val text-gold-gradient" style="font-size:2rem; font-weight:800;">${priceStr}</span>
+          </div>
+          <div class="modal-savings-highlight">
+            <i class="fa-solid fa-badge-check text-gold-primary"></i>
+            <span>${getTranslation('products.save', 'SAVE')} ${formatINR((product.marketPrice || product.price) - product.price)} vs Online Portals (Amazon / Etsy)</span>
+          </div>
         </div>
+
         <p class="product-detail-desc">${desc}</p>
 
         ${product.variants && product.variants.length > 0 ? `

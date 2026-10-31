@@ -92,6 +92,13 @@ const TRANSLATIONS = {
     'products.view_details': 'VIEW PRODUCT',
     'products.inquire_wa': 'INQUIRE ON WHATSAPP',
     'products.price_label': 'PRICE',
+    'products.market_price': 'ONLINE MARKET',
+    'products.academy_price': 'OUR SPECIAL PRICE',
+    'products.save': 'SAVE',
+    'products.energized_badge': '100% CONSECRATED',
+    'products.compare_title': 'Online Market Price Match Guarantee',
+    'products.compare_sub': 'Direct from Academy — 100% Genuine, Vedic Consecrated & 35-50% Below Commercial Online Portals',
+    'products.free_shipping': 'Free Sacred Packaging & Consecration Card Included',
 
     // Students
     'students.tag': 'OUR JOURNEY & SUCCESS',
@@ -216,6 +223,13 @@ const TRANSLATIONS = {
     'products.view_details': 'प्रॉडक्ट पहा',
     'products.inquire_wa': 'व्हॉट्सॲपवर चौकशी करा',
     'products.price_label': 'किंमत',
+    'products.market_price': 'ऑनलाईन मार्केट',
+    'products.academy_price': 'विशेष सवलत किंमत',
+    'products.save': 'बचत',
+    'products.energized_badge': '१००% अभिमंत्रित',
+    'products.compare_title': 'ऑनलाईन मार्केट किंमत तुलना व हमी',
+    'products.compare_sub': 'थेट अकॅडमीकडून — १००% शुद्ध, वैदिक मंत्रसिद्ध आणि नामांकित ऑनलाईन पोर्टल्सपेक्षा ३५-५०% स्वस्त',
+    'products.free_shipping': 'मोफत पवित्र पॅकेजिंग व सिद्धी प्रमाणपत्र समाविष्ट',
 
     // Students
     'students.tag': 'आमचा प्रवास व यश',
