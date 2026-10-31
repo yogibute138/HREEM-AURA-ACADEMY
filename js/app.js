@@ -175,9 +175,9 @@ const PRODUCTS_DATA = [
     slug: 'mesha-aries-rashi-bracelet',
     name: 'Mesha (Aries) Rashi Bracelet',
     nameMr: 'मेष राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/aries_highres.png',
     category: 'rashi',
     badge: 'ARIES / MESHA',
@@ -188,7 +188,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on your right wrist on Tuesday morning after offering morning prayers.',
     care: 'Cleanse once a month under moonlight or with sage incense. Avoid chemical detergents.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -197,9 +197,9 @@ const PRODUCTS_DATA = [
     slug: 'vrishabha-taurus-rashi-bracelet',
     name: 'Vrishabha (Taurus) Rashi Bracelet',
     nameMr: 'वृषभ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/taurus_highres.png',
     category: 'rashi',
     badge: 'TAURUS / VRISHABHA',
@@ -210,7 +210,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Friday morning after cleansing with holy water or raw milk.',
     care: 'Recharge under full moonlight. Keep away from harsh chemicals.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -219,9 +219,9 @@ const PRODUCTS_DATA = [
     slug: 'mithuna-gemini-rashi-bracelet',
     name: 'Mithuna (Gemini) Rashi Bracelet',
     nameMr: 'मिथुन राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/gemini.png',
     category: 'rashi',
     badge: 'GEMINI / MITHUNA',
@@ -232,7 +232,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Wednesday morning after morning meditation.',
     care: 'Cleanse with running water and charge with morning sunlight.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -241,9 +241,9 @@ const PRODUCTS_DATA = [
     slug: 'karka-cancer-rashi-bracelet',
     name: 'Karka (Cancer) Rashi Bracelet',
     nameMr: 'कर्क राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/cancer.png',
     category: 'rashi',
     badge: 'CANCER / KARKA',
@@ -254,7 +254,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Monday morning facing East.',
     care: 'Recharge under Monday moonlight or Selenite plate.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -263,9 +263,9 @@ const PRODUCTS_DATA = [
     slug: 'simha-leo-rashi-bracelet',
     name: 'Simha (Leo) Rashi Bracelet',
     nameMr: 'सिंह राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/leo.png',
     category: 'rashi',
     badge: 'LEO / SIMHA',
@@ -276,7 +276,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Sunday morning during sunrise.',
     care: 'Recharge in early morning gentle sunlight for 30 minutes.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -285,9 +285,9 @@ const PRODUCTS_DATA = [
     slug: 'kanya-virgo-rashi-bracelet',
     name: 'Kanya (Virgo) Rashi Bracelet',
     nameMr: 'कन्या राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/virgo.png',
     category: 'rashi',
     badge: 'VIRGO / KANYA',
@@ -298,7 +298,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Wednesday morning.',
     care: 'Cleanse with fresh water.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -307,9 +307,9 @@ const PRODUCTS_DATA = [
     slug: 'tula-libra-rashi-bracelet',
     name: 'Tula (Libra) Rashi Bracelet',
     nameMr: 'तुळ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/libra.png',
     category: 'rashi',
     badge: 'LIBRA / TULA',
@@ -320,7 +320,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Friday morning.',
     care: 'Keep in velvet box when not in use.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -329,9 +329,9 @@ const PRODUCTS_DATA = [
     slug: 'vrishchika-scorpio-rashi-bracelet',
     name: 'Vrishchika (Scorpio) Rashi Bracelet',
     nameMr: 'वृश्चिक राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/scorpio.png',
     category: 'rashi',
     badge: 'SCORPIO / VRISHCHIKA',
@@ -342,7 +342,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Tuesday morning.',
     care: 'Smudge with incense smoke regularly.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -351,9 +351,9 @@ const PRODUCTS_DATA = [
     slug: 'dhanu-sagittarius-rashi-bracelet',
     name: 'Dhanu (Sagittarius) Rashi Bracelet',
     nameMr: 'धनु राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/sagittarius.png',
     category: 'rashi',
     badge: 'SAGITTARIUS / DHANU',
@@ -364,7 +364,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Thursday morning.',
     care: 'Keep clean and recharge under sunlight.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -373,9 +373,9 @@ const PRODUCTS_DATA = [
     slug: 'makara-capricorn-rashi-bracelet',
     name: 'Makara (Capricorn) Rashi Bracelet',
     nameMr: 'मकर राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/capricorn_highres.png',
     category: 'rashi',
     badge: 'CAPRICORN / MAKARA',
@@ -386,7 +386,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Saturday morning or evening.',
     care: 'Avoid direct chemical contact.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -395,9 +395,9 @@ const PRODUCTS_DATA = [
     slug: 'kumbha-aquarius-rashi-bracelet',
     name: 'Kumbha (Aquarius) Rashi Bracelet',
     nameMr: 'कुंभ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/aquarius_highres.png',
     category: 'rashi',
     badge: 'AQUARIUS / KUMBHA',
@@ -408,7 +408,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Saturday morning.',
     care: 'Recharge with Selenite plate.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -417,9 +417,9 @@ const PRODUCTS_DATA = [
     slug: 'meena-pisces-rashi-bracelet',
     name: 'Meena (Pisces) Rashi Bracelet',
     nameMr: 'मीन राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
     image: 'assets/images/bracelets/pisces.png',
     category: 'rashi',
     badge: 'PISCES / MEENA',
@@ -430,7 +430,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on Thursday morning.',
     care: 'Cleanse under gentle running water.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
