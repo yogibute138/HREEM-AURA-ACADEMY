@@ -148,12 +148,6 @@ const PRODUCTS_DATA = [
     "price": 15999,
     "priceDisplay": "₹15,999",
     "priceDisplayMr": "₹१५,९९९",
-    "marketPrice": 24999,
-    "marketPriceDisplay": "₹24,999",
-    "marketPriceDisplayMr": "₹२४,९९९",
-    "discountPercent": 36,
-    "rating": 4.9,
-    "reviewsCount": 128,
     "image": "assets/images/bracelets/all_rashi_featured.png",
     "category": "rashi",
     "badge": "12 RASHI SET",
@@ -189,8 +183,14 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
-    image: 'assets/images/bracelets/aries_highres.png',
+    reviewsCount: 128,
+    image: 'assets/images/bracelets/aries_1.jpeg',
+    images: [
+      'assets/images/bracelets/aries_1.jpeg',
+      'assets/images/bracelets/aries_2.png',
+      'assets/images/bracelets/aries_3.jpeg',
+      'assets/images/bracelets/aries_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'ARIES / MESHA',
     orbClass: 'glow-red',
@@ -217,7 +217,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/taurus_highres.png',
     category: 'rashi',
     badge: 'TAURUS / VRISHABHA',
@@ -245,7 +245,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/gemini.png',
     category: 'rashi',
     badge: 'GEMINI / MITHUNA',
@@ -273,8 +273,14 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
-    image: 'assets/images/bracelets/cancer.png',
+    reviewsCount: 142,
+    image: 'assets/images/bracelets/cancer_1.png',
+    images: [
+      'assets/images/bracelets/cancer_1.png',
+      'assets/images/bracelets/cancer_2.jpeg',
+      'assets/images/bracelets/cancer_3.jpeg',
+      'assets/images/bracelets/cancer_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'CANCER / KARKA',
     orbClass: 'glow-silver',
@@ -301,7 +307,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/leo.png',
     category: 'rashi',
     badge: 'LEO / SIMHA',
@@ -329,7 +335,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/virgo.png',
     category: 'rashi',
     badge: 'VIRGO / KANYA',
@@ -357,7 +363,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/libra.png',
     category: 'rashi',
     badge: 'LIBRA / TULA',
@@ -385,7 +391,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/scorpio.png',
     category: 'rashi',
     badge: 'SCORPIO / VRISHCHIKA',
@@ -413,7 +419,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/sagittarius.png',
     category: 'rashi',
     badge: 'SAGITTARIUS / DHANU',
@@ -441,7 +447,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/capricorn_highres.png',
     category: 'rashi',
     badge: 'CAPRICORN / MAKARA',
@@ -469,8 +475,14 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
-    image: 'assets/images/bracelets/aquarius_highres.png',
+    reviewsCount: 118,
+    image: 'assets/images/bracelets/aquarius_1.jpeg',
+    images: [
+      'assets/images/bracelets/aquarius_1.jpeg',
+      'assets/images/bracelets/aquarius_2.jpeg',
+      'assets/images/bracelets/aquarius_3.jpeg',
+      'assets/images/bracelets/aquarius_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'AQUARIUS / KUMBHA',
     orbClass: 'glow-violet',
@@ -497,7 +509,7 @@ const PRODUCTS_DATA = [
     marketPriceDisplayMr: '₹१,४९९',
     discountPercent: 47,
     rating: 4.9,
-    reviewsCount: 94,
+    reviewsCount: 96,
     image: 'assets/images/bracelets/pisces.png',
     category: 'rashi',
     badge: 'PISCES / MEENA',
@@ -522,12 +534,6 @@ const PRODUCTS_DATA = [
     price: 1850,
     priceDisplay: '₹1,850',
     priceDisplayMr: '₹१,८५०',
-    marketPrice: 2999,
-    marketPriceDisplay: '₹2,999',
-    marketPriceDisplayMr: '₹२,९९९',
-    discountPercent: 38,
-    rating: 4.9,
-    reviewsCount: 114,
     image: 'assets/images/bracelets/aries.png',
     category: 'crystals',
     badge: 'WEALTH MAGNET',
@@ -550,12 +556,6 @@ const PRODUCTS_DATA = [
     price: 2100,
     priceDisplay: '₹2,100',
     priceDisplayMr: '₹२,१००',
-    marketPrice: 3499,
-    marketPriceDisplay: '₹3,499',
-    marketPriceDisplayMr: '₹३,४९९',
-    discountPercent: 40,
-    rating: 4.8,
-    reviewsCount: 89,
     image: 'assets/images/bracelets/aquarius.png',
     category: 'crystals',
     badge: 'INTUITION & CALM',
@@ -578,12 +578,6 @@ const PRODUCTS_DATA = [
     price: 1250,
     priceDisplay: '₹1,250',
     priceDisplayMr: '₹१,२५०',
-    marketPrice: 1999,
-    marketPriceDisplay: '₹1,999',
-    marketPriceDisplayMr: '₹१,९९९',
-    discountPercent: 37,
-    rating: 4.9,
-    reviewsCount: 96,
     image: 'assets/images/bracelets/libra.png',
     category: 'crystals',
     badge: 'LOVE & HARMONY',
@@ -605,12 +599,6 @@ const PRODUCTS_DATA = [
     price: 3500,
     priceDisplay: '₹3,500',
     priceDisplayMr: '₹३,५००',
-    marketPrice: 5999,
-    marketPriceDisplay: '₹5,999',
-    marketPriceDisplayMr: '₹५,९९९',
-    discountPercent: 42,
-    rating: 5.0,
-    reviewsCount: 64,
     image: 'assets/images/bracelets/sagittarius.png',
     category: 'lalkitab',
     badge: 'LAL KITAB REMEDY',
@@ -632,12 +620,6 @@ const PRODUCTS_DATA = [
     price: 2400,
     priceDisplay: '₹2,400',
     priceDisplayMr: '₹२,४००',
-    marketPrice: 3999,
-    marketPriceDisplay: '₹3,999',
-    marketPriceDisplayMr: '₹३,९९९',
-    discountPercent: 40,
-    rating: 4.9,
-    reviewsCount: 82,
     image: 'assets/images/bracelets/capricorn.png',
     category: 'vastu',
     badge: 'VASTU CORRECTION',
@@ -660,12 +642,6 @@ const PRODUCTS_DATA = [
     price: 1100,
     priceDisplay: '₹1,100',
     priceDisplayMr: '₹१,१००',
-    marketPrice: 1899,
-    marketPriceDisplay: '₹1,899',
-    marketPriceDisplayMr: '₹१,८९९',
-    discountPercent: 42,
-    rating: 4.9,
-    reviewsCount: 105,
     image: 'assets/images/bracelets/scorpio.png',
     category: 'crystals',
     badge: 'PSYCHIC SHIELD',
@@ -841,7 +817,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Render Products Grid Dynamically with Market Price Comparison & Sales Tags
+// Render Products Grid Dynamically
 function renderProducts(products) {
   const container = document.getElementById('products-container');
   if (!container) return;
@@ -850,6 +826,7 @@ function renderProducts(products) {
     const title = currentLanguage === 'mr' ? p.nameMr : p.name;
     const desc = currentLanguage === 'mr' ? p.descMr : p.desc;
     const priceStr = formatINR(p.price);
+
     const mktPriceStr = currentLanguage === 'mr' ? (p.marketPriceDisplayMr || formatINR(p.marketPrice)) : (p.marketPriceDisplay || formatINR(p.marketPrice));
     const discount = p.discountPercent || (p.marketPrice ? Math.round(((p.marketPrice - p.price) / p.marketPrice) * 100) : 0);
     const discountStr = currentLanguage === 'mr' ? formatDevanagariNum(discount) : discount;
@@ -857,11 +834,13 @@ function renderProducts(products) {
     const savingsStr = formatINR(savingsAmount);
     const ratingStr = currentLanguage === 'mr' ? (p.ratingMr || '४.९') : (p.rating || '4.9');
     const reviewsStr = currentLanguage === 'mr' ? (p.reviewsCountMr || formatDevanagariNum(p.reviewsCount || 90)) : (p.reviewsCount || 90);
+    const imgList = (p.images && p.images.length > 0) ? p.images : [p.image];
+    const hasMultipleImages = imgList.length > 1;
 
     return `
       <div class="product-card glass-card luxury-crystal-card" data-category="${p.category}" data-id="${p.id}">
-        <div class="product-image-wrapper">
-          <img src="${p.image}" alt="${title}" class="product-img" loading="lazy">
+        <div class="product-image-wrapper" data-product-id="${p.id}" data-current-index="0">
+          <img src="${imgList[0]}" alt="${title}" class="product-img" loading="lazy" id="prod-img-${p.id}">
           <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
           ${discount > 0 ? `
             <div class="product-discount-ribbon">
@@ -872,6 +851,22 @@ function renderProducts(products) {
           <div class="product-certified-tag">
             <i class="fa-solid fa-circle-check text-gold-primary"></i> ${getTranslation('products.energized_badge', '100% CONSECRATED')}
           </div>
+          ${hasMultipleImages ? `
+            <button class="product-slider-btn prev-btn" data-action="prev-image" data-id="${p.id}" aria-label="Previous image">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="product-slider-btn next-btn" data-action="next-image" data-id="${p.id}" aria-label="Next image">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="product-slider-dots">
+              ${imgList.map((_, idx) => `
+                <button class="product-dot ${idx === 0 ? 'active' : ''}" data-action="dot-image" data-id="${p.id}" data-index="${idx}" aria-label="View image ${idx + 1}"></button>
+              `).join('')}
+            </div>
+            <div class="product-image-counter">
+              <span class="counter-curr">1</span>/<span class="counter-total">${imgList.length}</span>
+            </div>
+          ` : ''}
         </div>
         <div class="product-info">
           <div class="product-meta-header">
@@ -1009,11 +1004,32 @@ function openProductDetailModal(productId) {
   const desc = currentLanguage === 'mr' ? product.descMr : product.desc;
   const priceStr = formatINR(product.price);
 
+  const modalImgList = (product.images && product.images.length > 0) ? product.images : [product.image];
+  const hasModalMultiple = modalImgList.length > 1;
+
   content.innerHTML = `
     <div class="product-detail-grid">
-      <div class="product-detail-visual">
-        <img src="${product.image}" alt="${title}" class="product-detail-img">
+      <div class="product-detail-visual" id="modal-visual-container" data-current-index="0" data-id="${product.id}">
+        <img src="${modalImgList[0]}" alt="${title}" class="product-detail-img" id="modal-product-img">
         <span class="product-badge" style="position:absolute; top:1rem; left:1rem;"><i class="fa-solid fa-gem"></i> ${product.badge}</span>
+        ${hasModalMultiple ? `
+          <button class="product-slider-btn modal-slider-btn prev-btn" id="modal-prev-btn" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="product-slider-btn modal-slider-btn next-btn" id="modal-next-btn" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div class="product-slider-dots modal-slider-dots">
+            ${modalImgList.map((_, idx) => `
+              <button class="product-dot ${idx === 0 ? 'active' : ''}" data-action="modal-dot" data-index="${idx}" aria-label="View image ${idx + 1}"></button>
+            `).join('')}
+          </div>
+          <div class="modal-thumbnails-strip">
+            ${modalImgList.map((src, idx) => `
+              <img src="${src}" alt="Thumb ${idx + 1}" class="modal-thumb ${idx === 0 ? 'active' : ''}" data-action="modal-thumb" data-index="${idx}">
+            `).join('')}
+          </div>
+        ` : ''}
       </div>
 
       <div class="product-detail-info">
@@ -1039,7 +1055,6 @@ function openProductDetailModal(productId) {
             <span>${getTranslation('products.save', 'SAVE')} ${formatINR((product.marketPrice || product.price) - product.price)} vs Online Portals (Amazon / Etsy)</span>
           </div>
         </div>
-
         <p class="product-detail-desc">${desc}</p>
 
         ${product.variants && product.variants.length > 0 ? `
@@ -1126,9 +1141,171 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Function to update card slider image
+function updateCardImage(productId, newIndex) {
+  const product = PRODUCTS_DATA.find(p => p.id == productId);
+  if (!product || !product.images || product.images.length === 0) return;
+
+  const images = product.images;
+  const count = images.length;
+  const normalizedIndex = (newIndex % count + count) % count;
+
+  const card = document.querySelector(`.product-card[data-id="${productId}"]`);
+  if (!card) return;
+
+  const imgWrapper = card.querySelector('.product-image-wrapper');
+  const imgEl = card.querySelector('.product-img');
+  if (imgWrapper) imgWrapper.setAttribute('data-current-index', normalizedIndex);
+
+  if (imgEl) {
+    imgEl.style.opacity = '0';
+    setTimeout(() => {
+      imgEl.src = images[normalizedIndex];
+      imgEl.style.opacity = '1';
+    }, 150);
+  }
+
+  // Update dots
+  const dots = card.querySelectorAll('.product-dot');
+  dots.forEach((dot, idx) => {
+    if (idx === normalizedIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  // Update counter
+  const counterCurr = card.querySelector('.counter-curr');
+  if (counterCurr) {
+    counterCurr.textContent = normalizedIndex + 1;
+  }
+}
+
+// Function to update modal slider image
+function updateModalImage(productId, newIndex) {
+  const product = PRODUCTS_DATA.find(p => p.id == productId);
+  if (!product) return;
+  const images = (product.images && product.images.length > 0) ? product.images : [product.image];
+  const count = images.length;
+  const normalizedIndex = (newIndex % count + count) % count;
+
+  const visualContainer = document.getElementById('modal-visual-container');
+  const modalImg = document.getElementById('modal-product-img');
+  if (visualContainer) visualContainer.setAttribute('data-current-index', normalizedIndex);
+
+  if (modalImg) {
+    modalImg.style.opacity = '0';
+    setTimeout(() => {
+      modalImg.src = images[normalizedIndex];
+      modalImg.style.opacity = '1';
+    }, 150);
+  }
+
+  // Update modal dots
+  const dots = document.querySelectorAll('.modal-slider-dots .product-dot');
+  dots.forEach((dot, idx) => {
+    if (idx === normalizedIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  // Update modal thumbnails
+  const thumbs = document.querySelectorAll('.modal-thumbnails-strip .modal-thumb');
+  thumbs.forEach((thumb, idx) => {
+    if (idx === normalizedIndex) {
+      thumb.classList.add('active');
+    } else {
+      thumb.classList.remove('active');
+    }
+  });
+}
+
 // Bind Product Grid & Modal Click Listeners
 function initProductEvents() {
   document.addEventListener('click', (e) => {
+    // 1. Check card slider prev/next buttons
+    const prevSliderBtn = e.target.closest('.product-slider-btn.prev-btn:not(.modal-slider-btn)');
+    if (prevSliderBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = prevSliderBtn.getAttribute('data-id');
+      const wrapper = prevSliderBtn.closest('.product-image-wrapper');
+      const currIndex = parseInt(wrapper ? wrapper.getAttribute('data-current-index') || 0 : 0, 10);
+      updateCardImage(id, currIndex - 1);
+      return;
+    }
+
+    const nextSliderBtn = e.target.closest('.product-slider-btn.next-btn:not(.modal-slider-btn)');
+    if (nextSliderBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = nextSliderBtn.getAttribute('data-id');
+      const wrapper = nextSliderBtn.closest('.product-image-wrapper');
+      const currIndex = parseInt(wrapper ? wrapper.getAttribute('data-current-index') || 0 : 0, 10);
+      updateCardImage(id, currIndex + 1);
+      return;
+    }
+
+    // 2. Check card slider dot indicator buttons
+    const dotBtn = e.target.closest('.product-slider-dots:not(.modal-slider-dots) .product-dot');
+    if (dotBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = dotBtn.getAttribute('data-id');
+      const targetIndex = parseInt(dotBtn.getAttribute('data-index') || 0, 10);
+      updateCardImage(id, targetIndex);
+      return;
+    }
+
+    // 3. Modal slider buttons & dots & thumbnails
+    const modalPrevBtn = e.target.closest('#modal-prev-btn');
+    if (modalPrevBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const currIndex = parseInt(visualContainer ? visualContainer.getAttribute('data-current-index') || 0 : 0, 10);
+      if (prodId) updateModalImage(prodId, currIndex - 1);
+      return;
+    }
+
+    const modalNextBtn = e.target.closest('#modal-next-btn');
+    if (modalNextBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const currIndex = parseInt(visualContainer ? visualContainer.getAttribute('data-current-index') || 0 : 0, 10);
+      if (prodId) updateModalImage(prodId, currIndex + 1);
+      return;
+    }
+
+    const modalDotBtn = e.target.closest('.modal-slider-dots .product-dot');
+    if (modalDotBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const targetIndex = parseInt(modalDotBtn.getAttribute('data-index') || 0, 10);
+      if (prodId) updateModalImage(prodId, targetIndex);
+      return;
+    }
+
+    const modalThumb = e.target.closest('.modal-thumb');
+    if (modalThumb) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const targetIndex = parseInt(modalThumb.getAttribute('data-index') || 0, 10);
+      if (prodId) updateModalImage(prodId, targetIndex);
+      return;
+    }
+
     const addBtn = e.target.closest('.add-to-cart-btn');
     if (addBtn) {
       e.preventDefault();
