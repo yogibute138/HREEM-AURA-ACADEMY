@@ -895,7 +895,6 @@ function renderProducts(products) {
       <div class="product-card glass-card luxury-crystal-card" data-category="${p.category}" data-id="${p.id}">
         <div class="product-image-wrapper" data-product-id="${p.id}" data-current-index="0">
           <img src="${imgList[0]}" alt="${title}" class="product-img" loading="lazy" id="prod-img-${p.id}">
-          <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
           ${discount > 0 ? `
             <div class="product-discount-ribbon">
               <span class="ribbon-percent">${discountStr}%</span>
@@ -1065,7 +1064,6 @@ function openProductDetailModal(productId) {
     <div class="product-detail-grid">
       <div class="product-detail-visual" id="modal-visual-container" data-current-index="0" data-id="${product.id}">
         <img src="${modalImgList[0]}" alt="${title}" class="product-detail-img" id="modal-product-img">
-        <span class="product-badge" style="position:absolute; top:1rem; left:1rem;"><i class="fa-solid fa-gem"></i> ${product.badge}</span>
         ${hasModalMultiple ? `
           <button class="product-slider-btn modal-slider-btn prev-btn" id="modal-prev-btn" aria-label="Previous image">
             <i class="fa-solid fa-chevron-left"></i>
