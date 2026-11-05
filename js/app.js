@@ -646,27 +646,6 @@ const PRODUCTS_DATA = [
     ]
   },
   {
-    id: 'prod-lalkitab-grid',
-    slug: 'lal-kitab-crystal-grid',
-    name: 'Lal Kitab Consecrated Crystal Grid',
-    nameMr: 'लाल किताब मंत्रसिद्ध क्रिस्टल ग्रिड',
-    price: 3500,
-    priceDisplay: '₹3,500',
-    priceDisplayMr: '₹३,५००',
-    image: 'assets/images/bracelets/sagittarius.png',
-    category: 'lalkitab',
-    badge: 'LAL KITAB REMEDY',
-    orbClass: 'glow-orange',
-    desc: 'Custom Lal Kitab remedial crystal set consecrated according to planetary debt calculations.',
-    descMr: 'लाल किताबानुसार ग्रहांचे दोष दूर करण्यासाठी डॉ. वैशाली बुटे यांनी तयार केलेली क्रिस्टल ग्रिड.',
-    features: ['Custom Selected Planetary Stones', 'Consecrated Yantra Plate', 'Detailed Manual Included'],
-    usage: 'Place on home altar facing East during auspicious Muhurat.',
-    care: 'Follow included ritual guidelines.',
-    variants: [
-      { name: 'Standard Kit', price: 3500 }
-    ]
-  },
-  {
     id: 'prod-vastu-pyramid',
     slug: 'vastu-energy-crystal-pyramid',
     name: 'Vastu Energy Crystal Pyramid',
@@ -686,28 +665,6 @@ const PRODUCTS_DATA = [
     variants: [
       { name: '75mm Base Pyramid', price: 2400 },
       { name: '100mm Base Pyramid', price: 3200 }
-    ]
-  },
-  {
-    id: 'prod-tourmaline',
-    slug: 'black-tourmaline-raw-shield',
-    name: 'Black Tourmaline Raw Shield Stone',
-    nameMr: 'ब्लॅक तूरमलीन संरक्षण शिळा',
-    price: 1100,
-    priceDisplay: '₹1,100',
-    priceDisplayMr: '₹१,१००',
-    image: 'assets/images/bracelets/scorpio.png',
-    category: 'crystals',
-    badge: 'PSYCHIC SHIELD',
-    orbClass: 'glow-dark',
-    desc: 'Powerful protection stone against negative energies, evil eye (Nazar), jealousy, and electronic EMF radiation.',
-    descMr: 'वाईट नजर, नकारात्मक ऊर्जा आणि रेडिएशनपासून संरक्षण देणारा काळा तूरमलीन क्रिस्टल.',
-    features: ['Raw Natural Specimen', 'High EMF Absorbing Capacity', 'Aura Grounding Stone'],
-    usage: 'Place near main entrance door or computer desk.',
-    care: 'Cleanse with dry salt once a fortnight.',
-    variants: [
-      { name: 'Medium Piece (~150g)', price: 1100 },
-      { name: 'Large Piece (~300g)', price: 1750 }
     ]
   }
 ];
