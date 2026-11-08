@@ -175,10 +175,22 @@ const PRODUCTS_DATA = [
     slug: 'mesha-aries-rashi-bracelet',
     name: 'Mesha (Aries) Rashi Bracelet',
     nameMr: 'मेष राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/aries_highres.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 128,
+    image: 'assets/images/bracelets/aries_1.jpeg',
+    images: [
+      'assets/images/bracelets/aries_1.jpeg',
+      'assets/images/bracelets/aries_2.png',
+      'assets/images/bracelets/aries_3.jpeg',
+      'assets/images/bracelets/aries_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'ARIES / MESHA',
     orbClass: 'glow-red',
@@ -188,7 +200,7 @@ const PRODUCTS_DATA = [
     usage: 'Wear on your right wrist on Tuesday morning after offering morning prayers.',
     care: 'Cleanse once a month under moonlight or with sage incense. Avoid chemical detergents.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -197,20 +209,32 @@ const PRODUCTS_DATA = [
     slug: 'vrishabha-taurus-rashi-bracelet',
     name: 'Vrishabha (Taurus) Rashi Bracelet',
     nameMr: 'वृषभ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/taurus_highres.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 114,
+    image: 'assets/images/bracelets/taurus_1.png',
+    images: [
+      'assets/images/bracelets/taurus_1.png',
+      'assets/images/bracelets/taurus_2.png',
+      'assets/images/bracelets/taurus_3.jpeg',
+      'assets/images/bracelets/taurus_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'TAURUS / VRISHABHA',
     orbClass: 'glow-green',
     desc: 'Attracts luxury, relationship stability, material abundance, and strengthens Venusian energy flow.',
     descMr: 'शुक्र ग्रहाची कृपा, आकर्षण, आर्थिक स्थिरता आणि नात्यांमधील गोडवा वाढवणारे वृषभ राशी ब्रेसलेट.',
-    features: ['Natural Green & Pink Quartz', 'Venusian Energy Consecration', 'Durable Stretch Cord'],
+    features: ['Natural Green & Pink Quartz', 'Venusian Energy Consecration', 'Durable Stretch Cord', 'Aura Protection Shield'],
     usage: 'Wear on Friday morning after cleansing with holy water or raw milk.',
     care: 'Recharge under full moonlight. Keep away from harsh chemicals.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -219,20 +243,32 @@ const PRODUCTS_DATA = [
     slug: 'mithuna-gemini-rashi-bracelet',
     name: 'Mithuna (Gemini) Rashi Bracelet',
     nameMr: 'मिथुन राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/gemini.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 108,
+    image: 'assets/images/bracelets/gemini_1.png',
+    images: [
+      'assets/images/bracelets/gemini_1.png',
+      'assets/images/bracelets/gemini_2.jpeg',
+      'assets/images/bracelets/gemini_3.jpeg',
+      'assets/images/bracelets/gemini_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'GEMINI / MITHUNA',
     orbClass: 'glow-gold',
     desc: 'Enhances communication skills, business intellect, sharpness, and pacifies Mercury transits.',
     descMr: 'बुध ग्रहाची बुद्धिमत्ता, संवादकौशल्य आणि व्यापारातील यश वाढवणारे मिथुन राशी ब्रेसलेट.',
-    features: ['Natural Aventurine & Citrine', 'Mercury Mantra Activation', 'Comfort Fit'],
+    features: ['Natural Aventurine & Citrine', 'Mercury Mantra Activation', 'Comfort Fit', 'Aura Protection Shield'],
     usage: 'Wear on Wednesday morning after morning meditation.',
     care: 'Cleanse with running water and charge with morning sunlight.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -241,20 +277,32 @@ const PRODUCTS_DATA = [
     slug: 'karka-cancer-rashi-bracelet',
     name: 'Karka (Cancer) Rashi Bracelet',
     nameMr: 'कर्क राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/cancer.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 142,
+    image: 'assets/images/bracelets/cancer_1.png',
+    images: [
+      'assets/images/bracelets/cancer_1.png',
+      'assets/images/bracelets/cancer_2.jpeg',
+      'assets/images/bracelets/cancer_3.jpeg',
+      'assets/images/bracelets/cancer_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'CANCER / KARKA',
     orbClass: 'glow-silver',
     desc: 'Soothes emotional volatility, promotes deep mental peace, intuition, and balances Lunar frequency.',
     descMr: 'चंद्र ग्रहाचे मानसिक स्वास्थ्य, शांतता आणि भावनिक स्थैर्य प्रदान करणारे कर्क राशी ब्रेसलेट.',
-    features: ['Natural Moonstone & Selenite', 'Lunar Energy Charging', 'Premium Polish'],
+    features: ['Natural Moonstone & Selenite', 'Lunar Energy Charging', 'Premium Polish', 'Aura Protection Shield'],
     usage: 'Wear on Monday morning facing East.',
     care: 'Recharge under Monday moonlight or Selenite plate.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -263,20 +311,32 @@ const PRODUCTS_DATA = [
     slug: 'simha-leo-rashi-bracelet',
     name: 'Simha (Leo) Rashi Bracelet',
     nameMr: 'सिंह राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/leo.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 135,
+    image: 'assets/images/bracelets/leo_1.jpeg',
+    images: [
+      'assets/images/bracelets/leo_1.jpeg',
+      'assets/images/bracelets/leo_2.jpeg',
+      'assets/images/bracelets/leo_3.jpeg',
+      'assets/images/bracelets/leo_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'LEO / SIMHA',
     orbClass: 'glow-gold',
     desc: 'Magnifies leadership, magnetic charisma, confidence, authority, and invokes Solar blessings.',
     descMr: 'सूर्य ग्रहाचे तेज, नेतृत्वगुण, आत्मविश्वास आणि राजयोग प्रदान करणारे सिंह राशी ब्रेसलेट.',
-    features: ['Sunstone & Tiger Eye Beads', 'Solar Mantra Consecration', 'Unisex Luxury Design'],
+    features: ['Sunstone & Tiger Eye Beads', 'Solar Mantra Consecration', 'Unisex Luxury Design', 'Aura Protection Shield'],
     usage: 'Wear on Sunday morning during sunrise.',
     care: 'Recharge in early morning gentle sunlight for 30 minutes.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -285,20 +345,32 @@ const PRODUCTS_DATA = [
     slug: 'kanya-virgo-rashi-bracelet',
     name: 'Kanya (Virgo) Rashi Bracelet',
     nameMr: 'कन्या राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/virgo.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 120,
+    image: 'assets/images/bracelets/virgo_1.png',
+    images: [
+      'assets/images/bracelets/virgo_1.png',
+      'assets/images/bracelets/virgo_2.jpeg',
+      'assets/images/bracelets/virgo_3.jpeg',
+      'assets/images/bracelets/virgo_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'VIRGO / KANYA',
     orbClass: 'glow-green',
     desc: 'Sharpens analytical clarity, health wellness, wealth management, and clears Mercury blockages.',
     descMr: 'उत्तम आरोग्य, आर्थिक शिस्त आणि बौद्धिक प्रगती देणारे कन्या राशी ब्रेसलेट.',
-    features: ['Green Jade & Moss Agate', 'Vedic Consecration', 'Flexible Fit'],
+    features: ['Green Jade & Moss Agate', 'Vedic Consecration', 'Flexible Fit', 'Aura Protection Shield'],
     usage: 'Wear on Wednesday morning.',
     care: 'Cleanse with fresh water.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -307,20 +379,32 @@ const PRODUCTS_DATA = [
     slug: 'tula-libra-rashi-bracelet',
     name: 'Tula (Libra) Rashi Bracelet',
     nameMr: 'तुळ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/libra.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 126,
+    image: 'assets/images/bracelets/libra_1.png',
+    images: [
+      'assets/images/bracelets/libra_1.png',
+      'assets/images/bracelets/libra_2.jpeg',
+      'assets/images/bracelets/libra_3.jpeg',
+      'assets/images/bracelets/libra_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'LIBRA / TULA',
     orbClass: 'glow-pink',
     desc: 'Harmonizes partnerships, marital happiness, aesthetic refinement, and Venusian prosperity.',
     descMr: 'नात्यांमधील गोडवा, वैवाहिक सुख आणि आर्थिक आकर्षण वाढवणारे तुळ राशी ब्रेसलेट.',
-    features: ['Rose Quartz & Opalite', 'Venus Attunement', 'Handcrafted Quality'],
+    features: ['Rose Quartz & Opalite', 'Venus Attunement', 'Handcrafted Quality', 'Aura Protection Shield'],
     usage: 'Wear on Friday morning.',
     care: 'Keep in velvet box when not in use.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -329,20 +413,32 @@ const PRODUCTS_DATA = [
     slug: 'vrishchika-scorpio-rashi-bracelet',
     name: 'Vrishchika (Scorpio) Rashi Bracelet',
     nameMr: 'वृश्चिक राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/scorpio.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 139,
+    image: 'assets/images/bracelets/scorpio_1.png',
+    images: [
+      'assets/images/bracelets/scorpio_1.png',
+      'assets/images/bracelets/scorpio_2.jpeg',
+      'assets/images/bracelets/scorpio_3.jpeg',
+      'assets/images/bracelets/scorpio_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'SCORPIO / VRISHCHIKA',
     orbClass: 'glow-darkred',
     desc: 'Unlocks intuitive transformation, shields against hidden evil eye, and strengthens aura.',
     descMr: 'गुप्त शत्रूंपासून संरक्षण, तीव्र निर्णयक्षमता आणि सुरक्षितता देणारे वृश्चिक राशी ब्रेसलेट.',
-    features: ['Red Jasper & Obsidian', 'Aura Shield Activation', 'High Elastic Cord'],
+    features: ['Red Jasper & Obsidian', 'Aura Shield Activation', 'High Elastic Cord', 'Aura Protection Shield'],
     usage: 'Wear on Tuesday morning.',
     care: 'Smudge with incense smoke regularly.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -351,20 +447,32 @@ const PRODUCTS_DATA = [
     slug: 'dhanu-sagittarius-rashi-bracelet',
     name: 'Dhanu (Sagittarius) Rashi Bracelet',
     nameMr: 'धनु राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/sagittarius.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 112,
+    image: 'assets/images/bracelets/sagittarius_1.jpeg',
+    images: [
+      'assets/images/bracelets/sagittarius_1.jpeg',
+      'assets/images/bracelets/sagittarius_2.jpeg',
+      'assets/images/bracelets/sagittarius_3.jpeg',
+      'assets/images/bracelets/sagittarius_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'SAGITTARIUS / DHANU',
     orbClass: 'glow-yellow',
     desc: 'Expands spiritual wisdom, luck, travel safety, and invokes Guru Jupiter grace.',
     descMr: 'गुरु ग्रहाची कृपा, उच्च शिक्षण, नशीब आणि समृद्धी देणारे धनु राशी ब्रेसलेट.',
-    features: ['Yellow Aventurine & Citrine', 'Guru Jupiter Blessings', 'Unisex Elastic'],
+    features: ['Yellow Aventurine & Citrine', 'Guru Jupiter Blessings', 'Unisex Elastic', 'Aura Protection Shield'],
     usage: 'Wear on Thursday morning.',
     care: 'Keep clean and recharge under sunlight.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -373,20 +481,32 @@ const PRODUCTS_DATA = [
     slug: 'makara-capricorn-rashi-bracelet',
     name: 'Makara (Capricorn) Rashi Bracelet',
     nameMr: 'मकर राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/capricorn_highres.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 119,
+    image: 'assets/images/bracelets/capricorn_1.png',
+    images: [
+      'assets/images/bracelets/capricorn_1.png',
+      'assets/images/bracelets/capricorn_2.jpeg',
+      'assets/images/bracelets/capricorn_3.jpeg',
+      'assets/images/bracelets/capricorn_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'CAPRICORN / MAKARA',
     orbClass: 'glow-blue',
     desc: 'Drives career endurance, discipline, financial security, and neutralizes Saturnian delays.',
     descMr: 'शनि ग्रहाचे पाठबळ, कामात सातत्य आणि करिअरमधील अडथळे दूर करणारे मकर राशी ब्रेसलेट.',
-    features: ['Blue Tiger Eye & Lapis', 'Saturn Pacification Mantra', 'Sturdy Construction'],
+    features: ['Blue Tiger Eye & Lapis', 'Saturn Pacification Mantra', 'Sturdy Construction', 'Aura Protection Shield'],
     usage: 'Wear on Saturday morning or evening.',
     care: 'Avoid direct chemical contact.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -395,20 +515,32 @@ const PRODUCTS_DATA = [
     slug: 'kumbha-aquarius-rashi-bracelet',
     name: 'Kumbha (Aquarius) Rashi Bracelet',
     nameMr: 'कुंभ राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/aquarius_highres.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 118,
+    image: 'assets/images/bracelets/aquarius_1.jpeg',
+    images: [
+      'assets/images/bracelets/aquarius_1.jpeg',
+      'assets/images/bracelets/aquarius_2.jpeg',
+      'assets/images/bracelets/aquarius_3.jpeg',
+      'assets/images/bracelets/aquarius_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'AQUARIUS / KUMBHA',
     orbClass: 'glow-violet',
     desc: 'Fosters innovative thinking, social influence, wealth accumulation, and balances Rahu/Saturn.',
     descMr: 'नाविन्यपूर्ण विचार, सामाजिक प्रतिष्ठा आणि आर्थिक यश देणारे कुंभ राशी ब्रेसलेट.',
-    features: ['Amethyst & Sodalite Beads', 'Rahu-Saturn Harmony Charge', 'Stretch Band'],
+    features: ['Amethyst & Sodalite Beads', 'Rahu-Saturn Harmony Charge', 'Stretch Band', 'Aura Protection Shield'],
     usage: 'Wear on Saturday morning.',
     care: 'Recharge with Selenite plate.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -417,20 +549,32 @@ const PRODUCTS_DATA = [
     slug: 'meena-pisces-rashi-bracelet',
     name: 'Meena (Pisces) Rashi Bracelet',
     nameMr: 'मीन राशी अभिमंत्रित ब्रेसलेट',
-    price: 1499,
-    priceDisplay: '₹1,499',
-    priceDisplayMr: '₹१,४९९',
-    image: 'assets/images/bracelets/pisces.png',
+    price: 799,
+    priceDisplay: '₹799',
+    priceDisplayMr: '₹७९९',
+    marketPrice: 1499,
+    marketPriceDisplay: '₹1,499',
+    marketPriceDisplayMr: '₹१,४९९',
+    discountPercent: 47,
+    rating: 4.9,
+    reviewsCount: 130,
+    image: 'assets/images/bracelets/pisces_1.png',
+    images: [
+      'assets/images/bracelets/pisces_1.png',
+      'assets/images/bracelets/pisces_2.jpeg',
+      'assets/images/bracelets/pisces_3.jpeg',
+      'assets/images/bracelets/pisces_4.jpeg'
+    ],
     category: 'rashi',
     badge: 'PISCES / MEENA',
     orbClass: 'glow-cyan',
     desc: 'Awakens spiritual enlightenment, artistic creativity, emotional serenity, and Jupiterian luck.',
     descMr: 'आत्मिक शांतता, कलात्मक प्रगती आणि ईश्वरी कृपा प्रदान करणारे मीन राशी ब्रेसलेट.',
-    features: ['Aquamarine & Fluorite', 'Guru Jupiter Activation', 'Gentle Comfort Fit'],
+    features: ['Aquamarine & Fluorite', 'Guru Jupiter Activation', 'Gentle Comfort Fit', 'Aura Protection Shield'],
     usage: 'Wear on Thursday morning.',
     care: 'Cleanse under gentle running water.',
     variants: [
-      { name: 'Standard (8mm Beads)', price: 1499 },
+      { name: 'Standard (8mm Beads)', price: 799 },
       { name: 'Large (10mm Beads)', price: 1799 }
     ]
   },
@@ -502,27 +646,6 @@ const PRODUCTS_DATA = [
     ]
   },
   {
-    id: 'prod-lalkitab-grid',
-    slug: 'lal-kitab-crystal-grid',
-    name: 'Lal Kitab Consecrated Crystal Grid',
-    nameMr: 'लाल किताब मंत्रसिद्ध क्रिस्टल ग्रिड',
-    price: 3500,
-    priceDisplay: '₹3,500',
-    priceDisplayMr: '₹३,५००',
-    image: 'assets/images/bracelets/sagittarius.png',
-    category: 'lalkitab',
-    badge: 'LAL KITAB REMEDY',
-    orbClass: 'glow-orange',
-    desc: 'Custom Lal Kitab remedial crystal set consecrated according to planetary debt calculations.',
-    descMr: 'लाल किताबानुसार ग्रहांचे दोष दूर करण्यासाठी डॉ. वैशाली बुटे यांनी तयार केलेली क्रिस्टल ग्रिड.',
-    features: ['Custom Selected Planetary Stones', 'Consecrated Yantra Plate', 'Detailed Manual Included'],
-    usage: 'Place on home altar facing East during auspicious Muhurat.',
-    care: 'Follow included ritual guidelines.',
-    variants: [
-      { name: 'Standard Kit', price: 3500 }
-    ]
-  },
-  {
     id: 'prod-vastu-pyramid',
     slug: 'vastu-energy-crystal-pyramid',
     name: 'Vastu Energy Crystal Pyramid',
@@ -542,28 +665,6 @@ const PRODUCTS_DATA = [
     variants: [
       { name: '75mm Base Pyramid', price: 2400 },
       { name: '100mm Base Pyramid', price: 3200 }
-    ]
-  },
-  {
-    id: 'prod-tourmaline',
-    slug: 'black-tourmaline-raw-shield',
-    name: 'Black Tourmaline Raw Shield Stone',
-    nameMr: 'ब्लॅक तूरमलीन संरक्षण शिळा',
-    price: 1100,
-    priceDisplay: '₹1,100',
-    priceDisplayMr: '₹१,१००',
-    image: 'assets/images/bracelets/scorpio.png',
-    category: 'crystals',
-    badge: 'PSYCHIC SHIELD',
-    orbClass: 'glow-dark',
-    desc: 'Powerful protection stone against negative energies, evil eye (Nazar), jealousy, and electronic EMF radiation.',
-    descMr: 'वाईट नजर, नकारात्मक ऊर्जा आणि रेडिएशनपासून संरक्षण देणारा काळा तूरमलीन क्रिस्टल.',
-    features: ['Raw Natural Specimen', 'High EMF Absorbing Capacity', 'Aura Grounding Stone'],
-    usage: 'Place near main entrance door or computer desk.',
-    care: 'Cleanse with dry salt once a fortnight.',
-    variants: [
-      { name: 'Medium Piece (~150g)', price: 1100 },
-      { name: 'Large Piece (~300g)', price: 1750 }
     ]
   }
 ];
@@ -737,24 +838,87 @@ function renderProducts(products) {
     const desc = currentLanguage === 'mr' ? p.descMr : p.desc;
     const priceStr = formatINR(p.price);
 
+    const mktPriceStr = currentLanguage === 'mr' ? (p.marketPriceDisplayMr || formatINR(p.marketPrice)) : (p.marketPriceDisplay || formatINR(p.marketPrice));
+    const discount = p.discountPercent || (p.marketPrice ? Math.round(((p.marketPrice - p.price) / p.marketPrice) * 100) : 0);
+    const discountStr = currentLanguage === 'mr' ? formatDevanagariNum(discount) : discount;
+    const savingsAmount = p.marketPrice ? (p.marketPrice - p.price) : 0;
+    const savingsStr = formatINR(savingsAmount);
+    const ratingStr = currentLanguage === 'mr' ? (p.ratingMr || '४.९') : (p.rating || '4.9');
+    const reviewsStr = currentLanguage === 'mr' ? (p.reviewsCountMr || formatDevanagariNum(p.reviewsCount || 90)) : (p.reviewsCount || 90);
+    const imgList = (p.images && p.images.length > 0) ? p.images : [p.image];
+    const hasMultipleImages = imgList.length > 1;
+
     return `
-      <div class="product-card glass-card" data-category="${p.category}" data-id="${p.id}">
-        <div class="product-image-wrapper">
-          <img src="${p.image}" alt="${title}" class="product-img">
-          <span class="product-badge"><i class="fa-solid fa-gem"></i> ${p.badge}</span>
+      <div class="product-card glass-card luxury-crystal-card" data-category="${p.category}" data-id="${p.id}">
+        <div class="product-image-wrapper" data-product-id="${p.id}" data-current-index="0">
+          <img src="${imgList[0]}" alt="${title}" class="product-img" loading="lazy" id="prod-img-${p.id}">
+          ${discount > 0 ? `
+            <div class="product-discount-ribbon">
+              <span class="ribbon-percent">${discountStr}%</span>
+              <span class="ribbon-off">OFF</span>
+            </div>
+          ` : ''}
+          <div class="product-certified-tag">
+            <i class="fa-solid fa-circle-check text-gold-primary"></i> ${getTranslation('products.energized_badge', '100% CONSECRATED')}
+          </div>
+          ${hasMultipleImages ? `
+            <button class="product-slider-btn prev-btn" data-action="prev-image" data-id="${p.id}" aria-label="Previous image">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="product-slider-btn next-btn" data-action="next-image" data-id="${p.id}" aria-label="Next image">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="product-slider-dots">
+              ${imgList.map((_, idx) => `
+                <button class="product-dot ${idx === 0 ? 'active' : ''}" data-action="dot-image" data-id="${p.id}" data-index="${idx}" aria-label="View image ${idx + 1}"></button>
+              `).join('')}
+            </div>
+            <div class="product-image-counter">
+              <span class="counter-curr">1</span>/<span class="counter-total">${imgList.length}</span>
+            </div>
+          ` : ''}
         </div>
         <div class="product-info">
-          <h3 class="product-title">${title}</h3>
-          <div class="product-price-box">
-            <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
-            <span class="price-val text-gold-gradient">${priceStr}</span>
+          <div class="product-meta-header">
+            <div class="product-rating">
+              <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+              <span class="rating-number">${ratingStr}</span>
+              <span class="rating-count">(${reviewsStr})</span>
+            </div>
+            <span class="in-stock-tag"><i class="fa-solid fa-circle-dot"></i> In Stock</span>
           </div>
+
+          <h3 class="product-title">${title}</h3>
+
+          <!-- Market Price Comparison Tagging Module -->
+          <div class="price-comparison-container">
+            <div class="market-price-row">
+              <span class="market-price-label">${getTranslation('products.market_price', 'ONLINE MARKET')}:</span>
+              <span class="market-price-val strike-through">${mktPriceStr}</span>
+            </div>
+            <div class="academy-price-row">
+              <div class="academy-price-wrap">
+                <span class="academy-price-label">${getTranslation('products.academy_price', 'OUR SPECIAL PRICE')}:</span>
+                <span class="price-val text-gold-gradient">${priceStr}</span>
+              </div>
+              ${savingsAmount > 0 ? `
+                <div class="savings-pill">
+                  <i class="fa-solid fa-tags"></i> ${getTranslation('products.save', 'SAVE')} ${savingsStr}
+                </div>
+              ` : ''}
+            </div>
+            <div class="market-comparison-note">
+              <i class="fa-solid fa-shield-halved text-subtle-gold"></i> Compared with Amazon, Etsy & Commercial Market
+            </div>
+          </div>
+
           <p class="product-desc">${desc}</p>
-          <div style="display:flex; gap:0.5rem; margin-top:0.5rem;">
+
+          <div class="product-card-actions">
             <button class="btn btn-gold btn-sm add-to-cart-btn" data-id="${p.id}" style="flex:1;">
               <i class="fa-solid fa-cart-plus"></i> ${getTranslation('products.add_to_cart', 'ADD TO CART')}
             </button>
-            <button class="btn btn-outline btn-sm view-product-detail-btn" data-id="${p.id}">
+            <button class="btn btn-outline btn-sm view-product-detail-btn" data-id="${p.id}" title="${getTranslation('products.view_details', 'VIEW DETAILS')}">
               <i class="fa-solid fa-eye"></i>
             </button>
           </div>
@@ -850,18 +1014,55 @@ function openProductDetailModal(productId) {
   const desc = currentLanguage === 'mr' ? product.descMr : product.desc;
   const priceStr = formatINR(product.price);
 
+  const modalImgList = (product.images && product.images.length > 0) ? product.images : [product.image];
+  const hasModalMultiple = modalImgList.length > 1;
+
   content.innerHTML = `
     <div class="product-detail-grid">
-      <div class="product-detail-visual">
-        <img src="${product.image}" alt="${title}" class="product-detail-img">
-        <span class="product-badge" style="position:absolute; top:1rem; left:1rem;"><i class="fa-solid fa-gem"></i> ${product.badge}</span>
+      <div class="product-detail-visual" id="modal-visual-container" data-current-index="0" data-id="${product.id}">
+        <img src="${modalImgList[0]}" alt="${title}" class="product-detail-img" id="modal-product-img">
+        ${hasModalMultiple ? `
+          <button class="product-slider-btn modal-slider-btn prev-btn" id="modal-prev-btn" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="product-slider-btn modal-slider-btn next-btn" id="modal-next-btn" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <div class="product-slider-dots modal-slider-dots">
+            ${modalImgList.map((_, idx) => `
+              <button class="product-dot ${idx === 0 ? 'active' : ''}" data-action="modal-dot" data-index="${idx}" aria-label="View image ${idx + 1}"></button>
+            `).join('')}
+          </div>
+          <div class="modal-thumbnails-strip">
+            ${modalImgList.map((src, idx) => `
+              <img src="${src}" alt="Thumb ${idx + 1}" class="modal-thumb ${idx === 0 ? 'active' : ''}" data-action="modal-thumb" data-index="${idx}">
+            `).join('')}
+          </div>
+        ` : ''}
       </div>
 
       <div class="product-detail-info">
         <h2 class="product-detail-title">${title}</h2>
-        <div class="product-detail-price-box">
-          <span class="price-label">${getTranslation('products.price_label', 'PRICE')}:</span>
-          <span class="price-val text-gold-gradient" style="font-size:1.8rem; font-weight:700;">${priceStr}</span>
+
+        <!-- Detailed Online Market Comparison Box in Modal -->
+        <div class="modal-price-comparison-box">
+          <div class="modal-price-top">
+            <div>
+              <span class="modal-mkt-label">${getTranslation('products.market_price', 'ONLINE MARKET')}:</span>
+              <span class="modal-mkt-val strike-through">${currentLanguage === 'mr' ? (product.marketPriceDisplayMr || formatINR(product.marketPrice)) : (product.marketPriceDisplay || formatINR(product.marketPrice))}</span>
+            </div>
+            ${product.discountPercent ? `
+              <span class="modal-discount-tag"><i class="fa-solid fa-bolt"></i> ${currentLanguage === 'mr' ? formatDevanagariNum(product.discountPercent) : product.discountPercent}% OFF</span>
+            ` : ''}
+          </div>
+          <div class="modal-price-main">
+            <span class="modal-academy-label">${getTranslation('products.academy_price', 'OUR SPECIAL PRICE')}:</span>
+            <span class="price-val text-gold-gradient" style="font-size:2rem; font-weight:800;">${priceStr}</span>
+          </div>
+          <div class="modal-savings-highlight">
+            <i class="fa-solid fa-badge-check text-gold-primary"></i>
+            <span>${getTranslation('products.save', 'SAVE')} ${formatINR((product.marketPrice || product.price) - product.price)} vs Online Portals (Amazon / Etsy)</span>
+          </div>
         </div>
         <p class="product-detail-desc">${desc}</p>
 
@@ -949,9 +1150,171 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Function to update card slider image
+function updateCardImage(productId, newIndex) {
+  const product = PRODUCTS_DATA.find(p => p.id == productId);
+  if (!product || !product.images || product.images.length === 0) return;
+
+  const images = product.images;
+  const count = images.length;
+  const normalizedIndex = (newIndex % count + count) % count;
+
+  const card = document.querySelector(`.product-card[data-id="${productId}"]`);
+  if (!card) return;
+
+  const imgWrapper = card.querySelector('.product-image-wrapper');
+  const imgEl = card.querySelector('.product-img');
+  if (imgWrapper) imgWrapper.setAttribute('data-current-index', normalizedIndex);
+
+  if (imgEl) {
+    imgEl.style.opacity = '0';
+    setTimeout(() => {
+      imgEl.src = images[normalizedIndex];
+      imgEl.style.opacity = '1';
+    }, 150);
+  }
+
+  // Update dots
+  const dots = card.querySelectorAll('.product-dot');
+  dots.forEach((dot, idx) => {
+    if (idx === normalizedIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  // Update counter
+  const counterCurr = card.querySelector('.counter-curr');
+  if (counterCurr) {
+    counterCurr.textContent = normalizedIndex + 1;
+  }
+}
+
+// Function to update modal slider image
+function updateModalImage(productId, newIndex) {
+  const product = PRODUCTS_DATA.find(p => p.id == productId);
+  if (!product) return;
+  const images = (product.images && product.images.length > 0) ? product.images : [product.image];
+  const count = images.length;
+  const normalizedIndex = (newIndex % count + count) % count;
+
+  const visualContainer = document.getElementById('modal-visual-container');
+  const modalImg = document.getElementById('modal-product-img');
+  if (visualContainer) visualContainer.setAttribute('data-current-index', normalizedIndex);
+
+  if (modalImg) {
+    modalImg.style.opacity = '0';
+    setTimeout(() => {
+      modalImg.src = images[normalizedIndex];
+      modalImg.style.opacity = '1';
+    }, 150);
+  }
+
+  // Update modal dots
+  const dots = document.querySelectorAll('.modal-slider-dots .product-dot');
+  dots.forEach((dot, idx) => {
+    if (idx === normalizedIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+
+  // Update modal thumbnails
+  const thumbs = document.querySelectorAll('.modal-thumbnails-strip .modal-thumb');
+  thumbs.forEach((thumb, idx) => {
+    if (idx === normalizedIndex) {
+      thumb.classList.add('active');
+    } else {
+      thumb.classList.remove('active');
+    }
+  });
+}
+
 // Bind Product Grid & Modal Click Listeners
 function initProductEvents() {
   document.addEventListener('click', (e) => {
+    // 1. Check card slider prev/next buttons
+    const prevSliderBtn = e.target.closest('.product-slider-btn.prev-btn:not(.modal-slider-btn)');
+    if (prevSliderBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = prevSliderBtn.getAttribute('data-id');
+      const wrapper = prevSliderBtn.closest('.product-image-wrapper');
+      const currIndex = parseInt(wrapper ? wrapper.getAttribute('data-current-index') || 0 : 0, 10);
+      updateCardImage(id, currIndex - 1);
+      return;
+    }
+
+    const nextSliderBtn = e.target.closest('.product-slider-btn.next-btn:not(.modal-slider-btn)');
+    if (nextSliderBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = nextSliderBtn.getAttribute('data-id');
+      const wrapper = nextSliderBtn.closest('.product-image-wrapper');
+      const currIndex = parseInt(wrapper ? wrapper.getAttribute('data-current-index') || 0 : 0, 10);
+      updateCardImage(id, currIndex + 1);
+      return;
+    }
+
+    // 2. Check card slider dot indicator buttons
+    const dotBtn = e.target.closest('.product-slider-dots:not(.modal-slider-dots) .product-dot');
+    if (dotBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = dotBtn.getAttribute('data-id');
+      const targetIndex = parseInt(dotBtn.getAttribute('data-index') || 0, 10);
+      updateCardImage(id, targetIndex);
+      return;
+    }
+
+    // 3. Modal slider buttons & dots & thumbnails
+    const modalPrevBtn = e.target.closest('#modal-prev-btn');
+    if (modalPrevBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const currIndex = parseInt(visualContainer ? visualContainer.getAttribute('data-current-index') || 0 : 0, 10);
+      if (prodId) updateModalImage(prodId, currIndex - 1);
+      return;
+    }
+
+    const modalNextBtn = e.target.closest('#modal-next-btn');
+    if (modalNextBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const currIndex = parseInt(visualContainer ? visualContainer.getAttribute('data-current-index') || 0 : 0, 10);
+      if (prodId) updateModalImage(prodId, currIndex + 1);
+      return;
+    }
+
+    const modalDotBtn = e.target.closest('.modal-slider-dots .product-dot');
+    if (modalDotBtn) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const targetIndex = parseInt(modalDotBtn.getAttribute('data-index') || 0, 10);
+      if (prodId) updateModalImage(prodId, targetIndex);
+      return;
+    }
+
+    const modalThumb = e.target.closest('.modal-thumb');
+    if (modalThumb) {
+      e.preventDefault();
+      e.stopPropagation();
+      const visualContainer = document.getElementById('modal-visual-container');
+      const prodId = visualContainer ? visualContainer.getAttribute('data-id') : null;
+      const targetIndex = parseInt(modalThumb.getAttribute('data-index') || 0, 10);
+      if (prodId) updateModalImage(prodId, targetIndex);
+      return;
+    }
+
     const addBtn = e.target.closest('.add-to-cart-btn');
     if (addBtn) {
       e.preventDefault();

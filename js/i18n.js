@@ -91,7 +91,12 @@ const TRANSLATIONS = {
     'products.add_to_cart': 'ADD TO CART',
     'products.view_details': 'VIEW PRODUCT',
     'products.inquire_wa': 'INQUIRE ON WHATSAPP',
-    'products.price_label': 'PRICE',
+        'products.price_label': 'PRICE',
+    'products.market_price': 'ONLINE MARKET',
+    'products.academy_price': 'OUR SPECIAL PRICE',
+    'products.save': 'SAVE',
+    'products.energized_badge': '100% CONSECRATED',
+    'products.view_details': 'View Details',
 
     // Students
     'students.tag': 'OUR JOURNEY & SUCCESS',
@@ -215,7 +220,12 @@ const TRANSLATIONS = {
     'products.add_to_cart': 'कार्टमध्ये जोडा',
     'products.view_details': 'प्रॉडक्ट पहा',
     'products.inquire_wa': 'व्हॉट्सॲपवर चौकशी करा',
-    'products.price_label': 'किंमत',
+        'products.price_label': 'किंमत',
+    'products.market_price': 'ऑनलाईन मार्केट',
+    'products.academy_price': 'आमची विशेष किंमत',
+    'products.save': 'बचत',
+    'products.energized_badge': '१००% सिद्ध व प्राणप्रतिष्ठित',
+    'products.view_details': 'तपशील पहा',
 
     // Students
     'students.tag': 'आमचा प्रवास व यश',
